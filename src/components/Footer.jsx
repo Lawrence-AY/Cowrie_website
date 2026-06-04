@@ -18,7 +18,7 @@ export default function Footer() {
                 <div className="text-ayedos-green font-bold text-lg -mt-1">COWRIE</div>
               </div>
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed">
+            <p className="text-white/75 text-sm leading-relaxed">
               Catalysing commerce through innovative financial solutions powered by
               blockchain technology, tokenization, and securitization.
             </p>
@@ -52,7 +52,7 @@ export default function Footer() {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-white/60 hover:text-ayedos-green text-sm transition-colors"
+                    className="text-white/75 hover:text-ayedos-green text-sm transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
                 'Securitization',
               ].map((item) => (
                 <li key={item}>
-                  <span className="text-white/60 text-sm">{item}</span>
+                  <span className="text-white/75 text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -89,19 +89,19 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <HiLocationMarker className="text-ayedos-green mt-0.5 shrink-0" size={18} />
-                <span className="text-white/60 text-sm">
+                <span className="text-white/75 text-sm">
                   Nairobi, Kenya
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <HiPhone className="text-ayedos-green shrink-0" size={18} />
-                <a href="tel:+254700000000" className="text-white/60 hover:text-ayedos-green text-sm transition-colors">
+                <a href="tel:+254700000000" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
                   +254 700 000 000
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <HiMail className="text-ayedos-green shrink-0" size={18} />
-                <a href="mailto:info@ayedoscowrie.com" className="text-white/60 hover:text-ayedos-green text-sm transition-colors">
+                <a href="mailto:info@ayedoscowrie.com" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
                   info@ayedoscowrie.com
                 </a>
               </li>

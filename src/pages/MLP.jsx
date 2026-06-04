@@ -180,7 +180,7 @@ export default function MLP() {
                 MLP for{' '}
                 <span className="text-ayedos-green">Affordable Housing</span>
               </h2>
-              <p className="text-white/70 leading-relaxed mb-6">
+              <p className="text-white/85 leading-relaxed mb-6">
                 MLP offers an integrated solution for financing affordable housing projects. Through
                 innovative rent-to-own schemes, ordinary mortgages, and development finance, MLP
                 addresses housing shortages and promotes sustainable urban development.
@@ -206,7 +206,7 @@ export default function MLP() {
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">{item.title}</h4>
-                      <p className="text-white/60 text-sm">{item.description}</p>
+                      <p className="text-white/80 text-sm">{item.description}</p>
                     </div>
                   </div>
                 ))}

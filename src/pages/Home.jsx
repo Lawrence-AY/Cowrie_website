@@ -65,7 +65,7 @@ export default function Home() {
               Catalysing Commerce{' '}
               <span className="text-ayedos-green">Through Innovation</span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/70 leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg sm:text-xl text-white/85 leading-relaxed mb-10 max-w-xl">
               AYEDOS COWRIE reimagines markets and exchanges at the intersection of
               distributed ledger technology, tokenization, securitization, and
               information symmetry.
@@ -155,7 +155,7 @@ export default function Home() {
                 Revolutionising{' '}
                 <span className="text-ayedos-green">Real Estate Finance</span>
               </h2>
-              <p className="text-white/70 leading-relaxed mb-8">
+              <p className="text-white/85 leading-relaxed mb-8">
                 MLP bridges the gap between developers, landlords and homebuyers by offering a
                 transparent technology-driven ecosystem for property acquisition. It makes home
                 ownership more accessible through rent-to-own schemes, ordinary mortgages, and
@@ -176,7 +176,7 @@ export default function Home() {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-white/80 text-sm">{item}</span>
+                    <span className="text-white/90 text-sm">{item}</span>
                   </div>
                 ))}
               </div>

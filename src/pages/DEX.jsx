@@ -130,7 +130,7 @@ export default function DEX() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Supply Chain <span className="text-ayedos-green">Finance</span>
             </h2>
-            <p className="text-lg text-white/70 leading-relaxed">
+            <p className="text-lg text-white/85 leading-relaxed">
               DEX is an innovative blockchain-based platform designed to streamline supply chain
               finance. It facilitates instant payments to suppliers by securitizing receivables and
               providing liquidity, enhancing efficiency across the entire value chain.
@@ -363,7 +363,7 @@ export default function DEX() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Security & <span className="text-ayedos-green">Compliance</span>
             </h2>
-            <p className="text-lg text-white/70">
+            <p className="text-lg text-white/85">
               DEX is a permissioned platform ensuring the highest standards of security and regulatory compliance.
             </p>
           </div>

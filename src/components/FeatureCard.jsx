@@ -17,7 +17,7 @@ export default function FeatureCard({
         </div>
       )}
       <h3 className={`text-lg font-bold mb-3 ${textColor}`}>{title}</h3>
-      <p className="text-sm leading-relaxed opacity-80">{description}</p>
+      <p className="text-sm leading-relaxed">{description}</p>
     </div>
   )
 }
