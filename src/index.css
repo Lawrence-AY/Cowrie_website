@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ayedos-green: #8CC63F;
+  --color-ayedos-charcoal: #5F5F5F;
+  --color-ayedos-bluegray: #34444E;
+  --color-ayedos-light: #E7E5E5;
+  --color-ayedos-white: #FFFFFF;
+  --color-ayedos-black: #1A1A1A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-ayedos-charcoal bg-white antialiased;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-ayedos-green to-green-400;
+  }
+}
+
+/* AOS animation overrides */
+[data-aos] {
+  pointer-events: none;
+}
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
