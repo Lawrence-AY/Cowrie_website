@@ -33,31 +33,37 @@ const investmentOpportunities = [
     title: 'Housing Projects',
     description: 'Invest in affordable and middle-income housing developments with strong demand fundamentals.',
     label: 'Real Estate',
+    image: '/images/01.jpg',
   },
   {
     title: 'Infrastructure Development',
     description: 'Participate in financing critical infrastructure projects that drive economic growth.',
     label: 'Infrastructure',
+    image: '/images/02.jpg',
   },
   {
     title: 'Sustainable Investments',
     description: 'Support environmentally sustainable projects with long-term value creation potential.',
     label: 'ESG',
+    image: '/images/03.jpg',
   },
   {
     title: 'Commercial Development',
     description: 'Access commercial real estate opportunities with strong income-generating potential.',
     label: 'Commercial',
+    image: '/images/04.jpg',
   },
   {
     title: 'Economic Growth',
     description: 'Fund initiatives that stimulate economic development and job creation in key sectors.',
     label: 'Development',
+    image: '/images/05.jpg',
   },
   {
     title: 'Innovation Projects',
     description: 'Back innovative financial technology solutions that transform traditional markets.',
     label: 'Fintech',
+    image: '/images/06.jpg',
   },
 ]
 
@@ -130,7 +136,7 @@ export default function SpecialFund() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="Special Fund Overview" className="shadow-xl" />
+              <ImagePlaceholder height="400px" label="Special Fund Overview" className="shadow-xl" src="/images/ecofriendly-building-modern-city-generative-ai.jpg" />
             </div>
           </div>
         </div>
@@ -181,7 +187,7 @@ export default function SpecialFund() {
                 data-aos="fade-up"
                 data-aos-delay={(index % 3) * 100}
               >
-                <ImagePlaceholder height="200px" label={item.title} />
+                <ImagePlaceholder height="200px" label={item.title} src={item.image} />
                 <div className="p-6 bg-white">
                   <span className="inline-block px-3 py-1 bg-ayedos-green/10 text-ayedos-green text-xs font-semibold rounded-full mb-3">
                     {item.label}

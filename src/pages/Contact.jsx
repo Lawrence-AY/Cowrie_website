@@ -14,8 +14,8 @@ const contactInfo = [
   {
     icon: <HiPhone size={24} />,
     title: 'Phone Number',
-    content: '+254 700 000 000',
-    href: 'tel:+254700000000',
+    content: '+254 733 556127',
+    href: 'tel:+254733556127',
   },
   {
     icon: <HiMail size={24} />,
@@ -116,7 +116,7 @@ export default function Contact() {
 
               {/* Map Placeholder */}
               <div className="rounded-xl overflow-hidden border border-ayedos-light">
-                <ImagePlaceholder height="250px" label="Map Placeholder - Nairobi, Kenya" />
+                <ImagePlaceholder height="250px" label="Map Placeholder - Nairobi, Kenya" src="/images/1_edited.jpg" />
               </div>
             </div>
           </div>

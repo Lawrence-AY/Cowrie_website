@@ -61,6 +61,13 @@ const securityFeatures = [
   },
 ]
 
+const dexGalleryImages = [
+  '/images/1.png',
+  '/images/2.png',
+  '/images/3.png',
+  '/images/8.png',
+]
+
 export default function DEX() {
   return (
     <>
@@ -239,7 +246,7 @@ export default function DEX() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="450px" label="Public Finance" className="shadow-xl" />
+              <ImagePlaceholder height="450px" label="Public Finance" className="shadow-xl" src="/images/shutterstock_497290141.jpg" />
             </div>
           </div>
         </div>
@@ -396,9 +403,9 @@ export default function DEX() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
+            {dexGalleryImages.map((src, i) => (
               <div key={i} data-aos="fade-up" data-aos-delay={(i % 4) * 100}>
-                <ImagePlaceholder height="200px" label={`DEX Gallery ${i}`} className="shadow-md" />
+                <ImagePlaceholder height="200px" label={`DEX Gallery ${i + 1}`} className="shadow-md" src={src} />
               </div>
             ))}
           </div>

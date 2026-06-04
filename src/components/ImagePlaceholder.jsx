@@ -3,7 +3,24 @@ export default function ImagePlaceholder({
   height = '300px',
   label = 'Image Placeholder',
   className = '',
+  src = null,
 }) {
+  if (src) {
+    return (
+      <div
+        className={`rounded-xl overflow-hidden ${className}`}
+        style={{ width, height, minHeight: height }}
+      >
+        <img
+          src={src}
+          alt={label}
+          className="w-full h-full object-cover"
+          style={{ width: '100%', height: '100%' }}
+        />
+      </div>
+    )
+  }
+
   return (
     <div
       className={`bg-ayedos-light rounded-xl flex items-center justify-center ${className}`}

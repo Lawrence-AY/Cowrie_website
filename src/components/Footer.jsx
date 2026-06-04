@@ -95,8 +95,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <HiPhone className="text-ayedos-green shrink-0" size={18} />
-                <a href="tel:+254700000000" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
-                  +254 700 000 000
+                <a href="tel:+254733 556127" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
+                  +254 733 556127
                 </a>
               </li>
               <li className="flex items-center gap-3">

@@ -65,6 +65,15 @@ const investorBenefits = [
   'Transparent investment processes',
 ]
 
+const galleryImages = [
+  '/images/01.jpg',
+  '/images/02.jpg',
+  '/images/03.jpg',
+  '/images/04.jpg',
+  '/images/05.jpg',
+  '/images/06.jpg',
+]
+
 export default function MLP() {
   return (
     <>
@@ -102,7 +111,7 @@ export default function MLP() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="MLP Overview" className="shadow-xl" />
+              <ImagePlaceholder height="400px" label="MLP Overview" className="shadow-xl" src="/images/shutterstock_1664978713-2-min.jpg" />
             </div>
           </div>
         </div>
@@ -213,7 +222,7 @@ export default function MLP() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="450px" label="Affordable Housing" className="shadow-2xl" />
+              <ImagePlaceholder height="450px" label="Affordable Housing" className="shadow-2xl" src="/images/ecofriendly-building-modern-city-generative-ai.jpg" />
             </div>
           </div>
         </div>
@@ -231,9 +240,9 @@ export default function MLP() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {galleryImages.map((src, i) => (
               <div key={i} data-aos="fade-up" data-aos-delay={(i % 3) * 100}>
-                <ImagePlaceholder height="250px" label={`Project ${i}`} className="shadow-md" />
+                <ImagePlaceholder height="250px" label={`Project ${i + 1}`} className="shadow-md" src={src} />
               </div>
             ))}
           </div>
