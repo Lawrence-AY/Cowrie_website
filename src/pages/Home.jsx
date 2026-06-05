@@ -18,8 +18,8 @@ export default function Home() {
           />
         </div>
         {/* Decorative elements */}
-        <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-ayedos-green/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-0 w-125 h-125 bg-ayedos-green/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-0 w-100 h-100 bg-white/5 rounded-full blur-3xl" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="max-w-3xl" data-aos="fade-up">
@@ -38,7 +38,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                to="/mlp"
+                to="/MLP"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-ayedos-green text-white font-semibold rounded-xl hover:bg-ayedos-green/90 transition-all duration-300 hover:shadow-xl hover:scale-105"
               >
                 Explore MLP
@@ -47,7 +47,7 @@ export default function Home() {
                 </svg>
               </Link>
               <Link
-                to="/dex"
+                to="/DEX"
                 className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105"
               >
                 Explore DEX
@@ -147,7 +147,7 @@ export default function Home() {
                 ))}
               </div>
               <Link
-                to="/mlp"
+                to="/MLP"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-ayedos-green text-white font-semibold rounded-xl hover:bg-ayedos-green/90 transition-all duration-300 hover:shadow-lg"
               >
                 Learn More
@@ -203,7 +203,7 @@ export default function Home() {
                 ))}
               </div>
               <Link
-                to="/dex"
+                to="/DEX"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-ayedos-bluegray text-white font-semibold rounded-xl hover:bg-ayedos-bluegray/90 transition-all duration-300 hover:shadow-lg"
               >
                 Learn More
@@ -242,7 +242,7 @@ export default function Home() {
                 ))}
               </div>
               <Link
-                to="/special-fund"
+                to="/SpecialFund"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-ayedos-green text-white font-semibold rounded-xl hover:bg-ayedos-green/90 transition-all duration-300 hover:shadow-lg"
               >
                 Learn More
@@ -289,7 +289,7 @@ export default function Home() {
         title="Ready to Transform Your Financial Future?"
         subtitle="Partner with AYEDOS COWRIE and discover how our innovative blockchain-powered solutions can unlock new opportunities for your business."
         buttonText="Get In Touch"
-        buttonLink="/contact"
+        buttonLink="/Contact"
       />
     </>
   )

@@ -10,13 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-ayedos-green rounded-lg flex items-center justify-center text-white font-bold">
-                AC
-              </div>
-              <div>
-                <div className="text-white font-bold text-lg">AYEDOS</div>
-                <div className="text-ayedos-green font-bold text-lg -mt-1">COWRIE</div>
-              </div>
+             <img src="/icon-dark-landscape.png" alt="Ayedos Cowrie Logo" className="h-12 w-auto" />  
             </Link>
             <p className="text-white/75 text-sm leading-relaxed">
               Catalysing commerce through innovative financial solutions powered by

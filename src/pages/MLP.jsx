@@ -254,7 +254,7 @@ export default function MLP() {
         title="Ready to Transform Real Estate Finance?"
         subtitle="Whether you are a developer, homebuyer, or investor, the Mortgage Liquidity Platform offers unparalleled opportunities to participate in and benefit from the evolving housing market."
         buttonText="Contact Us About MLP"
-        buttonLink="/contact"
+        buttonLink="/Contact"
       />
     </>
   )
