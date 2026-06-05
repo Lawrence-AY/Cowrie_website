@@ -46,7 +46,7 @@ export default function Footer() {
                 { name: 'Home', path: '/' },
                 { name: 'MLP', path: '/mlp' },
                 { name: 'DEX', path: '/dex' },
-                { name: 'Special Fund', path: '/special-fund' },
+                { name: 'Investment Fund', path: '/special-fund' },
                 { name: 'Contact', path: '/contact' },
               ].map((link) => (
                 <li key={link.path}>
@@ -70,7 +70,7 @@ export default function Footer() {
               {[
                 'Mortgage Liquidity Platform',
                 'Digital Exchange',
-                'Special Fund',
+                'Cowrie Special Investment Fund',
                 'Tokenization',
                 'Securitization',
               ].map((item) => (

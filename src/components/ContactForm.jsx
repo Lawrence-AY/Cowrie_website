@@ -109,7 +109,7 @@ export default function ContactForm() {
           <option value="">Select a subject</option>
           <option value="MLP">Mortgage Liquidity Platform</option>
           <option value="DEX">Digital Exchange</option>
-          <option value="Special Fund">Special Fund</option>
+          <option value="Cowrie Special Investment Fund">Cowrie Special Investment Fund</option>
           <option value="Partnership">Partnership Inquiry</option>
           <option value="General">General Inquiry</option>
         </select>

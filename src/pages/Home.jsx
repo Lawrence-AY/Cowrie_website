@@ -216,7 +216,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Special Fund Preview */}
+      {/* Cowrie Special Investment Fund Preview */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -225,11 +225,11 @@ export default function Home() {
                 Investment Vehicle
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-                AYEDOS{' '}
-                <span className="text-ayedos-green">Special Fund</span>
+                Cowrie Special{' '}
+                <span className="text-ayedos-green">Investment Fund</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                The AYEDOS Special Fund is an investment and financing vehicle designed to support
+                The Cowrie Special Investment Fund is an investment and financing vehicle designed to support
                 innovative projects, housing development, infrastructure, and economic development
                 initiatives. It provides capital growth opportunities while driving positive social
                 impact.
@@ -252,7 +252,7 @@ export default function Home() {
               </Link>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="Special Fund Preview" className="shadow-xl" src="/images/06.jpg" />
+              <ImagePlaceholder height="400px" label="Cowrie Special Investment Fund Preview" className="shadow-xl" src="/images/06.jpg" />
             </div>
           </div>
         </div>

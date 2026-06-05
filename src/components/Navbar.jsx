@@ -6,7 +6,7 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'MLP', path: '/mlp' },
   { name: 'DEX', path: '/dex' },
-  { name: 'Special Fund', path: '/special-fund' },
+  { name: 'Investment Fund', path: '/special-fund' },
   { name: 'Contact', path: '/contact' },
 ]
 

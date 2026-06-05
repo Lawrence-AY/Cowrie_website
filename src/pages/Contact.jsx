@@ -52,8 +52,8 @@ const faqItems = [
     answer: 'Yes, DEX is a permissioned platform where all participants must pass through KYC and AML vetting. Security Tokens are embedded with compliance rules, and all transactions comply with CMA regulations and securities laws.',
   },
   {
-    question: 'How can I invest in the AYEDOS Special Fund?',
-    answer: 'You can contact us through our website form, email, or phone to learn about investment opportunities in the AYEDOS Special Fund. Our team will provide you with detailed information about fund objectives, performance, and investment process.',
+    question: 'How can I invest in the Cowrie Special Investment Fund?',
+    answer: 'You can contact us through our website form, email, or phone to learn about investment opportunities in the Cowrie Special Investment Fund. Our team will provide you with detailed information about fund objectives, performance, and investment process.',
   },
   {
     question: 'Who can use the MLP platform?',

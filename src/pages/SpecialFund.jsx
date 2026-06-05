@@ -1,7 +1,6 @@
 import { HiTrendingUp, HiHeart, HiCash, HiOfficeBuilding, HiShieldCheck, HiChartBar, HiBadgeCheck, HiLightningBolt } from 'react-icons/hi'
 import PageBanner from '../components/PageBanner'
 import FeatureCard from '../components/FeatureCard'
-import StatsSection from '../components/StatsSection'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import CTASection from '../components/CTASection'
 
@@ -90,19 +89,14 @@ const governanceFeatures = [
   },
 ]
 
-const fundStats = [
-  { value: 'KES 5B+', label: 'Fund Target' },
-  { value: '15%+', label: 'Target Returns' },
-  { value: '500+', label: 'Projects Funded' },
-  { value: '5+', label: 'Years Track Record' },
-]
+
 
 export default function SpecialFund() {
   return (
     <>
       {/* Hero Banner */}
       <PageBanner
-        title="AYEDOS Special Fund"
+        title="Cowrie Special Investment Fund"
         subtitle="An investment and financing vehicle designed to support innovative projects, housing development, infrastructure, and economic development initiatives."
       />
 
@@ -116,9 +110,9 @@ export default function SpecialFund() {
                 <span className="text-ayedos-green">Strategic Investment</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                The AYEDOS Special Fund is a purpose-driven investment vehicle that combines
+                The Cowrie Special Investment Fund is a purpose-driven investment vehicle that combines
                 financial returns with measurable social impact. We invest in projects that
-                matter — housing, infrastructure, sustainable development, and innovative
+                matter - housing, infrastructure, sustainable development, and innovative
                 enterprises that drive economic growth.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
@@ -136,7 +130,7 @@ export default function SpecialFund() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="Special Fund Overview" className="shadow-xl" src="/images/ecofriendly-building-modern-city-generative-ai.jpg" />
+              <ImagePlaceholder height="400px" label="Cowrie Special Investment Fund Overview" className="shadow-xl" src="/images/ecofriendly-building-modern-city-generative-ai.jpg" />
             </div>
           </div>
         </div>
@@ -226,12 +220,9 @@ export default function SpecialFund() {
         </div>
       </section>
 
-      {/* Performance Highlights */}
-      <StatsSection stats={fundStats} bgColor="bg-ayedos-green" />
-
       {/* CTA */}
       <CTASection
-        title="Invest with AYEDOS Special Fund"
+        title="Invest with Cowrie Special Investment Fund"
         subtitle="Discover how you can be part of transformative investments that generate both financial returns and positive social impact."
         buttonText="Contact Us About Investment Opportunities"
         buttonLink="/contact"
