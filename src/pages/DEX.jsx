@@ -61,12 +61,12 @@ const securityFeatures = [
   },
 ]
 
-const dexGalleryImages = [
-  '/images/1.png',
-  '/images/2.png',
-  '/images/3.png',
-  '/images/8.png',
-]
+// const dexGalleryImages = [
+//   '/images/1.png',
+//   '/images/2.png',
+//   '/images/3.png',
+//   '/images/8.png',
+// ]
 
 export default function DEX() {
   return (
@@ -246,7 +246,7 @@ export default function DEX() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="450px" label="Public Finance" className="shadow-xl" src="/images/shutterstock_497290141.jpg" />
+              <ImagePlaceholder height="450px" label="Public Finance" className="shadow-xl" src="/images/01.jpg" />
             </div>
           </div>
         </div>
@@ -391,7 +391,7 @@ export default function DEX() {
         </div>
       </section>
 
-      {/* Gallery Placeholders */}
+      {/* Gallery Placeholders
       <section className="py-20 lg:py-28 bg-ayedos-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
@@ -410,7 +410,7 @@ export default function DEX() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <CTASection

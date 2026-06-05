@@ -4,8 +4,12 @@ export default function FeatureCard({
   description,
   bgColor = 'bg-white',
   textColor = 'text-ayedos-charcoal',
+  descriptionColor,
   borderColor = 'border-ayedos-light',
 }) {
+  const resolvedDescriptionColor =
+    descriptionColor ?? (textColor.includes('white') ? 'text-white/80' : 'text-ayedos-charcoal/70')
+
   return (
     <div
       className={`${bgColor} ${borderColor} border rounded-xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group`}
@@ -17,7 +21,7 @@ export default function FeatureCard({
         </div>
       )}
       <h3 className={`text-lg font-bold mb-3 ${textColor}`}>{title}</h3>
-      <p className="text-sm leading-relaxed">{description}</p>
+      <p className={`text-sm leading-relaxed ${resolvedDescriptionColor}`}>{description}</p>
     </div>
   )
 }

@@ -1,41 +1,6 @@
 import { Link } from 'react-router-dom'
-import { HiShieldCheck, HiLockClosed, HiLightningBolt, HiBadgeCheck, HiChartBar, HiCash } from 'react-icons/hi'
 import ImagePlaceholder from '../components/ImagePlaceholder'
-import FeatureCard from '../components/FeatureCard'
 import CTASection from '../components/CTASection'
-
-const whyChooseUs = [
-  {
-    icon: <HiShieldCheck size={24} />,
-    title: 'Transparency',
-    description: 'Every transaction is recorded immutably on the blockchain, providing complete visibility and auditability.',
-  },
-  {
-    icon: <HiLockClosed size={24} />,
-    title: 'Security',
-    description: 'Enterprise-grade security with KYC/AML compliance, permissioned networks, and regulated financial integration.',
-  },
-  {
-    icon: <HiLightningBolt size={24} />,
-    title: 'Innovation',
-    description: 'Cutting-edge blockchain technology combined with traditional finance for next-generation solutions.',
-  },
-  {
-    icon: <HiBadgeCheck size={24} />,
-    title: 'Compliance',
-    description: 'Full regulatory compliance with CMA guidelines, securities laws, and international financial standards.',
-  },
-  {
-    icon: <HiChartBar size={24} />,
-    title: 'Efficiency',
-    description: 'Streamlined processes that reduce paperwork, eliminate intermediaries, and accelerate transactions.',
-  },
-  {
-    icon: <HiCash size={24} />,
-    title: 'Liquidity',
-    description: 'Enhanced liquidity through tokenization, enabling fractional ownership and broader market participation.',
-  },
-]
 
 export default function Home() {
   return (
@@ -49,7 +14,7 @@ export default function Home() {
             height="100%"
             label="Hero Background"
             className="rounded-none w-full h-full"
-            src="/images/website-banner.jpg"
+            src="/images/05.jpg"
           />
         </div>
         {/* Decorative elements */}
@@ -192,7 +157,7 @@ export default function Home() {
               </Link>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="MLP Platform Preview" className="shadow-2xl" src="/images/shutterstock_1664978713-2-min.jpg" />
+              <ImagePlaceholder height="400px" label="MLP Platform Preview" className="shadow-2xl" src="/images/03.jpg" />
             </div>
           </div>
         </div>
@@ -203,7 +168,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1" data-aos="fade-right">
-              <ImagePlaceholder height="400px" label="DEX Platform Preview" className="shadow-xl" src="/images/shutterstock_1664978713-3-min.jpg" />
+              <ImagePlaceholder height="400px" label="DEX Platform Preview" className="shadow-xl" src="/images/02.jpg" />
             </div>
             <div className="order-1 lg:order-2" data-aos="fade-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-ayedos-bluegray/20 rounded-full text-ayedos-bluegray text-sm font-medium mb-4">
@@ -287,7 +252,7 @@ export default function Home() {
               </Link>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="Special Fund Preview" className="shadow-xl" src="/images/ecofriendly-building-modern-city-generative-ai.jpg" />
+              <ImagePlaceholder height="400px" label="Special Fund Preview" className="shadow-xl" src="/images/06.jpg" />
             </div>
           </div>
         </div>

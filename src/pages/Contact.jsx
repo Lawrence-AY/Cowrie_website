@@ -9,7 +9,7 @@ const contactInfo = [
   {
     icon: <HiLocationMarker size={24} />,
     title: 'Our Address',
-    content: 'Nairobi, Kenya',
+    content: 'Nairobi, Kenya, 1st Floor Africa Reit House, Africa Reit Lane, Karen',
   },
   {
     icon: <HiPhone size={24} />,
@@ -116,7 +116,7 @@ export default function Contact() {
 
               {/* Map Placeholder */}
               <div className="rounded-xl overflow-hidden border border-ayedos-light">
-                <ImagePlaceholder height="250px" label="Map Placeholder - Nairobi, Kenya" src="/images/1_edited.jpg" />
+                <ImagePlaceholder height="250px" label="Map Placeholder - Nairobi, Kenya" src="/images/04.jpg" />
               </div>
             </div>
           </div>

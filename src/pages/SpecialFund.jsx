@@ -33,19 +33,19 @@ const investmentOpportunities = [
     title: 'Housing Projects',
     description: 'Invest in affordable and middle-income housing developments with strong demand fundamentals.',
     label: 'Real Estate',
-    image: '/images/01.jpg',
+    image: '/images/9.png',
   },
   {
     title: 'Infrastructure Development',
     description: 'Participate in financing critical infrastructure projects that drive economic growth.',
     label: 'Infrastructure',
-    image: '/images/02.jpg',
+    image: '/images/10.png',
   },
   {
     title: 'Sustainable Investments',
     description: 'Support environmentally sustainable projects with long-term value creation potential.',
     label: 'ESG',
-    image: '/images/03.jpg',
+    image: '/images/8.png',
   },
   {
     title: 'Commercial Development',

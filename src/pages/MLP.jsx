@@ -65,14 +65,14 @@ const investorBenefits = [
   'Transparent investment processes',
 ]
 
-const galleryImages = [
-  '/images/01.jpg',
-  '/images/02.jpg',
-  '/images/03.jpg',
-  '/images/04.jpg',
-  '/images/05.jpg',
-  '/images/06.jpg',
-]
+// const galleryImages = [
+//   '/images/01.jpg',
+//   '/images/02.jpg',
+//   '/images/03.jpg',
+//   '/images/04.jpg',
+//   '/images/05.jpg',
+//   '/images/06.jpg',
+// ]
 
 export default function MLP() {
   return (
@@ -111,7 +111,7 @@ export default function MLP() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="MLP Overview" className="shadow-xl" src="/images/shutterstock_1664978713-2-min.jpg" />
+              <ImagePlaceholder height="400px" label="MLP Overview" className="shadow-xl" src="/images/03.jpg" />
             </div>
           </div>
         </div>
@@ -222,13 +222,13 @@ export default function MLP() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="450px" label="Affordable Housing" className="shadow-2xl" src="/images/ecofriendly-building-modern-city-generative-ai.jpg" />
+              <ImagePlaceholder height="450px" label="Affordable Housing" className="shadow-2xl" src="/images/15.png" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Image Gallery Placeholder */}
+      {/* Image Gallery Placeholder
       <section className="py-20 lg:py-28 bg-ayedos-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
@@ -247,7 +247,7 @@ export default function MLP() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <CTASection

@@ -2,7 +2,6 @@ export default function PageBanner({
   title,
   subtitle,
   bgColor = 'bg-ayedos-bluegray',
-  accentColor = 'text-ayedos-green',
 }) {
   return (
     <section className={`${bgColor} relative overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-20`}>
