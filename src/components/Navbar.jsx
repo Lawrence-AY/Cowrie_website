@@ -1,27 +1,38 @@
-import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { HiMenu, HiX } from 'react-icons/hi'
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { HiMenu, HiX } from 'react-icons/hi';
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '@/components/ui/hover-card';
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'MLP', path: '/mlp' },
-  { name: 'DEX', path: '/dex' },
-  { name: 'Investment Fund', path: '/special-fund' },
-  { name: 'Contact', path: '/contact' },
-]
+  { name: 'MLP', path: '/MLP' },
+  { name: 'DEX', path: '/DEX' },
+  { name: 'Investment Fund', path: '/SpecialFund' },
+  { name: 'Contact', path: '/Contact' },
+];
+
+// Extended names for specific nav items
+const extendedNames = {
+  MLP: 'Cowrie Mortgage Liquidity Platform',
+  DEX: 'Cowrie Digital Exchange',
+};
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const location = useLocation()
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <nav
@@ -35,34 +46,61 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-ayedos-green rounded-lg flex items-center justify-center text-white font-bold text-lg transition-transform group-hover:scale-105">
-              AC
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-white font-bold text-xl tracking-tight">
-                AYEDOS
-              </span>
-              <span className="text-ayedos-green font-bold text-xl ml-1">
-                COWRIE
-              </span>
-            </div>
+            <img
+              src="/icon-dark-landscape.png"
+              alt="Ayedos Cowrie Logo"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                  location.pathname === link.path
-                    ? 'text-ayedos-green bg-white/10'
-                    : 'text-white/80 hover:text-white hover:bg-white/5'
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
+          <div className="hidden    lg:flex items-center gap-10">
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              const extended = extendedNames[link.name];
+
+              // If the link has an extended name, wrap with HoverCard
+              if (extended) {
+                return (
+                  <HoverCard key={link.path} openDelay={10} closeDelay={100}>
+                    <HoverCardTrigger asChild>
+                      <Link
+                        to={link.path}
+                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                          isActive
+                            ? 'text-ayedos-green bg-white/10'
+                            : 'text-white/80 hover:text-white hover:bg-white/5'
+                        }`}
+                      >
+                        {link.name}
+                      </Link>
+                    </HoverCardTrigger>
+                    <HoverCardContent
+                      side="bottom"
+                      align="center"
+                      className="w-auto px-3 py-2 text-sm font-medium bg-gray-900 text-white border-gray-700"
+                    >
+                      {extended}
+                    </HoverCardContent>
+                  </HoverCard>
+                );
+              }
+
+              // Regular link (no hover card)
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                    isActive
+                      ? 'text-ayedos-green bg-white/10'
+                      : 'text-white/80 hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Mobile Hamburger */}
@@ -100,5 +138,5 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
