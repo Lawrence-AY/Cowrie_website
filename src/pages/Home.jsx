@@ -134,7 +134,7 @@ export default function Home() {
                   'Connects Investors',
                   'Rent-to-Own Solutions',
                   'Mortgage Financing',
-                  'Tokenized Real Estate',
+                  'Property Financing',
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-5 h-5 bg-ayedos-green/20 rounded-full flex items-center justify-center">
@@ -222,7 +222,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-ayedos-green/20 rounded-full text-ayedos-green text-sm font-medium mb-4">
-                Investment Vehicle
+                Investment Fund
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
                 Cowrie Special{' '}
