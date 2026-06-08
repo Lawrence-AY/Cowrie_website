@@ -62,6 +62,27 @@ const securityFeatures = [
   },
 ]
 
+const dexPathways = [
+  {
+    icon: <HiOfficeBuilding size={26} />,
+    title: 'Commercial Finance',
+    label: 'Supply Chain',
+    description:
+      'Tokenized invoice and receivables financing that helps suppliers access liquidity faster while buyers keep predictable settlement terms.',
+    link: '/DEX/Commercial',
+    buttonText: 'Explore Commercial Finance',
+  },
+  {
+    icon: <HiShieldCheck size={26} />,
+    title: 'Public Sector Finance',
+    label: 'Government Procurement',
+    description:
+      'Transparent procurement finance for public-sector entities, suppliers, investors, and regulated financial partners.',
+    link: '/DEX/PublicSector',
+    buttonText: 'Explore Public Sector Finance',
+  },
+]
+
 // const dexGalleryImages = [
 //   '/images/1.png',
 //   '/images/2.png',
@@ -79,6 +100,54 @@ export default function DEX() {
       />
 
       {/* Overview */}
+            {/* DEX Pathways */}
+      <section className="py-20 lg:py-28 bg-ayedos-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
+              Choose Your <span className="text-ayedos-green">DEX Pathway</span>
+            </h2>
+            <p className="text-lg text-ayedos-charcoal/70">
+              Explore the two core DEX use cases and go deeper into the one that matches your needs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {dexPathways.map((pathway, index) => (
+              <div
+                key={pathway.title}
+                className="bg-white border border-ayedos-light rounded-xl p-6 sm:p-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 bg-ayedos-green/10 rounded-xl flex items-center justify-center text-ayedos-green shrink-0">
+                    {pathway.icon}
+                  </div>
+                  <div>
+                    <div className="inline-flex items-center px-3 py-1 rounded-full bg-ayedos-bluegray/10 text-ayedos-bluegray text-xs font-semibold mb-4">
+                      {pathway.label}
+                    </div>
+                    <h3 className="text-2xl font-bold text-ayedos-bluegray mb-3">{pathway.title}</h3>
+                    <p className="text-sm sm:text-base text-ayedos-charcoal/70 leading-relaxed mb-6">
+                      {pathway.description}
+                    </p>
+                    <Link
+                      to={pathway.link}
+                      className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-ayedos-green text-white font-semibold text-sm transition-all duration-300 hover:bg-ayedos-green/90 hover:scale-105"
+                    >
+                      {pathway.buttonText}
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto mb-16" data-aos="fade-up">
@@ -128,151 +197,10 @@ export default function DEX() {
         </div>
       </section>
 
-      {/* Supply Chain Finance */}
-      <section className="py-20 lg:py-28 bg-ayedos-bluegray">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-ayedos-green/20 rounded-full text-ayedos-green text-sm font-medium mb-4">
-              Commercial
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Supply Chain <span className="text-ayedos-green">Finance</span>
-            </h2>
-            <p className="text-lg text-white/85 leading-relaxed">
-              DEX is an innovative blockchain-based platform designed to streamline supply chain
-              finance. It facilitates instant payments to suppliers by securitizing receivables and
-              providing liquidity, enhancing efficiency across the entire value chain.
-            </p>
-            <Link
-              to="/DEX/Commercial"
-              className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-ayedos-green text-white font-semibold text-sm transition-all duration-300 hover:bg-ayedos-green/90 hover:scale-105"
-            >
-              Explore Commercial Finance
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: <HiLightningBolt size={24} />,
-                title: 'Instant Payments',
-                description: 'Buyers make immediate payments using security tokens (DexT) that automatically convert to KES on maturity.',
-              },
-              {
-                icon: <HiCurrencyDollar size={24} />,
-                title: 'Invoice Tokenization',
-                description: 'Invoices are converted into security tokens, enabling efficient trading and liquidity management.',
-              },
-              {
-                icon: <HiCash size={24} />,
-                title: 'Factoring',
-                description: 'Traditional factoring and invoice discounting services reimagined for the blockchain age.',
-              },
-              {
-                icon: <HiTrendingUp size={24} />,
-                title: 'Enhanced Liquidity',
-                description: 'Suppliers achieve liquidity by discounting tokens or trading them on the integrated Exchange.',
-              },
-              {
-                icon: <HiChartBar size={24} />,
-                title: 'Procurement Efficiency',
-                description: 'Streamlined approach reduces administrative overhead and improves cash flow management.',
-              },
-              {
-                icon: <HiShieldCheck size={24} />,
-                title: 'Trust Premium',
-                description: 'Symmetrical guarantee to Buyers, Suppliers and Bankers that obligations will be met on due dates.',
-              },
-            ].map((item, index) => (
-              <FeatureCard
-                key={index}
-                icon={item.icon}
-                title={item.title}
-                description={item.description}
-                bgColor="bg-white/10"
-                textColor="text-white"
-                borderColor="border-white/10"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Public Finance */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div data-aos="fade-right">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-ayedos-bluegray/20 rounded-full text-ayedos-bluegray text-sm font-medium mb-4">
-                Public Sector
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-                Transforming{' '}
-                <span className="text-ayedos-green">Government Procurement</span>
-              </h2>
-              <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                DEX supports efficient, transparent, and cost-effective financial management for
-                government entities. By leveraging blockchain technology, DEX revolutionizes
-                government procurement processes.
-              </p>
-              <Link
-                to="/DEX/PublicSector"
-                className="mb-6 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-ayedos-green text-white font-semibold text-sm transition-all duration-300 hover:bg-ayedos-green/90 hover:scale-105"
-              >
-                Explore Public Sector Finance
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-              <div className="space-y-4">
-                {[
-                  {
-                    title: 'Government Procurement',
-                    description: 'Instant payments to suppliers using security tokens, ensuring timely payments and fostering trust.',
-                  },
-                  {
-                    title: 'Faster Supplier Payments',
-                    description: 'Suppliers can achieve liquidity immediately by discounting tokens or using them for downstream payments.',
-                  },
-                  {
-                    title: 'Increased Transparency',
-                    description: 'Every transaction is recorded immutably on the blockchain, providing complete auditability.',
-                  },
-                  {
-                    title: 'Revenue Optimization',
-                    description: 'Timely payments bring forward VAT collection and decrease government pending bills.',
-                  },
-                  {
-                    title: 'Reduced Borrowing Costs',
-                    description: 'Lower short-term marginal cost of borrowing compared to traditional Treasury Bills or Euro Bonds.',
-                  },
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-5 h-5 bg-ayedos-green/20 rounded-full flex items-center justify-center mt-0.5 shrink-0">
-                      <svg className="w-3 h-3 text-ayedos-green" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-ayedos-bluegray text-sm">{item.title}</h4>
-                      <p className="text-xs text-ayedos-charcoal/70 mt-1">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div data-aos="fade-left">
-              <ImagePlaceholder height="450px" label="Public Finance" className="shadow-xl" src="/images/01.jpg" />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Benefits Section */}
-      <section className="py-20 lg:py-28 bg-ayedos-light">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
@@ -331,6 +259,8 @@ export default function DEX() {
           </div>
         </div>
       </section>
+
+     
 
       {/* How DEX Works */}
       <section className="py-20 lg:py-28 bg-white">
