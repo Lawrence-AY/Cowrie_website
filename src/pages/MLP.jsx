@@ -111,7 +111,7 @@ export default function MLP() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="MLP Overview" className="shadow-xl" src="/images/03.jpg" />
+              <ImagePlaceholder height="400px" label="MLP Overview" className="" src="/images/03.jpg" />
             </div>
           </div>
         </div>
@@ -222,7 +222,7 @@ export default function MLP() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="450px" label="Affordable Housing" className="shadow-2xl" src="/images/15.png" />
+              <ImagePlaceholder height="450px" label="Affordable Housing" className="" src="/images/15.png" />
             </div>
           </div>
         </div>

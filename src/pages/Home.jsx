@@ -157,7 +157,7 @@ export default function Home() {
               </Link>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="MLP Platform Preview" className="shadow-2xl" src="/images/03.jpg" />
+              <ImagePlaceholder height="400px" label="MLP Platform Preview" className="shadow-none" src="/images/03.jpg" />
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1" data-aos="fade-right">
-              <ImagePlaceholder height="400px" label="DEX Platform Preview" className="shadow-xl" src="/images/02.jpg" />
+              <ImagePlaceholder height="400px" label="DEX Platform Preview" className="" src="/images/02.jpg" />
             </div>
             <div className="order-1 lg:order-2" data-aos="fade-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-ayedos-bluegray/20 rounded-full text-ayedos-bluegray text-sm font-medium mb-4">
@@ -252,7 +252,7 @@ export default function Home() {
               </Link>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="Cowrie Special Investment Fund Preview" className="shadow-xl" src="/images/06.jpg" />
+              <ImagePlaceholder height="400px" label="Cowrie Special Investment Fund Preview" className="" src="/images/06.jpg" />
             </div>
           </div>
         </div>

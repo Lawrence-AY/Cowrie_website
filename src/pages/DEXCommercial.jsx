@@ -74,7 +74,7 @@ export default function DEXCommercial() {
               </p>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="430px" label="Commercial Finance" className="shadow-xl" src="/images/02.jpg" />
+              <ImagePlaceholder height="430px" label="Commercial Finance" className="" src="/images/02.jpg" />
             </div>
           </div>
         </div>
