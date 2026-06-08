@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { HiLightningBolt, HiShieldCheck, HiChartBar, HiCash, HiBadgeCheck, HiOfficeBuilding, HiUserGroup, HiTrendingUp, HiLockClosed, HiDocumentText, HiCurrencyDollar } from 'react-icons/hi'
 import PageBanner from '../components/PageBanner'
 import FeatureCard from '../components/FeatureCard'
@@ -142,6 +143,15 @@ export default function DEX() {
               finance. It facilitates instant payments to suppliers by securitizing receivables and
               providing liquidity, enhancing efficiency across the entire value chain.
             </p>
+            <Link
+              to="/DEX/Commercial"
+              className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-ayedos-green text-white font-semibold text-sm transition-all duration-300 hover:bg-ayedos-green/90 hover:scale-105"
+            >
+              Explore Commercial Finance
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -208,6 +218,15 @@ export default function DEX() {
                 government entities. By leveraging blockchain technology, DEX revolutionizes
                 government procurement processes.
               </p>
+              <Link
+                to="/DEX/PublicSector"
+                className="mb-6 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-ayedos-green text-white font-semibold text-sm transition-all duration-300 hover:bg-ayedos-green/90 hover:scale-105"
+              >
+                Explore Public Sector Finance
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
               <div className="space-y-4">
                 {[
                   {
@@ -417,7 +436,7 @@ export default function DEX() {
         title="Ready to Transform Your Financial Operations?"
         subtitle="Join us in transforming commerce with DEX - where technology meets efficiency, transparency, and security."
         buttonText="Contact Us About DEX"
-        buttonLink="/contact"
+        buttonLink="/Contact"
       />
     </>
   )

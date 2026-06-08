@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import MLP from './pages/MLP'
 import DEX from './pages/DEX'
+import DEXCommercial from './pages/DEXCommercial'
+import DEXPublicSector from './pages/DEXPublicSector'
 import SpecialFund from './pages/SpecialFund'
 import Contact from './pages/Contact'
 
@@ -27,6 +29,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/MLP" element={<MLP />} />
           <Route path="/DEX" element={<DEX />} />
+          <Route path="/DEX/Commercial" element={<DEXCommercial />} />
+          <Route path="/DEX/PublicSector" element={<DEXPublicSector />} />
           <Route path="/SpecialFund" element={<SpecialFund />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
