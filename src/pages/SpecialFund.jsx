@@ -130,7 +130,7 @@ export default function SpecialFund() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="400px" label="Cowrie Special Investment Fund Overview" className="shadow-xl" src="/images/ecofriendly-building-modern-city-generative-ai.jpg" />
+              <ImagePlaceholder height="400px" label="Cowrie Special Investment Fund Overview" className="" src="/images/ecofriendly-building-modern-city-generative-ai.jpg" />
             </div>
           </div>
         </div>
