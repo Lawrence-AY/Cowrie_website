@@ -95,13 +95,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <HiMail className="text-ayedos-green shrink-0" size={18} />
-                <a href="mailto:info@ayedoscowrie.com" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
-                  info@ayedoscowrie.com
+                <a href="mailto:info@ayedoscowrie.io" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
+                  info@ayedoscowrie.io
                 </a>
               </li>
             </ul>
           </div>
-        </div>
+        </div>\  
       </div>
 
       {/* Bottom Bar */}

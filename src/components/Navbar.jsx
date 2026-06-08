@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from '@/components/ui/hover-card';
 
-// Updated nav structure – DEX now has children
+// navItems now includes children for both DEX and MLP
 const navItems = [
   { name: 'Home', path: '/' },
-  { name: 'MLP', path: '/MLP' },
+  {
+    name: 'MLP',
+    path: '/MLP',
+    children: [
+      { },    
+      
+    ],
+  },
   {
     name: 'DEX',
     path: '/DEX',
@@ -23,9 +25,10 @@ const navItems = [
   { name: 'Contact', path: '/Contact' },
 ];
 
-// Extended names for tooltips (only for MLP now)
+// Extended names shown as headers inside the dropdowns
 const extendedNames = {
   MLP: 'Cowrie Mortgage Liquidity Platform',
+  DEX: 'Cowrie Digital Exchange',
 };
 
 export default function Navbar() {
@@ -42,7 +45,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Helper to check if a link (or its children) is active – no TypeScript
   const isActive = (item) => {
     if (item.path === location.pathname) return true;
     if (item.children) {
@@ -51,7 +53,6 @@ export default function Navbar() {
     return false;
   };
 
-  // Toggle mobile submenu for a given item name
   const toggleMobileSubmenu = (name) => {
     setMobileSubmenuOpen(mobileSubmenuOpen === name ? null : name);
   };
@@ -81,34 +82,7 @@ export default function Navbar() {
               const active = isActive(item);
               const hasChildren = !!item.children?.length;
 
-              // Special case: MLP uses HoverCard for extended name
-              if (item.name === 'MLP' && extendedNames.MLP) {
-                return (
-                  <HoverCard key={item.path} openDelay={10} closeDelay={100}>
-                    <HoverCardTrigger asChild>
-                      <Link
-                        to={item.path}
-                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                          active
-                            ? 'text-ayedos-green bg-white/10'
-                            : 'text-white/80 hover:text-white hover:bg-white/5'
-                        }`}
-                      >
-                        {item.name}
-                      </Link>
-                    </HoverCardTrigger>
-                    <HoverCardContent
-                      side="bottom"
-                      align="center"
-                      className="w-auto px-3 py-2 text-sm font-medium bg-gray-900 text-white border-gray-700"
-                    >
-                      {extendedNames.MLP}
-                    </HoverCardContent>
-                  </HoverCard>
-                );
-              }
-
-              // For DEX (with children) – desktop dropdown on hover
+              // For any item with children (MLP or DEX) – show dropdown with header
               if (hasChildren) {
                 return (
                   <div key={item.path} className="relative group">
@@ -125,8 +99,9 @@ export default function Navbar() {
                     </Link>
                     <div className="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                       <div className="bg-ayedos-bluegray border border-white/10 rounded-lg shadow-lg py-2">
-                      <div className="px-4 py-2 text-xs   font-bold text-ayedos-green tracking-wide">
-                        Cowrie Digital Exchange
+                        {/* Header with extended name */}
+                        <div className="px-4 py-2 text-xs font-bold text-ayedos-green tracking-wide border-b border-white/10 mb-1">
+                          {extendedNames[item.name]}
                         </div>
                         {item.children.map((child) => (
                           <Link
@@ -147,7 +122,7 @@ export default function Navbar() {
                 );
               }
 
-              // Regular link (no children, no special tooltip)
+              // Regular link (e.g., Home, Investment Fund, Contact)
               return (
                 <Link
                   key={item.path}
