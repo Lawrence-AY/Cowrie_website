@@ -99,8 +99,42 @@ export default function DEX() {
         subtitle="DEX is a digital exchange that leverages securitization and tokenization to deliver liquidity solutions in a secure permissioned blockchain environment."
       />
 
-      {/* Overview */}
-            {/* DEX Pathways */}
+      {/* Overview - What is DEX */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto mb-16" data-aos="fade-up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
+              What is <span className="text-ayedos-green">DEX?</span>
+            </h2>
+            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
+              DEX is a digital exchange that leverages Securitization and Tokenization in a secure, 
+              permissioned blockchain environment to deliver liquidity across the economy in both 
+              private and public finance.
+            </p>
+            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
+              Whether the objective is to bring forward receivables or defer payables, raise funds 
+              for a project, obtain liquidity for commercial real estate, homebuyer finance of 
+              residential project development finance, at DEX you'll find an innovative solution.
+            </p>
+            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
+              DEX is an effective method of payment for Government desiring to bring forward VAT 
+              collections, guarantee on time supplier payments and optimize public borrowing.
+            </p>
+            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed">
+              The exchange brings together Buyers, Suppliers, Banks, Project Developers, Liquidity 
+              Providers, Investors and Government in one transparent permissioned system with perfect 
+              information symmetry.
+            </p>
+            <div className="mt-8">
+              <p className="text-ayedos-green font-semibold text-lg">
+                Learn how DEX can optimize your supply chain with immediate payments and improved liquidity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DEX Pathways */}
       <section className="py-20 lg:py-28 bg-ayedos-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">

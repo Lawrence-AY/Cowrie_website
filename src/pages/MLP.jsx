@@ -79,8 +79,8 @@ export default function MLP() {
     <>
       {/* Hero Banner */}
       <PageBanner
-        title="Mortgage Liquidity Platform"
-        subtitle="MLP bridges the gap between developers, landlords and homebuyers by offering a transparent technology-driven ecosystem for property acquisition."
+        title="Mortgage Liquidity Platform (MLP)"
+        subtitle="The Cowrie Mortgage Liquidity Platform (MLP) is a real estate marketplace bringing together developers, homebuyers, financiers and investors in a coherent technology-driven ecosystem."
       />
 
       {/* Overview */}
@@ -222,7 +222,7 @@ export default function MLP() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder height="450px" label="Affordable Housing" className="" src="/images/15.png" />
+              <ImagePlaceholder height="450px" label="Affordable Housing" className="" src="/images/AHK.jpg" /> 
             </div>
           </div>
         </div>

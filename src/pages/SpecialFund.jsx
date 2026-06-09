@@ -116,6 +116,13 @@ export default function SpecialFund() {
                 enterprises that drive economic growth.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
+                The Cowrie Special Investment Fund operates similarly to a Money Market Fund (MMF) but with
+                a distinct mandate - it is a Special Fund designed to channel institutional and retail
+                capital into high-impact, transformative projects. Like an MMF, it prioritizes capital
+                preservation and liquidity, but goes further by targeting sectors that generate both
+                competitive financial returns and measurable social outcomes.
+              </p>
+              <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
                 Our fund leverages the power of blockchain technology, tokenization, and
                 securitization to provide investors with unprecedented access to high-quality
                 investment opportunities while maintaining the highest standards of transparency
