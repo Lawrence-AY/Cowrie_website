@@ -8,34 +8,27 @@ const navItems = [
   {
     name: 'MLP',
     path: '/mlp',
-    children: [
-      { },    
-      
-    ],
+    tooltip: 'Cowrie Mortgage Liquidity Platform',
   },
   {
     name: 'DEX',
     path: '/dex',
     children: [
       { name: 'Commercial', path: '/dex/commercial' },
-      { name: 'PublicSector', path: '/dex/public-sector' },
+      { name: 'Public Sector', path: '/dex/public-sector' },
     ],
   },
-  { name: 'SIF', path: '/special-fund' ,
-    children: [
-      { },    
-      
-    ],
+  {
+    name: 'SIF',
+    path: '/special-fund',
+    tooltip: 'Cowrie Special Investment Fund',
   },
  
   { name: 'Contact', path: '/contact' },
 ];
 
-// Extended names shown as headers inside the dropdowns
 const extendedNames = {
-  MLP: 'Cowrie Mortgage Liquidity Platform',
   DEX: 'Cowrie Digital Exchange',
-  SIF:'Cowrie Special Investment Fund'
 };
 
 export default function Navbar() {
@@ -79,7 +72,7 @@ export default function Navbar() {
             <img
               src="/icon-dark-landscape.png"
               alt="Ayedos Cowrie Logo"
-              className="h-8 sm:h-10 md:h-12 w-auto max-w-[180px] sm:max-w-[220px] md:max-w-full object-contain"
+              className="h-8 sm:h-10 md:h-12 w-auto max-w-45 sm:max-w-[220px] md:max-w-full object-contain"
             />
           </Link>
 
@@ -129,7 +122,30 @@ export default function Navbar() {
                 );
               }
 
-              // Regular link (e.g., Home, Investment Fund, Contact)
+              // Item with tooltip only (MLP, SIF) – show extended name on hover
+              if (item.tooltip) {
+                return (
+                  <div key={item.path} className="relative group">
+                    <Link
+                      to={item.path}
+                      className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                        active
+                          ? 'text-ayedos-green bg-white/10'
+                          : 'text-white/80 hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                    <div className="absolute left-1/2 -translate-x-1/2 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 whitespace-nowrap">
+                      <div className="bg-gray-900 border border-white/10 rounded-lg shadow-lg px-4 py-2 text-xs text-ayedos-green font-semibold tracking-wide">
+                        {item.tooltip}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+
+              // Regular link (e.g., Home, Contact)
               return (
                 <Link
                   key={item.path}
