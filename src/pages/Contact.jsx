@@ -20,8 +20,8 @@ const contactInfo = [
   {
     icon: <HiMail size={24} />,
     title: 'Email Address',
-    content: 'info@ayedoscowrie.com',
-    href: 'mailto:info@ayedoscowrie.com',
+    content: 'info@cowriex.io',
+    href: 'mailto:info@cowriex.io',
   },
   {
     icon: <HiClock size={24} />,
