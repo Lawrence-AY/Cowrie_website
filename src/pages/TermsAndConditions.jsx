@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HiDocumentText, HiInformationCircle, HiMenu } from "react-icons/hi";
+import SEO from '../components/SEO';
 
 function TermsAndConditions() {
   const [theme, setTheme] = useState(() => {
@@ -45,7 +46,12 @@ function TermsAndConditions() {
 
   return (
     <div className="info-page-container">
-      {/* Hero Section */}
+      <SEO
+        title="Terms and Conditions"
+        description="Review the terms and conditions governing the use of AYEDOS COWRIE website and services."
+        path="/terms-and-conditions"
+        noindex={true}
+      />
       <div className="info-hero mb-0">
         <div className="text-4xl font-semibold">Terms & Conditions</div>
         <div className="text-xl font-semibold">

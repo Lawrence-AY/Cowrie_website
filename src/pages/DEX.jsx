@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import { HiLightningBolt, HiShieldCheck, HiChartBar, HiCash, HiBadgeCheck, HiOfficeBuilding, HiUserGroup, HiTrendingUp, HiLockClosed, HiDocumentText, HiCurrencyDollar } from 'react-icons/hi'
+import SEO from '../components/SEO'
 import PageBanner from '../components/PageBanner'
 import FeatureCard from '../components/FeatureCard'
 import BenefitCard from '../components/BenefitCard'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import CTASection from '../components/CTASection'
+import { generateProductSchema } from '../lib/seo'
 
 const howDexWorks = [
   {
@@ -91,8 +93,19 @@ const dexPathways = [
 // ]
 
 export default function DEX() {
+  const structuredData = generateProductSchema({
+    name: 'Cowrie Digital Exchange (DEX)',
+    description: 'Blockchain-based digital exchange for tokenized real assets, supply chain finance, and public sector procurement',
+  })
+
   return (
     <>
+      <SEO
+        title="Cowrie Digital Exchange (DEX)"
+        description="Blockchain digital exchange leveraging securitization and tokenization for liquidity in private and public finance. Commercial and government solutions."
+        path="/dex"
+        structuredData={structuredData}
+      />
       {/* Hero Banner */}
       <PageBanner
         title="Digital Exchange (DEX)"

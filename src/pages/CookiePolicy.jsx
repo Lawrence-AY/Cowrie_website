@@ -13,6 +13,7 @@ import {
   HiOutlineDocumentText,
   HiOutlineComputerDesktop,
 } from "react-icons/hi2";
+import SEO from '../components/SEO';
 
 function CookiePolicy() {
   const [theme, setTheme] = useState(() => {
@@ -48,7 +49,12 @@ function CookiePolicy() {
 
   return (
     <div className="info-page-container">
-      {/* Hero Section */}
+      <SEO
+        title="Cookie Policy"
+        description="Learn how AYEDOS COWRIE uses cookies and similar technologies to enhance your browsing experience."
+        path="/cookie-policy"
+        noindex={true}
+      />
       <div className="info-hero mb-0">
         <div className="text-4xl font-semibold">Cookies Policy</div>
         <div className="text-xl font-semibold">
