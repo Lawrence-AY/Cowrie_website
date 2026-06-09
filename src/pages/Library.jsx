@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { HiBookOpen, HiDocumentText, HiScale, HiShieldCheck, HiArrowRight } from 'react-icons/hi'
+import SEO from '../components/SEO'
 import PageBanner from '../components/PageBanner'
 
 const resources = [
@@ -50,6 +51,12 @@ const resources = [
 export default function Library() {
   return (
     <>
+      <SEO
+        title="Resource Library"
+        description="Access whitepapers, documentation, and legal policies for AYEDOS COWRIE platforms including MLP, DEX, and more."
+        path="/library"
+      />
+
       <PageBanner
         title="Library"
         subtitle="Access resources, documentation, and legal policies related to AYEDOS COWRIE and our platforms."

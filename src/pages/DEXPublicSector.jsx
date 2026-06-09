@@ -1,55 +1,68 @@
 import { HiShieldCheck, HiDocumentText, HiCurrencyDollar, HiOfficeBuilding, HiTrendingUp, HiUserGroup, HiBadgeCheck } from 'react-icons/hi'
+import SEO from '../components/SEO'
 import PageBanner from '../components/PageBanner'
 import FeatureCard from '../components/FeatureCard'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import CTASection from '../components/CTASection'
+import { generateProductSchema } from '../lib/seo'
 
 const publicFeatures = [
   {
     icon: <HiOfficeBuilding size={24} />,
-    title: 'Government Procurement',
-    description: 'DEX supports structured procurement finance by enabling approved supplier obligations to be represented and settled digitally.',
+    title: 'Instant Payments',
+    description: 'Government entities can make immediate supplier payments using DexT security tokens matched to submitted invoice payment terms.',
   },
   {
     icon: <HiUserGroup size={24} />,
-    title: 'Faster Supplier Payments',
-    description: 'Suppliers can access liquidity sooner through token discounting or downstream token use, reducing pressure from delayed payments.',
+    title: 'Enhanced Liquidity',
+    description: 'Government suppliers can discount all or part of their DexT on the exchange or use tokens to pay downstream suppliers.',
   },
   {
     icon: <HiDocumentText size={24} />,
-    title: 'Transparent Audit Trail',
-    description: 'Immutable blockchain records make procurement and settlement activity easier to verify, reconcile, and audit.',
+    title: 'Improved Government Revenue',
+    description: 'Timely supplier payments can bring forward VAT collection, decrease pending bills, and support higher capital turnover and tax revenue.',
   },
   {
     icon: <HiCurrencyDollar size={24} />,
-    title: 'Revenue Optimization',
-    description: 'Timely supplier payments can bring forward VAT collection and help reduce the impact of pending bills.',
+    title: 'Lower Cost of Borrowing',
+    description: 'DEX can support simpler short-term borrowing on an as-needed basis when payment terms mature, including financing tied to specific projects.',
   },
   {
     icon: <HiTrendingUp size={24} />,
-    title: 'Lower Financing Pressure',
-    description: 'Efficient tokenized payment structures can reduce reliance on more expensive short-term public borrowing channels.',
+    title: 'Targeted Impact Finance',
+    description: 'Project-specific borrowing allows social impact lenders to target investments toward specific government initiatives.',
   },
   {
     icon: <HiShieldCheck size={24} />,
-    title: 'Compliance Controls',
-    description: 'KYC, AML, permissioned access, and regulated settlement support public-sector accountability and trust.',
+    title: 'Security and Compliance',
+    description: 'DEX is permissioned, requires KYC and AML vetting, and routes payments or withdrawals only through regulated financial institutions.',
   },
 ]
 
 const outcomes = [
-  'Fewer supplier payment conflicts through clear digital records.',
-  'Better visibility into obligations, maturities, and settlement status.',
-  'Improved confidence for suppliers serving public-sector entities.',
-  'More efficient movement from procurement approval to final KES settlement.',
+  'Timely supplier payments foster trust and certainty in government payments.',
+  'Immediate liquidity reduces reliance on expensive short-term loans and overdrafts.',
+  'Reduced pending bills and bad debt provisions can improve government revenue outcomes.',
+  'Transparent, secure financial management supports more efficient procurement workflows.',
 ]
 
 export default function DEXPublicSector() {
+  const structuredData = generateProductSchema({
+    name: 'DEX Public Sector Finance',
+    description: 'Transparent government procurement finance platform with tokenized payments and blockchain security',
+  })
+
   return (
     <>
+      <SEO
+        title="DEX Public Sector Finance"
+        description="Government procurement finance platform with transparent payments and blockchain security. Designed for public sector entities and suppliers."
+        path="/dex/public-sector"
+        structuredData={structuredData}
+      />
       <PageBanner
         title="DEX Public Sector Finance"
-        subtitle="A transparent procurement finance model for government entities, suppliers, investors, and regulated financial partners."
+        subtitle="A transparent, efficient, and cost-effective financial management platform for government entities and public procurement workflows."
       />
 
       <section className="py-20 lg:py-28 bg-white">
@@ -63,13 +76,13 @@ export default function DEXPublicSector() {
                 Transforming <span className="text-ayedos-green">Government Procurement</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                DEX can help public-sector entities manage approved procurement obligations through
-                tokenized payment instruments. Suppliers gain faster access to liquidity, while
-                government buyers benefit from transparent records and more predictable settlement.
+                At Ayedos Cowrie, we understand the unique financial needs of government entities.
+                DEX is designed to support efficient, transparent, and cost-effective financial
+                management for public finance and government operations.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed">
-                This creates a clearer financial workflow from supplier service delivery to invoice
-                approval, token issuance, liquidity access, and final KES settlement.
+                By leveraging security tokens, regulated settlement, and permissioned blockchain
+                infrastructure, DEX can revolutionize public finance and government procurement.
               </p>
             </div>
             <div data-aos="fade-left">
@@ -86,7 +99,7 @@ export default function DEXPublicSector() {
               Public Sector <span className="text-ayedos-green">Capabilities</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              Tools for supplier liquidity, procurement transparency, revenue optimization, and accountable settlement.
+              Tools for supplier liquidity, government revenue improvement, lower borrowing costs, and accountable settlement.
             </p>
           </div>
 
@@ -114,7 +127,7 @@ export default function DEXPublicSector() {
                 Outcomes
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Clearer Payments, <span className="text-ayedos-green">Stronger Trust</span>
+                A Comprehensive <span className="text-ayedos-green">Financial Solution</span>
               </h2>
               <div className="space-y-4">
                 {outcomes.map((outcome, index) => (
@@ -133,7 +146,7 @@ export default function DEXPublicSector() {
 
       <CTASection
         title="Explore DEX for Public Sector Finance"
-        subtitle="Talk to Cowrie about transparent tokenized procurement finance for public-sector payment workflows."
+        subtitle="DEX empowers governments with advanced financial tools to enhance liquidity, streamline procurement, and promote economic growth."
         buttonText="Contact Us"
         buttonLink="/contact"
       />

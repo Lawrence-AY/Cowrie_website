@@ -1,9 +1,11 @@
 import { HiHome, HiUserGroup, HiTrendingUp, HiCurrencyDollar, HiDocumentText, HiCalendar, HiShieldCheck, HiOfficeBuilding } from 'react-icons/hi'
+import SEO from '../components/SEO'
 import PageBanner from '../components/PageBanner'
 import FeatureCard from '../components/FeatureCard'
 import BenefitCard from '../components/BenefitCard'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import CTASection from '../components/CTASection'
+import { generateProductSchema } from '../lib/seo'
 
 const keyFeatures = [
   {
@@ -75,8 +77,19 @@ const investorBenefits = [
 // ]
 
 export default function MLP() {
+  const structuredData = generateProductSchema({
+    name: 'Cowrie Mortgage Liquidity Platform (MLP)',
+    description: 'Real estate marketplace for developers, homebuyers, financiers and investors with blockchain integration',
+  })
+
   return (
     <>
+      <SEO
+        title="Cowrie Mortgage Liquidity Platform (MLP)"
+        description="Real estate marketplace integrating mortgage lending, developer financing, and tokenized real estate investments. Streamlined homebuying with blockchain security."
+        path="/mlp"
+        structuredData={structuredData}
+      />
       {/* Hero Banner */}
       <PageBanner
         title="Mortgage Liquidity Platform (MLP)"

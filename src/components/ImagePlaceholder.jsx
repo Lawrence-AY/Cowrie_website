@@ -1,10 +1,20 @@
+/**
+ * Enhanced ImagePlaceholder component with consistent alt text handling
+ * Ensures accessibility by requiring meaningful alt text
+ */
+
 export default function ImagePlaceholder({
   width = '100%',
   height = '300px',
   label = 'Image Placeholder',
+  alt = null,
   className = '',
   src = null,
+  loading = 'lazy',
 }) {
+  // Use explicit alt prop if provided, otherwise fall back to label
+  const altText = alt || label || 'Image'
+
   if (src) {
     return (
       <div
@@ -13,7 +23,8 @@ export default function ImagePlaceholder({
       >
         <img
           src={src}
-          alt={label}
+          alt={altText}
+          loading={loading}
           className="w-full h-full object-cover"
           style={{ width: '100%', height: '100%' }}
         />
@@ -25,6 +36,8 @@ export default function ImagePlaceholder({
     <div
       className={`bg-ayedos-light rounded-xl flex items-center justify-center ${className}`}
       style={{ width, height, minHeight: height }}
+      role="img"
+      aria-label={altText}
     >
       <div className="text-center px-6">
         <svg
@@ -37,6 +50,7 @@ export default function ImagePlaceholder({
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
+          aria-hidden="true"
         >
           <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
           <circle cx="8.5" cy="8.5" r="1.5" />
