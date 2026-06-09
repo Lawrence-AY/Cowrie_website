@@ -22,6 +22,7 @@ const navItems = [
     ],
   },
   { name: 'Investment Fund', path: '/SpecialFund' },
+ 
   { name: 'Contact', path: '/Contact' },
 ];
 
@@ -72,7 +73,7 @@ export default function Navbar() {
             <img
               src="/icon-dark-landscape.png"
               alt="Ayedos Cowrie Logo"
-              className="h-12 w-auto"
+              className="h-8 sm:h-10 md:h-12 w-auto max-w-[180px] sm:max-w-[220px] md:max-w-full object-contain"
             />
           </Link>
 

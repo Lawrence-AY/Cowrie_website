@@ -5,17 +5,46 @@ import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa'
 export default function Footer() {
   return (
     <footer className="bg-ayedos-bluegray text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Brand Section */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-3">
-             <img src="/icon-dark-landscape.png" alt="Ayedos Cowrie Logo" className="h-12 w-auto" />  
+            <Link to="/" className="inline-flex items-center gap-3">
+              <img 
+                src="/icon-dark-landscape.png" 
+                alt="Ayedos Cowrie Logo" 
+                className="h-8 sm:h-10 md:h-12 w-auto max-w-full object-contain" 
+              />
             </Link>
-            <p className="text-white/75 text-sm leading-relaxed">
-              Catalysing commerce through innovative financial solutions powered by
-              blockchain technology, tokenization, and securitization.
-            </p>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <HiLocationMarker className="text-ayedos-green mt-0.5 shrink-0" size={18} />
+                <div className="flex flex-col">
+
+                <span className="text-white/75 text-sm">
+                  1st Floor Africa Reit House, Karen
+                </span>
+                 <span className="text-white/75 text-sm">
+                   Africa Reit Lane, Karen
+                  </span>
+                <span className="text-white/75 text-sm">
+                   Nairobi, Kenya
+                  </span>
+                </div>
+              </li>
+              <li className="flex items-center gap-3">
+                <HiPhone className="text-ayedos-green shrink-0" size={18} />
+                <a href="tel:+254733556127" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
+                  +254 733 556 127
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <HiMail className="text-ayedos-green shrink-0" size={18} />
+                <a href="mailto:info@ayedoscowrie.io" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
+                  info@cowriex.io
+                </a>
+              </li>
+            </ul>
             {/* Social Icons */}
             <div className="flex gap-3 pt-2">
               <a href="#" className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ayedos-green transition-colors" aria-label="LinkedIn">
@@ -35,89 +64,61 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">
               Quick Links
             </h3>
-            <ul className="space-y-3">
-              {[
-                { name: 'Home', path: '/' },
-                { name: 'MLP', path: '/mlp' },
-                { name: 'DEX', path: '/dex' },
-                { name: 'Investment Fund', path: '/special-fund' },
-                { name: 'Contact', path: '/contact' },
-              ].map((link) => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-white/75 hover:text-ayedos-green text-sm transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="flex flex-col sm:flex-row gap-6 md:gap-12 lg:gap-20">
+              <div className="flex-1">
+                <ul className="space-y-3">
+                  {[
+                    { name: 'Home', path: '/' },
+                    { name: 'MLP', path: '/mlp' },
+                    { name: 'DEX', path: '/dex' },
+                  ].map((link) => (
+                    <li key={link.path}>
+                      <Link
+                        to={link.path}
+                        className="text-white/75 hover:text-ayedos-green text-sm transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex-1">
+                <ul className="space-y-3">
+                  {[
+                    { name: 'Investment Fund', path: '/special-fund' },
+                    { name: 'Contact', path: '/contact' },
+                  ].map((link) => (
+                    <li key={link.path}>
+                      <Link
+                        to={link.path}
+                        className="text-white/75 hover:text-ayedos-green text-sm transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
-
-          {/* Solutions */}
-          <div>
-            <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">
-              Solutions
-            </h3>
-            <ul className="space-y-3">
-              {[
-                'Mortgage Liquidity Platform',
-                'Digital Exchange',
-                'Cowrie Special Investment Fund',
-                'Tokenization',
-                'Securitization',
-              ].map((item) => (
-                <li key={item}>
-                  <span className="text-white/75 text-sm">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">
-              Contact Us
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <HiLocationMarker className="text-ayedos-green mt-0.5 shrink-0" size={18} />
-                <span className="text-white/75 text-sm">
-                  Nairobi, Kenya
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <HiPhone className="text-ayedos-green shrink-0" size={18} />
-                <a href="tel:+254733 556127" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
-                  +254 733 556127
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <HiMail className="text-ayedos-green shrink-0" size={18} />
-                <a href="mailto:info@ayedoscowrie.io" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
-                  info@ayedoscowrie.io
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>\  
+        </div>
       </div>
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
+            <p className="text-white/40 text-sm text-center sm:text-left">
               &copy; {new Date().getFullYear()} AYEDOS COWRIE. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-white/40 hover:text-white text-xs transition-colors">
+              <Link to="/cookie-policy" className="text-white/40 hover:text-white text-xs transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-white/40 hover:text-white text-xs transition-colors">
+              </Link>
+              <Link to="/terms-and-conditions" className="text-white/40 hover:text-white text-xs transition-colors">
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>
