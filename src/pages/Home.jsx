@@ -170,6 +170,13 @@ export default function Home() {
                 consolidation, equity release, and project financing into a
                 simple, efficient platform.
               </p>
+              <p className="text-white/80 leading-relaxed mb-8">
+                MLP makes home ownership more accessible through rent-to-own schemes,
+                ordinary mortgages, and development finance. It also adds a liquidity
+                premium to the real estate sector through tokenization and distribution of
+                tokens for commercial real estate, mortgage receivables, and project
+                development finance bonds.
+              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
                   "Market Search",
@@ -254,6 +261,13 @@ export default function Home() {
                 deliver liquidity across the economy in both private and public
                 finance.
               </p>
+              <p className="text-ayedos-charcoal/70 leading-relaxed mb-8">
+                Whether the objective is to bring forward receivables or defer payables,
+                raise funds for a project, obtain liquidity for commercial real estate,
+                homebuyer finance, or residential project development finance, DEX provides
+                an innovative solution. It also supports government payment needs, VAT
+                collections, on-time supplier payments, and public borrowing optimization.
+              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
                   "Receivables Finance",
@@ -324,6 +338,11 @@ export default function Home() {
                 Fund. This is a professionally managed investment opportunity
                 designed for investors looking for growth opportunities through
                 strategic investments.
+              </p>
+              <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
+                The Fund is regulated by the Capital Markets Authority (CMA), and focuses on
+                preserving your capital while earning competitive returns through a diversified
+                portfolio across carefully vetted and monitored asset classes.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
                 {[

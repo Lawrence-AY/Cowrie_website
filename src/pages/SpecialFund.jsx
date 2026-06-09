@@ -140,20 +140,23 @@ export default function SpecialFund() {
                 portfolio.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                The Cowrie Special Investment Fund operates similarly to a Money
-                Market Fund (MMF) but with a distinct mandate - it is a Special
-                Fund designed to channel institutional and retail capital into
-                high-impact, transformative projects. Like an MMF, it
-                prioritizes capital preservation and liquidity, but goes further
-                by targeting sectors that generate both competitive financial
-                returns and measurable social outcomes.
+                The AYEDOS COWRIE Special Investment Fund invests across a range of carefully
+                vetted and monitored asset classes, including real estate developments,
+                infrastructure projects, Public Private Partnerships (PPPs), virtual assets,
+                and other high investment opportunities approved by the Capital Market
+                Authority.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                Our fund leverages the power of blockchain technology,
-                tokenization, and securitization to provide investors with
-                unprecedented access to high-quality investment opportunities
-                while maintaining the highest standards of transparency and
-                security.
+                With our modern digital platform, investors can conveniently monitor their
+                investments through our mobile app or web portal at any time, from anywhere
+                in the world. Our dedicated investment team ensures transparency, integrity,
+                and round-the-clock support throughout your investment journey.
+              </p>
+              <p className="text-ayedos-charcoal/90 leading-relaxed mb-6 font-semibold">
+                Whether your goal is wealth creation, portfolio diversification, long-term
+                financial security, or access to exclusive investment opportunities, the
+                AYEDOS COWRIE Special Fund provides a flexible and professionally managed
+                solution tailored to sophisticated investors.
               </p>
               <div className="flex flex-wrap gap-3">
                 {[
