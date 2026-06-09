@@ -69,7 +69,7 @@ const dexPathways = [
     label: 'Supply Chain',
     description:
       'Tokenized invoice and receivables financing that helps suppliers access liquidity faster while buyers keep predictable settlement terms.',
-    link: '/DEX/Commercial',
+    link: '/dex/commercial',
     buttonText: 'Explore Commercial Finance',
   },
   {
@@ -78,7 +78,7 @@ const dexPathways = [
     label: 'Government Procurement',
     description:
       'Transparent procurement finance for public-sector entities, suppliers, investors, and regulated financial partners.',
-    link: '/DEX/PublicSector',
+    link: '/dex/public-sector',
     buttonText: 'Explore Public Sector Finance',
   },
 ]
@@ -400,7 +400,7 @@ export default function DEX() {
         title="Optimize Your Supply Chain with DEX"
         subtitle="Learn how DEX can optimize your supply chain with immediate payments and improved liquidity."
         buttonText="Contact Us About DEX"
-        buttonLink="/Contact"
+        buttonLink="/contact"
       />
     </>
   )

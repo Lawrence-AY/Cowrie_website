@@ -135,7 +135,7 @@ export default function DEXPublicSector() {
         title="Explore DEX for Public Sector Finance"
         subtitle="Talk to Cowrie about transparent tokenized procurement finance for public-sector payment workflows."
         buttonText="Contact Us"
-        buttonLink="/Contact"
+        buttonLink="/contact"
       />
     </>
   )

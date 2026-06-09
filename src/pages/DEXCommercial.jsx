@@ -166,7 +166,7 @@ export default function DEXCommercial() {
         title="Explore DEX for Commercial Finance"
         subtitle="Talk to Cowrie about tokenized supply chain finance for buyers, suppliers, and financial partners."
         buttonText="Contact Us"
-        buttonLink="/Contact"
+        buttonLink="/contact"
       />
     </>
   )

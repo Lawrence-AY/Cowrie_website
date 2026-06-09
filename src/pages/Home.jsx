@@ -45,7 +45,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                to="/MLP"
+                to="/mlp"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-ayedos-green text-white font-semibold rounded-xl hover:bg-ayedos-green/90 transition-all duration-300 hover:shadow-xl hover:scale-105"
               >
                 Explore MLP
@@ -64,7 +64,7 @@ export default function Home() {
                 </svg>
               </Link>
               <Link
-                to="/DEX"
+                to="/dex"
                 className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105"
               >
                 Explore DEX
@@ -205,7 +205,7 @@ export default function Home() {
                 ))}
               </div>
               <Link
-                to="/MLP"
+                to="/mlp"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-ayedos-green text-white font-semibold rounded-xl hover:bg-ayedos-green/90 transition-all duration-300 hover:shadow-lg"
               >
                 Learn More
@@ -298,7 +298,7 @@ export default function Home() {
                 ))}
               </div>
               <Link
-                to="/DEX"
+                to="/dex"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-ayedos-bluegray text-white font-semibold rounded-xl hover:bg-ayedos-bluegray/90 transition-all duration-300 hover:shadow-lg"
               >
                 Learn More
@@ -360,7 +360,7 @@ export default function Home() {
                 ))}
               </div>
               <Link
-                to="/SpecialFund"
+                to="/special-fund"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-ayedos-green text-white font-semibold rounded-xl hover:bg-ayedos-green/90 transition-all duration-300 hover:shadow-lg"
               >
                 Learn More
@@ -475,7 +475,7 @@ export default function Home() {
         title="Ready to Transform Your Financial Future?"
         subtitle="Partner with AYEDOS COWRIE and discover how our innovative blockchain-powered solutions can unlock new opportunities for your business."
         buttonText="Get In Touch"
-        buttonLink="/Contact"
+        buttonLink="/contact"
       />
     </>
   );

@@ -516,7 +516,7 @@ function CookiePolicy() {
                       support team is ready to help.
                     </p>
                     <Link
-                      to="/Contact"
+                      to="/contact"
                       className="px-6 py-3 rounded-xl font-semibold bg-[#8cc63f] hover:bg-[#9fd858] text-slate-900 transition-all duration-300 hover:-translate-y-1 shadow-lg inline-block"
                     >
                       Contact Support

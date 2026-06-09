@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Navigate, Routes, Route, useLocation } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Navbar from './components/Navbar'
@@ -39,15 +39,22 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/MLP" element={<MLP />} />
-          <Route path="/DEX" element={<DEX />} />
-          <Route path="/DEX/Commercial" element={<DEXCommercial />} />
-          <Route path="/DEX/PublicSector" element={<DEXPublicSector />} />
-          <Route path="/SpecialFund" element={<SpecialFund />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/mlp" element={<MLP />} />
+          <Route path="/dex" element={<DEX />} />
+          <Route path="/dex/commercial" element={<DEXCommercial />} />
+          <Route path="/dex/public-sector" element={<DEXPublicSector />} />
+          <Route path="/special-fund" element={<SpecialFund />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/library" element={<Library />} />
+          <Route path="/MLP" element={<Navigate to="/mlp" replace />} />
+          <Route path="/DEX" element={<Navigate to="/dex" replace />} />
+          <Route path="/DEX/Commercial" element={<Navigate to="/dex/commercial" replace />} />
+          <Route path="/DEX/PublicSector" element={<Navigate to="/dex/public-sector" replace />} />
+          <Route path="/SpecialFund" element={<Navigate to="/special-fund" replace />} />
+          <Route path="/Contact" element={<Navigate to="/contact" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />

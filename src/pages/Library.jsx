@@ -106,7 +106,7 @@ export default function Library() {
             Our team is ready to assist you with any questions about our platforms, products, or documentation.
           </p>
           <Link
-            to="/Contact"
+            to="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-ayedos-green text-white font-semibold rounded-xl hover:bg-ayedos-green/90 transition-all duration-300 hover:shadow-xl"
             data-aos="fade-up"
             data-aos-delay="200"

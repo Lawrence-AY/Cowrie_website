@@ -256,7 +256,7 @@ export default function MLP() {
         title="Ready to Transform Real Estate Finance?"
         subtitle="Discover how MLP can help you own your dream home, complete your rental project, or invest in a diversified property portfolio with innovative financing devices."
         buttonText="Contact Us About MLP"
-        buttonLink="/Contact"
+        buttonLink="/contact"
       />
     </>
   )

@@ -7,7 +7,7 @@ const navItems = [
   { name: 'Home', path: '/' },
   {
     name: 'MLP',
-    path: '/MLP',
+    path: '/mlp',
     children: [
       { },    
       
@@ -15,15 +15,15 @@ const navItems = [
   },
   {
     name: 'DEX',
-    path: '/DEX',
+    path: '/dex',
     children: [
-      { name: 'Commercial', path: '/DEX/Commercial' },
-      { name: 'PublicSector', path: '/DEX/PublicSector' },
+      { name: 'Commercial', path: '/dex/commercial' },
+      { name: 'PublicSector', path: '/dex/public-sector' },
     ],
   },
-  { name: 'Investment Fund', path: '/SpecialFund' },
+  { name: 'Investment Fund', path: '/special-fund' },
  
-  { name: 'Contact', path: '/Contact' },
+  { name: 'Contact', path: '/contact' },
 ];
 
 // Extended names shown as headers inside the dropdowns
