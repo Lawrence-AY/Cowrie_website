@@ -80,7 +80,7 @@ export default function MLP() {
       {/* Hero Banner */}
       <PageBanner
         title="Mortgage Liquidity Platform"
-        subtitle="MLP bridges the gap between developers, landlords and homebuyers by offering a transparent technology-driven ecosystem for property acquisition."
+        subtitle="The Cowrie Mortgage Liquidity Platform (MLP) is a real estate marketplace bringing together developers, homebuyers, financiers, and investors in a coherent technology-driven ecosystem."
       />
 
       {/* Overview */}
@@ -89,21 +89,23 @@ export default function MLP() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-                Connecting{' '}
-                <span className="text-ayedos-green">Developers, Homebuyers & Investors</span>
+                Mortgage Liquidity{' '}
+                <span className="text-ayedos-green">Platform</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                The Cowrie MLP integrates KYC/AML compliance, sales processes, credit assessment,
-                homebuyer finance, loan consolidation, equity release and project financing into a
-                simple efficient process.
+                MLP integrates market search, KYC/AML compliance, sales processes, credit
+                assessment, homebuyer finance, loan consolidation, equity release, and
+                project financing into a simple, efficient platform.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                At the core of MLP is a commitment to affordability, accessibility, availability,
-                and sustainability. By leveraging advanced technology, the platform automates
-                processes, reduces paperwork, and facilitates seamless transactions.
+                MLP makes home ownership more accessible through rent-to-own schemes,
+                ordinary mortgages, and development finance. It also adds a liquidity
+                premium to the real estate sector through tokenization and distribution of
+                tokens for commercial real estate, mortgage receivables, and project
+                development finance bonds.
               </p>
               <div className="flex flex-wrap gap-4">
-                {['Developers', 'Homebuyers', 'Investors'].map((item, index) => (
+                {['Developers', 'Homebuyers', 'Financiers', 'Investors'].map((item, index) => (
                   <span key={index} className="px-4 py-2 bg-ayedos-green/10 text-ayedos-green rounded-lg text-sm font-semibold">
                     {item}
                   </span>
@@ -252,7 +254,7 @@ export default function MLP() {
       {/* CTA */}
       <CTASection
         title="Ready to Transform Real Estate Finance?"
-        subtitle="Whether you are a developer, homebuyer, or investor, the Mortgage Liquidity Platform offers unparalleled opportunities to participate in and benefit from the evolving housing market."
+        subtitle="Discover how MLP can help you own your dream home, complete your rental project, or invest in a diversified property portfolio with innovative financing devices."
         buttonText="Contact Us About MLP"
         buttonLink="/Contact"
       />

@@ -96,7 +96,7 @@ export default function DEX() {
       {/* Hero Banner */}
       <PageBanner
         title="Digital Exchange (DEX)"
-        subtitle="DEX is a digital exchange that leverages securitization and tokenization to deliver liquidity solutions in a secure permissioned blockchain environment."
+        subtitle="DEX is a digital exchange that leverages securitization and tokenization in a secure, permissioned blockchain environment to deliver liquidity across the economy in both private and public finance."
       />
 
       {/* Overview */}
@@ -108,7 +108,7 @@ export default function DEX() {
               Choose Your <span className="text-ayedos-green">DEX Pathway</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              Explore the two core DEX use cases and go deeper into the one that matches your needs.
+              Whether the objective is to bring forward receivables, defer payables, raise funds for a project, or obtain liquidity, DEX provides an innovative solution.
             </p>
           </div>
 
@@ -155,11 +155,11 @@ export default function DEX() {
               Understanding <span className="text-ayedos-green">DEX</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70 leading-relaxed">
-              Tokenization is the process of converting ownership of real-world assets into digital
-              security tokens which are then immutably recorded, stored, traded and transferred on
-              the blockchain. Security Tokens are a digital representation of fractional ownership
-              rights in real-world assets such as commercial real estate, mortgage receivables,
-              government bonds and corporate bonds.
+              The exchange brings together buyers, suppliers, banks, project developers,
+              liquidity providers, investors, and government in one transparent permissioned
+              system with perfect information symmetry. DEX is an effective method of
+              payment for government desiring to bring forward VAT collections, guarantee
+              on-time supplier payments, and optimize public borrowing.
             </p>
           </div>
 
@@ -363,8 +363,8 @@ export default function DEX() {
 
       {/* CTA */}
       <CTASection
-        title="Ready to Transform Your Financial Operations?"
-        subtitle="Join us in transforming commerce with DEX - where technology meets efficiency, transparency, and security."
+        title="Optimize Your Supply Chain with DEX"
+        subtitle="Learn how DEX can optimize your supply chain with immediate payments and improved liquidity."
         buttonText="Contact Us About DEX"
         buttonLink="/Contact"
       />

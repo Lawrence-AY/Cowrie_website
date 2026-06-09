@@ -7,61 +7,61 @@ import CTASection from '../components/CTASection'
 const fundObjectives = [
   {
     icon: <HiTrendingUp size={24} />,
-    title: 'Capital Growth',
-    description: 'Generate attractive risk-adjusted returns through strategic investments in high-growth sectors and innovative projects.',
+    title: 'Capital Preservation',
+    description: 'Preserve investor capital while earning competitive returns through a diversified portfolio.',
   },
   {
     icon: <HiHeart size={24} />,
-    title: 'Social Impact',
-    description: 'Drive positive social change by funding affordable housing, infrastructure, and community development initiatives.',
+    title: 'Wealth Creation',
+    description: 'Support investors whose goals include wealth creation, long-term financial security, and access to exclusive opportunities.',
   },
   {
     icon: <HiCash size={24} />,
-    title: 'Liquidity Support',
-    description: 'Provide liquidity solutions to projects and enterprises, enabling them to achieve their full potential.',
+    title: 'Portfolio Diversification',
+    description: 'Invest across carefully vetted and monitored asset classes to diversify sophisticated investor portfolios.',
   },
   {
     icon: <HiOfficeBuilding size={24} />,
-    title: 'Project Financing',
-    description: 'Offer comprehensive financing solutions for housing projects, infrastructure development, and commercial real estate.',
+    title: 'Professional Management',
+    description: 'Benefit from a flexible and professionally managed solution supported by a dedicated investment team.',
   },
 ]
 
 const investmentOpportunities = [
   {
-    title: 'Housing Projects',
-    description: 'Invest in affordable and middle-income housing developments with strong demand fundamentals.',
+    title: 'Real Estate Developments',
+    description: 'Invest in carefully vetted real estate developments through the AYEDOS COWRIE Special Investment Fund.',
     label: 'Real Estate',
     image: '/images/9.png',
   },
   {
-    title: 'Infrastructure Development',
-    description: 'Participate in financing critical infrastructure projects that drive economic growth.',
+    title: 'Infrastructure Projects',
+    description: 'Participate in monitored infrastructure projects approved within the fund investment mandate.',
     label: 'Infrastructure',
     image: '/images/10.png',
   },
   {
-    title: 'Sustainable Investments',
-    description: 'Support environmentally sustainable projects with long-term value creation potential.',
-    label: 'ESG',
+    title: 'Public Private Partnerships',
+    description: 'Access opportunities in Public Private Partnerships (PPPs) that meet the fund approval criteria.',
+    label: 'PPPs',
     image: '/images/8.png',
   },
   {
-    title: 'Commercial Development',
-    description: 'Access commercial real estate opportunities with strong income-generating potential.',
-    label: 'Commercial',
+    title: 'Virtual Assets',
+    description: 'Explore virtual asset opportunities approved by the Capital Market Authority.',
+    label: 'Virtual Assets',
     image: '/images/04.jpg',
   },
   {
-    title: 'Economic Growth',
-    description: 'Fund initiatives that stimulate economic development and job creation in key sectors.',
-    label: 'Development',
+    title: 'High Investment Opportunities',
+    description: 'Access other high investment opportunities that have been carefully vetted and monitored.',
+    label: 'Growth',
     image: '/images/05.jpg',
   },
   {
-    title: 'Innovation Projects',
-    description: 'Back innovative financial technology solutions that transform traditional markets.',
-    label: 'Fintech',
+    title: 'CMA-Approved Opportunities',
+    description: 'Invest in opportunities approved by the Capital Market Authority through a regulated fund structure.',
+    label: 'Regulated',
     image: '/images/06.jpg',
   },
 ]
@@ -70,22 +70,22 @@ const governanceFeatures = [
   {
     icon: <HiShieldCheck size={24} />,
     title: 'Transparency',
-    description: 'Full disclosure of fund performance, holdings, and investment strategies to all stakeholders.',
+    description: 'Investors can conveniently monitor their investments through the mobile app or web portal at any time.',
   },
   {
     icon: <HiBadgeCheck size={24} />,
-    title: 'Compliance',
-    description: 'Strict adherence to regulatory requirements and international best practices in fund management.',
+    title: 'CMA Regulation',
+    description: 'The fund is regulated by the Capital Markets Authority (CMA) and follows approved investment opportunities.',
   },
   {
     icon: <HiChartBar size={24} />,
-    title: 'Risk Management',
-    description: 'Comprehensive risk assessment and mitigation frameworks to protect investor capital.',
+    title: 'Integrity',
+    description: 'A dedicated investment team ensures integrity throughout the investor journey.',
   },
   {
     icon: <HiLightningBolt size={24} />,
-    title: 'Professional Oversight',
-    description: 'Experienced fund management team with deep expertise in finance, real estate, and blockchain technology.',
+    title: 'Round-the-Clock Support',
+    description: 'Investors receive round-the-clock support throughout their investment journey.',
   },
 ]
 
@@ -96,8 +96,8 @@ export default function SpecialFund() {
     <>
       {/* Hero Banner */}
       <PageBanner
-        title="Cowrie Special Investment Fund"
-        subtitle="An investment and financing vehicle designed to support innovative projects, housing development, infrastructure, and economic development initiatives."
+        title="SIF - AYEDOS COWRIE Special Investment Fund"
+        subtitle="A new, innovative, and trusted Special Fund for investors looking for growth opportunities through strategic investments."
       />
 
       {/* Overview */}
@@ -106,23 +106,38 @@ export default function SpecialFund() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-                Driving Growth Through{' '}
-                <span className="text-ayedos-green">Strategic Investment</span>
+                SIF - AYEDOS COWRIE Special{' '}
+                <span className="text-ayedos-green">Investment Fund</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                The Cowrie Special Investment Fund is a purpose-driven investment vehicle that combines
-                financial returns with measurable social impact. We invest in projects that
-                matter - housing, infrastructure, sustainable development, and innovative
-                enterprises that drive economic growth.
+                AYEDOS COWRIE presents its new, innovative, and trusted Special Fund. This
+                is a professionally managed investment opportunity designed for investors
+                looking for growth opportunities through strategic investments. Our Fund is
+                regulated by the Capital Markets Authority (CMA), and focuses on preserving
+                your capital while earning you competitive returns through a diversified
+                portfolio.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                Our fund leverages the power of blockchain technology, tokenization, and
-                securitization to provide investors with unprecedented access to high-quality
-                investment opportunities while maintaining the highest standards of transparency
-                and security.
+                The AYEDOS COWRIE Special Investment Fund invests across a range of carefully
+                vetted and monitored asset classes, including real estate developments,
+                infrastructure projects, Public Private Partnerships (PPPs), virtual assets,
+                and other high investment opportunities approved by the Capital Market
+                Authority.
+              </p>
+              <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
+                With our modern digital platform, investors can conveniently monitor their
+                investments through our mobile app or web portal at any time, from anywhere
+                in the world. Our dedicated investment team ensures transparency, integrity,
+                and round-the-clock support throughout your investment journey.
+              </p>
+              <p className="text-ayedos-charcoal/90 leading-relaxed mb-6 font-semibold">
+                Whether your goal is wealth creation, portfolio diversification, long-term
+                financial security, or access to exclusive investment opportunities, the
+                AYEDOS COWRIE Special Fund provides a flexible and professionally managed
+                solution tailored to sophisticated investors.
               </p>
               <div className="flex flex-wrap gap-3">
-                {['Housing', 'Infrastructure', 'Sustainable', 'Commercial', 'Innovation'].map((item, index) => (
+                {['Real Estate', 'Infrastructure', 'PPPs', 'Virtual Assets', 'CMA Regulated'].map((item, index) => (
                   <span key={index} className="px-4 py-2 bg-ayedos-green/10 text-ayedos-green rounded-lg text-sm font-semibold">
                     {item}
                   </span>
@@ -144,7 +159,7 @@ export default function SpecialFund() {
               Fund <span className="text-ayedos-green">Objectives</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              Our strategic objectives guide every investment decision we make.
+              The Special Fund is tailored to sophisticated investors seeking growth, diversification, and long-term financial security.
             </p>
           </div>
 
@@ -169,7 +184,7 @@ export default function SpecialFund() {
               Investment <span className="text-ayedos-green">Opportunities</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              Diversified investment opportunities across multiple sectors and asset classes.
+              Carefully vetted and monitored asset classes approved by the Capital Market Authority.
             </p>
           </div>
 
@@ -203,7 +218,7 @@ export default function SpecialFund() {
               Fund <span className="text-ayedos-green">Governance</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              Our commitment to transparency, compliance, and professional management.
+              Our commitment to transparency, integrity, regulation, and investor support.
             </p>
           </div>
 
@@ -222,8 +237,8 @@ export default function SpecialFund() {
 
       {/* CTA */}
       <CTASection
-        title="Invest with Cowrie Special Investment Fund"
-        subtitle="Discover how you can be part of transformative investments that generate both financial returns and positive social impact."
+        title="Invest with AYEDOS COWRIE Special Fund"
+        subtitle="Access a flexible and professionally managed solution tailored to sophisticated investors."
         buttonText="Contact Us About Investment Opportunities"
         buttonLink="/contact"
       />

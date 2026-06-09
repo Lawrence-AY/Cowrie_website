@@ -28,13 +28,13 @@ export default function Home() {
               Catalysing Commerce
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              Catalysing Commerce{' '}
-              <span className="text-ayedos-green">Through Innovation</span>
+              AYEDOS COWRIE{' '}
+              <span className="text-ayedos-green">Catalysing Commerce</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/85 leading-relaxed mb-10 max-w-xl">
-              AYEDOS COWRIE reimagines markets and exchanges at the intersection of
-              distributed ledger technology, tokenization, securitization, and
-              information symmetry.
+              Welcome to AYEDOS COWRIE, innovative financial solutions. Cowrie, the
+              ancient symbol of fertility, prosperity, a store of value, and a means
+              of exchange.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -68,10 +68,10 @@ export default function Home() {
               About <span className="text-ayedos-green">AYEDOS COWRIE</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70 leading-relaxed">
-              As long as humans have existed there has always been an inexorable flow of economic value
+              As long as humans have existed, there has always been an inexorable flow of economic value
               from producer to consumer, oftentimes via markets and exchanges. AYEDOS COWRIE reimagines
               markets and exchanges as the intersection of distributed ledger technology (DLT),
-              tokenization, securitization and information symmetry.
+              tokenization, securitization, and information symmetry.
             </p>
           </div>
 
@@ -118,23 +118,25 @@ export default function Home() {
                 Mortgage Liquidity Platform
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Revolutionising{' '}
-                <span className="text-ayedos-green">Real Estate Finance</span>
+                Mortgage Liquidity{' '}
+                <span className="text-ayedos-green">Platform</span>
               </h2>
               <p className="text-white/85 leading-relaxed mb-8">
-                MLP bridges the gap between developers, landlords and homebuyers by offering a
-                transparent technology-driven ecosystem for property acquisition. It makes home
-                ownership more accessible through rent-to-own schemes, ordinary mortgages, and
-                development finance.
+                The Cowrie Mortgage Liquidity Platform (MLP) is a real estate marketplace
+                bringing together developers, homebuyers, financiers, and investors in a
+                coherent technology-driven ecosystem. MLP integrates market search, KYC/AML
+                compliance, sales processes, credit assessment, homebuyer finance, loan
+                consolidation, equity release, and project financing into a simple, efficient
+                platform.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
-                  'Connects Developers',
-                  'Connects Homebuyers',
-                  'Connects Investors',
-                  'Rent-to-Own Solutions',
-                  'Mortgage Financing',
-                  'Property Financing',
+                  'Market Search',
+                  'KYC/AML Compliance',
+                  'Sales Processes',
+                  'Credit Assessment',
+                  'Homebuyer Finance',
+                  'Project Financing',
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-5 h-5 bg-ayedos-green/20 rounded-full flex items-center justify-center">
@@ -175,22 +177,22 @@ export default function Home() {
                 Digital Exchange
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-                Powering the{' '}
-                <span className="text-ayedos-green">Future of Finance</span>
+                Digital{' '}
+                <span className="text-ayedos-green">Exchange</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-8">
-                DEX is a digital exchange that leverages securitization and tokenization to deliver
-                liquidity solutions in a secure permissioned blockchain environment. It revolutionizes
-                supply chain finance and public finance through instant payments and enhanced liquidity.
+                DEX is a digital exchange that leverages securitization and tokenization in a
+                secure, permissioned blockchain environment to deliver liquidity across the
+                economy in both private and public finance.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
-                  'Blockchain-Powered Exchange',
-                  'Supply Chain Finance',
-                  'Public Finance Solutions',
-                  'Security Tokens',
-                  'Liquidity Enhancement',
-                  'Instant Payments',
+                  'Receivables Finance',
+                  'Payables Solutions',
+                  'Project Funding',
+                  'Commercial Real Estate',
+                  'Homebuyer Finance',
+                  'Public Finance',
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-5 h-5 bg-ayedos-green/20 rounded-full flex items-center justify-center">
@@ -229,13 +231,12 @@ export default function Home() {
                 <span className="text-ayedos-green">Investment Fund</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                The Cowrie Special Investment Fund is an investment and financing vehicle designed to support
-                innovative projects, housing development, infrastructure, and economic development
-                initiatives. It provides capital growth opportunities while driving positive social
-                impact.
+                AYEDOS COWRIE presents its new, innovative, and trusted Special Fund. This is a
+                professionally managed investment opportunity designed for investors looking for
+                growth opportunities through strategic investments.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
-                {['Capital Growth', 'Social Impact', 'Liquidity Support', 'Project Financing'].map((item, index) => (
+                {['Capital Preservation', 'Competitive Returns', 'Diversified Portfolio', 'Professional Management'].map((item, index) => (
                   <span key={index} className="px-4 py-2 bg-ayedos-light rounded-lg text-sm font-medium text-ayedos-charcoal">
                     {item}
                   </span>
