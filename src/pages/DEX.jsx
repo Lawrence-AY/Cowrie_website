@@ -11,18 +11,18 @@ import { generateProductSchema } from '../lib/seo'
 const howDexWorks = [
   {
     step: '01',
-    title: 'Invoice Submitted',
-    description: 'Supplier submits invoice to Buyer through the DEX platform.',
+    title: 'Receivables Submitted',
+    description: 'Supplier submits receivables to the DEX platform.',
   },
   {
     step: '02',
     title: 'Token Created',
-    description: 'DEX creates security tokens (DexT) matching the invoice payment terms.',
+    description: 'DEX creates security tokens (DexT) matching the receivable payment terms.',
   },
   {
     step: '03',
     title: 'Token Issued',
-    description: 'Tokens are issued to the Supplier representing the invoice value.',
+    description: 'Tokens are issued to the Supplier representing the receivable value.',
   },
   {
     step: '04',
@@ -37,7 +37,7 @@ const howDexWorks = [
   {
     step: '06',
     title: 'KES Settlement',
-    description: 'Buyer settles the invoice in KES through regulated financial institutions.',
+    description: 'Buyer settles the receivable in KES through regulated financial institutions.',
   },
 ]
 
