@@ -113,11 +113,17 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} AYEDOS COWRIE. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="/cookie-policy" className="text-white/40 hover:text-white text-xs transition-colors">
+              <Link to="/privacy-policy" className="text-white/40 hover:text-white text-xs transition-colors">
                 Privacy Policy
               </Link>
               <Link to="/terms-and-conditions" className="text-white/40 hover:text-white text-xs transition-colors">
                 Terms of Service
+              </Link>
+              <Link to="/cookie-policy" className="text-white/40 hover:text-white text-xs transition-colors">
+                Cookie Policy
+              </Link>
+              <Link to="/customer-charter" className="text-white/40 hover:text-white text-xs transition-colors">
+                Customer Service Charter
               </Link>
             </div>
           </div>

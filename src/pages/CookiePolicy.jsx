@@ -117,7 +117,7 @@ function CookiePolicy() {
                 {/* Effective date notice */}
                 <div className="mb-6 flex items-center gap-2 text-sm text-[#8cc63f]">
                   <HiInformationCircle />
-                  <span>Effective from 01.01.2023</span>
+                  <span>Effective from 01.01.2026</span>
                 </div>
 
                 {/* Introduction */}
@@ -126,7 +126,7 @@ function CookiePolicy() {
                     This Cookies Policy sets out the basis on which we, AYEDOS
                     COWRIE LIMITED use cookies and similar technologies on or in
                     relation to our website, www.cowriex.io This Cookies
-                    Policy is effective from 01.01.2023.
+                    Policy is effective from 01.01.2026.
                   </p>
                   <p>
                     'Essential' cookies are automatically placed on your

@@ -114,7 +114,7 @@ function TermsAndConditions() {
                 {/* Effective date notice */}
                 <div className="mb-6 flex items-center gap-2 text-sm text-[#8cc63f]">
                   <HiInformationCircle />
-                  <span>Effective from 01.01.2023</span>
+                  <span>Effective from 01.01.2026</span>
                 </div>
 
                 {/* Introduction */}

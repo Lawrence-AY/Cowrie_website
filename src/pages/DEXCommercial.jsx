@@ -63,7 +63,7 @@ export default function DEXCommercial() {
                 Supply Chain <span className="text-ayedos-green">Finance</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                DEX gives commercial buyers and suppliers a blockchain-based way to manage invoices,
+                DEX gives commercial suppliers a blockchain-based way to manage invoices,
                 payment timing, and liquidity. Approved receivables can be securitized into DexT
                 tokens, helping suppliers access value earlier while buyers retain predictable
                 settlement windows.

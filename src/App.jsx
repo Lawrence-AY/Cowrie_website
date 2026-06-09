@@ -14,6 +14,8 @@ import Contact from './pages/Contact'
 import CookiePolicy from './pages/CookiePolicy'
 import TermsAndConditions from './pages/TermsAndConditions'
 import Library from './pages/Library'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import CustomerCharter from './pages/CustomerCharter'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -47,6 +49,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/customer-charter" element={<CustomerCharter />} />
           <Route path="/library" element={<Library />} />
           <Route path="/MLP" element={<Navigate to="/mlp" replace />} />
           <Route path="/DEX" element={<Navigate to="/dex" replace />} />
