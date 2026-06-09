@@ -21,7 +21,12 @@ const navItems = [
       { name: 'PublicSector', path: '/dex/public-sector' },
     ],
   },
-  { name: 'Investment Fund', path: '/special-fund' },
+  { name: 'SIF', path: '/special-fund' ,
+    children: [
+      { },    
+      
+    ],
+  },
  
   { name: 'Contact', path: '/contact' },
 ];
@@ -30,6 +35,7 @@ const navItems = [
 const extendedNames = {
   MLP: 'Cowrie Mortgage Liquidity Platform',
   DEX: 'Cowrie Digital Exchange',
+  SIF:'Cowrie Special Investment Fund'
 };
 
 export default function Navbar() {

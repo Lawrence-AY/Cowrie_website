@@ -40,7 +40,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <HiMail className="text-ayedos-green shrink-0" size={18} />
-                <a href="mailto:info@ayedoscowrie.io" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
+                <a href="mailto:info@cowriex.io" className="text-white/75 hover:text-ayedos-green text-sm transition-colors">
                   info@cowriex.io
                 </a>
               </li>
