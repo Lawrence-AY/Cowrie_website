@@ -118,6 +118,7 @@ export default function SpecialFund() {
                 portfolio.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
+<<<<<<< HEAD
                 The AYEDOS COWRIE Special Investment Fund invests across a range of carefully
                 vetted and monitored asset classes, including real estate developments,
                 infrastructure projects, Public Private Partnerships (PPPs), virtual assets,
@@ -135,6 +136,19 @@ export default function SpecialFund() {
                 financial security, or access to exclusive investment opportunities, the
                 AYEDOS COWRIE Special Fund provides a flexible and professionally managed
                 solution tailored to sophisticated investors.
+=======
+                The Cowrie Special Investment Fund operates similarly to a Money Market Fund (MMF) but with
+                a distinct mandate - it is a Special Fund designed to channel institutional and retail
+                capital into high-impact, transformative projects. Like an MMF, it prioritizes capital
+                preservation and liquidity, but goes further by targeting sectors that generate both
+                competitive financial returns and measurable social outcomes.
+              </p>
+              <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
+                Our fund leverages the power of blockchain technology, tokenization, and
+                securitization to provide investors with unprecedented access to high-quality
+                investment opportunities while maintaining the highest standards of transparency
+                and security.
+>>>>>>> 19727659836a11ea5cb33ab58b8936ccebee8677
               </p>
               <div className="flex flex-wrap gap-3">
                 {['Real Estate', 'Infrastructure', 'PPPs', 'Virtual Assets', 'CMA Regulated'].map((item, index) => (
