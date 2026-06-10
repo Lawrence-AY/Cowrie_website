@@ -10,40 +10,40 @@ const publicFeatures = [
   {
     icon: <HiOfficeBuilding size={24} />,
     title: 'Instant Payments',
-    description: 'Government entities can make immediate supplier payments using DexT security tokens matched to submitted invoice payment terms.',
+    description: 'DEX enables government entities to make immediate payments to suppliers using security tokens issued by the platform, namely DexT. These tokens are matched to the payment terms of submitted invoices, converting to KES (local currency) upon maturity. This feature ensures timely payments, fostering trust and certainty in government payments.',
   },
   {
     icon: <HiUserGroup size={24} />,
     title: 'Enhanced Liquidity',
-    description: 'Government suppliers can discount all or part of their DexT on the exchange or use tokens to pay downstream suppliers.',
+    description: 'Government Suppliers can achieve liquidity immediately by discounting all or part of their DexT on the exchange or using them to pay downstream suppliers. This reduces the need for expensive short-term loans and overdrafts, improving cash flows and ultimately benefiting government contracts and costs.',
   },
   {
     icon: <HiDocumentText size={24} />,
     title: 'Improved Government Revenue',
-    description: 'Timely supplier payments can bring forward VAT collection, decrease pending bills, and support higher capital turnover and tax revenue.',
+    description: 'DEX, through timely payments to suppliers, brings forward Value-Added Tax collection and effectively decreases Government pending bills – i.e. outstanding payments to suppliers - by the amount of Value Added Tax. The DEX symmetrical payment assurance decreases Provisions for Bad Debts / Bad Debt Write-offs by Banks, thus increasing corporation tax revenue. Lastly, timely payment also leads to higher capital turnover, GDP, and therefore, government tax revenue.',
   },
   {
     icon: <HiCurrencyDollar size={24} />,
-    title: 'Lower Cost of Borrowing',
-    description: 'DEX can support simpler short-term borrowing on an as-needed basis when payment terms mature, including financing tied to specific projects.',
+    title: 'Lower Cost of Borrowing for the Government',
+    description: "The government's short-term marginal cost of borrowing is lower and simpler compared to the traditional issuance of Treasury Bills or Euro Bonds. This is because lending occurs on an as-needed basis, specifically when payment terms mature. Additionally, the government can borrow for specific projects, allowing social impact lenders to target their investments toward specific initiatives.",
   },
   {
     icon: <HiTrendingUp size={24} />,
-    title: 'Targeted Impact Finance',
-    description: 'Project-specific borrowing allows social impact lenders to target investments toward specific government initiatives.',
+    title: 'A Comprehensive Financial Solution for Governments',
+    description: 'Dex is designed to empower governments with advanced financial tools, ensuring efficient, transparent, and secure financial management. By leveraging our platforms, governments can enhance liquidity, streamline procurement processes, and promote economic growth',
   },
   {
     icon: <HiShieldCheck size={24} />,
     title: 'Security and Compliance',
-    description: 'DEX is permissioned, requires KYC and AML vetting, and routes payments or withdrawals only through regulated financial institutions.',
+    description: 'DEX is a permissioned platform that ensures all participants pass through KYC and AML vetting. Payments or withdrawals are made only through regulated financial institutions, maintaining high security and compliance standards.',
   },
 ]
 
 const outcomes = [
-  'Timely supplier payments foster trust and certainty in government payments.',
-  'Immediate liquidity reduces reliance on expensive short-term loans and overdrafts.',
-  'Reduced pending bills and bad debt provisions can improve government revenue outcomes.',
-  'Transparent, secure financial management supports more efficient procurement workflows.',
+  'DEX enables government entities to make immediate payments to suppliers using security tokens issued by the platform, namely DexT.',
+  'Government Suppliers can achieve liquidity immediately by discounting all or part of their DexT on the exchange or using them to pay downstream suppliers.',
+  'DEX, through timely payments to suppliers, brings forward Value-Added Tax collection and effectively decreases Government pending bills.',
+  "The government's short-term marginal cost of borrowing is lower and simpler compared to the traditional issuance of Treasury Bills or Euro Bonds.",
 ]
 
 export default function DEXPublicSector() {
@@ -55,14 +55,14 @@ export default function DEXPublicSector() {
   return (
     <>
       <SEO
-        title="DEX Public Sector Finance"
-        description="Government procurement finance platform with transparent payments and blockchain security. Designed for public sector entities and suppliers."
+        title="DEX – Digital Exchange – Public Finance"
+        description="At Ayedos Cowrie, we understand the unique financial needs of government entities. DEX is designed to support efficient, transparent, and cost-effective financial management."
         path="/dex/public-sector"
         structuredData={structuredData}
       />
       <PageBanner
-        title="DEX Public Sector Finance"
-        subtitle="A transparent, efficient, and cost-effective financial management platform for government entities and public procurement workflows."
+        title="DEX – Digital Exchange – Public Finance"
+        subtitle="Transforming Government Procurement with DEX"
       />
 
       <section className="py-20 lg:py-28 bg-white">
@@ -76,13 +76,10 @@ export default function DEXPublicSector() {
                 Transforming <span className="text-ayedos-green">Government Procurement</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                At Ayedos Cowrie, we understand the unique financial needs of government entities.
-                DEX is designed to support efficient, transparent, and cost-effective financial
-                management for public finance and government operations.
+                At Ayedos Cowrie, we understand the unique financial needs of government entities. Dex designed to support efficient, transparent, and cost-effective financial management. Explore how the DEX platform, can revolutionize public finance and your operations.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed">
-                By leveraging security tokens, regulated settlement, and permissioned blockchain
-                infrastructure, DEX can revolutionize public finance and government procurement.
+                Transforming Government Procurement with DEX
               </p>
             </div>
             <div data-aos="fade-left">
@@ -99,7 +96,7 @@ export default function DEXPublicSector() {
               Public Sector <span className="text-ayedos-green">Capabilities</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              Tools for supplier liquidity, government revenue improvement, lower borrowing costs, and accountable settlement.
+              DEX is designed to support efficient, transparent, and cost-effective financial management.
             </p>
           </div>
 
@@ -127,8 +124,11 @@ export default function DEXPublicSector() {
                 Outcomes
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                A Comprehensive <span className="text-ayedos-green">Financial Solution</span>
+                A Comprehensive <span className="text-ayedos-green">Financial Solution for Governments</span>
               </h2>
+              <p className="text-white/85 leading-relaxed mb-6">
+                Dex is designed to empower governments with advanced financial tools, ensuring efficient, transparent, and secure financial management. By leveraging our platforms, governments can enhance liquidity, streamline procurement processes, and promote economic growth
+              </p>
               <div className="space-y-4">
                 {outcomes.map((outcome, index) => (
                   <div key={index} className="flex items-start gap-3">
@@ -145,8 +145,8 @@ export default function DEXPublicSector() {
       </section>
 
       <CTASection
-        title="Explore DEX for Public Sector Finance"
-        subtitle="DEX empowers governments with advanced financial tools to enhance liquidity, streamline procurement, and promote economic growth."
+        title="Get Involved"
+        subtitle="Why Get Involved?"
         buttonText="Contact Us"
         buttonLink="/contact"
       />
