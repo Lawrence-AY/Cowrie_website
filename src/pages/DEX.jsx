@@ -4,7 +4,6 @@ import SEO from '../components/SEO'
 import PageBanner from '../components/PageBanner'
 import FeatureCard from '../components/FeatureCard'
 import BenefitCard from '../components/BenefitCard'
-import ImagePlaceholder from '../components/ImagePlaceholder'
 import CTASection from '../components/CTASection'
 import { generateProductSchema } from '../lib/seo'
 
@@ -120,8 +119,8 @@ export default function DEX() {
   return (
     <>
       <SEO
-        title="Cowrie Digital Exchange (DEX)"
-        description="Blockchain digital exchange leveraging securitization and tokenization for liquidity in private and public finance. Commercial and government solutions."
+        title="DEX - Digital Exchange"
+        description="DEX is a digital exchange by AYEDOS COWRIE that leverages securitization and tokenization to deliver liquidity solutions in a secure permissioned blockchain environment."
         path="/dex"
         structuredData={structuredData}
       />
@@ -135,20 +134,32 @@ export default function DEX() {
       {/* Overview - What is DEX */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto mb-16" data-aos="fade-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-              What is <span className="text-ayedos-green">DEX?</span>
-            </h2>
-            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
-              DEX is a digital exchange by AYEDOS COWRIE that leverages Securitization and Tokenization to deliver liquidity solutions in a secure permissioned blockchain environment.
-            </p>
-            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
-              By leveraging Tokenization, DEX offers an innovative platform that enhances liquidity and capital efficiency across the economy in both private and public finance.
-            </p>
-            <div className="mt-8">
-              <p className="text-ayedos-green font-semibold text-lg">
-                Learn how DEX can optimize your supply chain with immediate payments and improved liquidity.
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text content */}
+            <div data-aos="fade-right">
+              <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
+                What is <span className="text-ayedos-green">DEX?</span>
+              </h2>
+              <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
+                DEX is a digital exchange by AYEDOS COWRIE that leverages Securitization and Tokenization to deliver liquidity solutions in a secure permissioned blockchain environment.
               </p>
+              <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
+                By leveraging Tokenization, DEX offers an innovative platform that enhances liquidity and capital efficiency across the economy in both private and public finance.
+              </p>
+              <div className="mt-8">
+                <p className="text-ayedos-green font-semibold text-lg">
+                  Learn how DEX can optimize your supply chain with immediate payments and improved liquidity.
+                </p>
+              </div>
+            </div>
+
+            {/* Right side - Image */}
+            <div data-aos="fade-left">
+              <img
+                src="/images/dex.png"
+                alt="DEX Digital Exchange Platform"
+                className="w-full h-auto rounded-xl shadow-lg"
+              />
             </div>
           </div>
         </div>

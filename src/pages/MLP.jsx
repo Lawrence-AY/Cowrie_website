@@ -94,7 +94,7 @@ export default function MLP() {
       <PageBanner
         title="Mortgage Liquidity Platform (MLP)"
         subtitle="The Cowrie Mortgage Liquidity Platform (MLP) is a real estate marketplace bringing together developers, homebuyers, financiers and investors in a coherent technology-driven ecosystem."
-        bgImage="/images/ecofriendly-building-modern-city-generative-ai.jpg"
+        bgImage="/images/mlp.png"
       />
 
       {/* Overview */}
