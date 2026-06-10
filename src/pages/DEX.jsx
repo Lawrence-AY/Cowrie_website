@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { HiLightningBolt, HiShieldCheck, HiChartBar, HiCash, HiBadgeCheck, HiOfficeBuilding, HiUserGroup, HiTrendingUp, HiLockClosed, HiDocumentText, HiCurrencyDollar } from 'react-icons/hi'
+import { HiShieldCheck, HiBadgeCheck, HiOfficeBuilding, HiUserGroup, HiTrendingUp, HiLockClosed, HiDocumentText, HiCurrencyDollar } from 'react-icons/hi'
 import SEO from '../components/SEO'
 import PageBanner from '../components/PageBanner'
 import FeatureCard from '../components/FeatureCard'
@@ -85,6 +85,25 @@ const dexPathways = [
   },
 ]
 
+const tokenizationConcepts = [
+  {
+    title: 'Tokenization',
+    description: 'The process of converting ownership of real-world assets into digital security tokens that are immutably recorded, stored, traded, and transferred on the blockchain.',
+  },
+  {
+    title: 'Security Tokens',
+    description: 'A digital representation of fractional ownership rights in real-world assets such as commercial real estate, mortgage receivables, government bonds, and corporate bonds.',
+  },
+  {
+    title: 'Fractional Ownership',
+    description: 'Securitization and tokenization allow large assets to be divided into smaller units, lowering the investment threshold and widening access for investors.',
+  },
+  {
+    title: 'Embedded Compliance',
+    description: 'Security Tokens carry compliance rules so sales and transfers can only occur between permitted and verified participants under CMA, KYC/AML, and market rules.',
+  },
+]
+
 // const dexGalleryImages = [
 //   '/images/1.png',
 //   '/images/2.png',
@@ -108,8 +127,8 @@ export default function DEX() {
       />
       {/* Hero Banner */}
       <PageBanner
-        title="Digital Exchange (DEX)"
-        subtitle="DEX is a digital exchange that leverages securitization and tokenization in a secure, permissioned blockchain environment to deliver liquidity across the economy in both private and public finance."
+        title="DEX - Digital Exchange"
+        subtitle="A secure permissioned blockchain exchange by AYEDOS COWRIE for tokenized liquidity solutions across private and public finance."
         bgImage="/images/02.jpg"
       />
 
@@ -121,23 +140,10 @@ export default function DEX() {
               What is <span className="text-ayedos-green">DEX?</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
-              DEX is a digital exchange that leverages Securitization and Tokenization in a secure, 
-              permissioned blockchain environment to deliver liquidity across the economy in both 
-              private and public finance.
+              DEX is a digital exchange by AYEDOS COWRIE that leverages Securitization and Tokenization to deliver liquidity solutions in a secure permissioned blockchain environment.
             </p>
             <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
-              Whether the objective is to bring forward receivables or defer payables, raise funds 
-              for a project, obtain liquidity for commercial real estate, homebuyer finance of 
-              residential project development finance, at DEX you'll find an innovative solution.
-            </p>
-            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed mb-6">
-              DEX is an effective method of payment for Government desiring to bring forward VAT 
-              collections, guarantee on time supplier payments and optimize public borrowing.
-            </p>
-            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed">
-              The exchange brings together Buyers, Suppliers, Banks, Project Developers, Liquidity 
-              Providers, Investors and Government in one transparent permissioned system with perfect 
-              information symmetry.
+              By leveraging Tokenization, DEX offers an innovative platform that enhances liquidity and capital efficiency across the economy in both private and public finance.
             </p>
             <div className="mt-8">
               <p className="text-ayedos-green font-semibold text-lg">
@@ -148,15 +154,43 @@ export default function DEX() {
         </div>
       </section>
 
-      {/* DEX Pathways */}
       <section className="py-20 lg:py-28 bg-ayedos-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto mb-16" data-aos="fade-up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
+              Tokenization and <span className="text-ayedos-green">Security Tokens</span>
+            </h2>
+            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed">
+              Each Security Token serves as a unique identifier that represents a fraction of the underlying asset. In practice, this preserves regulatory control and investor eligibility requirements within the safety of blockchain infrastructure.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {tokenizationConcepts.map((item, index) => (
+              <div
+                key={item.title}
+                className="bg-white rounded-xl p-6 border border-ayedos-light hover:shadow-lg transition-all duration-300"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <div className="w-12 h-1 bg-ayedos-green rounded-full mb-4" />
+                <h3 className="text-lg font-bold text-ayedos-bluegray mb-3">{item.title}</h3>
+                <p className="text-sm text-ayedos-charcoal/70 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* DEX Pathways */}
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
               Choose Your <span className="text-ayedos-green">DEX Pathway</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              Whether the objective is to bring forward receivables, defer payables, raise funds for a project, or obtain liquidity, DEX provides an innovative solution.
+              DEX applies tokenized liquidity to commercial supply chain finance and public finance workflows.
             </p>
           </div>
 
@@ -196,59 +230,9 @@ export default function DEX() {
           </div>
         </div>
       </section>
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto mb-16" data-aos="fade-up">
-            <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-              Understanding <span className="text-ayedos-green">DEX</span>
-            </h2>
-            <p className="text-lg text-ayedos-charcoal/70 leading-relaxed">
-              The exchange brings together buyers, suppliers, banks, project developers,
-              liquidity providers, investors, and government in one transparent permissioned
-              system with perfect information symmetry. DEX is an effective method of
-              payment for government desiring to bring forward VAT collections, guarantee
-              on-time supplier payments, and optimize public borrowing.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: 'Security Tokens',
-                description: 'Digital representation of fractional ownership rights in real-world assets, embedded with compliance rules and regulations.',
-              },
-              {
-                title: 'Tokenization',
-                description: 'Converting real-world assets into digital tokens that are immutably recorded, stored, traded and transferred on the blockchain.',
-              },
-              {
-                title: 'Securitization',
-                description: 'Pooling financial assets and issuing security tokens backed by diversified revenue streams for broader investor access.',
-              },
-              {
-                title: 'Blockchain Infrastructure',
-                description: 'Secure permissioned blockchain environment ensuring transparency, immutability, and regulatory compliance.',
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-ayedos-light/50 rounded-xl p-6 border border-ayedos-light hover:shadow-lg transition-all duration-300"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <div className="w-12 h-1 bg-ayedos-green rounded-full mb-4" />
-                <h3 className="text-lg font-bold text-ayedos-bluegray mb-3">{item.title}</h3>
-                <p className="text-sm text-ayedos-charcoal/70">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
 
       {/* Benefits Section */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-ayedos-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
@@ -307,8 +291,6 @@ export default function DEX() {
           </div>
         </div>
       </section>
-
-     
 
       {/* How DEX Works */}
       <section className="py-20 lg:py-28 bg-white">
