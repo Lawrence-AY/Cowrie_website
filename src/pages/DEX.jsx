@@ -156,7 +156,7 @@ export default function DEX() {
             {/* Right side - Image */}
             <div data-aos="fade-left">
               <img
-                src="/images/dex.png"
+                src="/images/dex1.png"
                 alt="DEX Digital Exchange Platform"
                 className="w-full h-auto rounded-xl shadow-lg"
               />
