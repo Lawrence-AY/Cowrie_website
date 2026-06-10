@@ -110,6 +110,7 @@ export default function DEX() {
       <PageBanner
         title="Digital Exchange (DEX)"
         subtitle="DEX is a digital exchange that leverages securitization and tokenization in a secure, permissioned blockchain environment to deliver liquidity across the economy in both private and public finance."
+        bgImage="/images/02.jpg"
       />
 
       {/* Overview - What is DEX */}

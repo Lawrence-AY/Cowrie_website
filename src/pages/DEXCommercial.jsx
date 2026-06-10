@@ -96,6 +96,7 @@ export default function DEXCommercial() {
       <PageBanner
         title="DEX – Digital Exchange - Commercial"
         subtitle="Supply Chain Finance"
+        bgImage="/images/02.jpg"
       />
 
       <section className="py-20 lg:py-28 bg-white">

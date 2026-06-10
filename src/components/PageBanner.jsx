@@ -2,9 +2,21 @@ export default function PageBanner({
   title,
   subtitle,
   bgColor = 'bg-ayedos-bluegray',
+  bgImage = null,
+  bgImageAlt = '',
 }) {
   return (
     <section className={`${bgColor} relative overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-20`}>
+      {bgImage && (
+        <div className="absolute inset-0 opacity-20">
+          <img
+            src={bgImage}
+            alt={bgImageAlt}
+            aria-hidden={bgImageAlt ? undefined : true}
+            className="h-full w-full object-cover"
+          />
+        </div>
+      )}
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />

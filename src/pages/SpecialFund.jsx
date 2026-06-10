@@ -119,6 +119,7 @@ export default function SpecialFund() {
       <PageBanner
         title="SIF - AYEDOS COWRIE Special Investment Fund"
         subtitle="A new, innovative, and trusted Special Fund for investors looking for growth opportunities through strategic investments."
+        bgImage="/images/06.jpg"
       />
 
       {/* Overview */}
