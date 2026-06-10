@@ -12,8 +12,8 @@ export default function Home() {
     { name: "Proximic", logo: "/images/proximic.jpg" },
     { name: "UBA", logo: "/images/UBA.png" },
     { name: "USI", logo: "/images/USI.jpg" },
-    { name: "Mohammed Muigai Advocates" },
-    { name: "Moronge Obonyo & Co. Advocates" },
+    { name: "Mohammed Muigai Advocates", logo:"/images/Mohammed.png" },
+    { name: "Moronge Obonyo & Co. Advocates", logo: "/images/Moronge.png" },
   ];
 
   const organizationSchema = generateOrganizationSchema();
