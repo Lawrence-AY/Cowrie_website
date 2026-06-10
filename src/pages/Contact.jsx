@@ -68,6 +68,7 @@ export default function Contact() {
       <PageBanner
         title="Get In Touch"
         subtitle="We are eager to hear from you! Whether you are interested in our services or have a business proposal, please reach out to us."
+        bgImage="/images/2.png"
       />
 
       {/* Contact Form + Info */}

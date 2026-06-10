@@ -63,6 +63,7 @@ export default function DEXPublicSector() {
       <PageBanner
         title="DEX – Digital Exchange – Public Finance"
         subtitle="Transforming Government Procurement with DEX"
+        bgImage="/images/02.jpg"
       />
 
       <section className="py-20 lg:py-28 bg-white">
