@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'
+import { useEffect } from 'react'
 import { SITE_NAME, SITE_URL } from '../lib/seo'
 
 interface SEOProps {
@@ -22,41 +22,53 @@ export default function SEO({
   const canonicalUrl = `${SITE_URL}${path}`
   const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`
 
-  return (
-    <Helmet>
-      {/* Basic Meta Tags */}
-      <title>{fullTitle}</title>
-      <meta name="description" content={description} />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      
-      {/* Robots Meta */}
-      {noindex && <meta name="robots" content="noindex, nofollow" />}
-      {!noindex && <meta name="robots" content="index, follow" />}
+  useEffect(() => {
+    const previousTitle = document.title
+    const managedElements = Array.from(document.head.querySelectorAll('[data-seo-managed="true"]'))
 
-      {/* Canonical URL */}
-      <link rel="canonical" href={canonicalUrl} />
+    document.title = fullTitle
+    managedElements.forEach((element) => element.remove())
 
-      {/* Open Graph / Social Sharing */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={imageUrl} />
-      <meta property="og:site_name" content={SITE_NAME} />
+    const appendMeta = (attributes: Record<string, string>) => {
+      const meta = document.createElement('meta')
+      Object.entries(attributes).forEach(([key, value]) => meta.setAttribute(key, value))
+      meta.setAttribute('data-seo-managed', 'true')
+      document.head.appendChild(meta)
+    }
 
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={canonicalUrl} />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={imageUrl} />
+    const canonical = document.createElement('link')
+    canonical.setAttribute('rel', 'canonical')
+    canonical.setAttribute('href', canonicalUrl)
+    canonical.setAttribute('data-seo-managed', 'true')
+    document.head.appendChild(canonical)
 
-      {/* Structured Data (JSON-LD) */}
-      {structuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      )}
-    </Helmet>
-  )
+    appendMeta({ name: 'description', content: description })
+    appendMeta({ name: 'robots', content: noindex ? 'noindex, nofollow' : 'index, follow' })
+    appendMeta({ property: 'og:type', content: 'website' })
+    appendMeta({ property: 'og:url', content: canonicalUrl })
+    appendMeta({ property: 'og:title', content: fullTitle })
+    appendMeta({ property: 'og:description', content: description })
+    appendMeta({ property: 'og:image', content: imageUrl })
+    appendMeta({ property: 'og:site_name', content: SITE_NAME })
+    appendMeta({ name: 'twitter:card', content: 'summary_large_image' })
+    appendMeta({ name: 'twitter:url', content: canonicalUrl })
+    appendMeta({ name: 'twitter:title', content: fullTitle })
+    appendMeta({ name: 'twitter:description', content: description })
+    appendMeta({ name: 'twitter:image', content: imageUrl })
+
+    if (structuredData) {
+      const script = document.createElement('script')
+      script.setAttribute('type', 'application/ld+json')
+      script.setAttribute('data-seo-managed', 'true')
+      script.textContent = JSON.stringify(structuredData)
+      document.head.appendChild(script)
+    }
+
+    return () => {
+      document.title = previousTitle
+      document.head.querySelectorAll('[data-seo-managed="true"]').forEach((element) => element.remove())
+    }
+  }, [canonicalUrl, description, fullTitle, imageUrl, noindex, structuredData])
+
+  return null
 }
