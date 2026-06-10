@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 import ImagePlaceholder from "../components/ImagePlaceholder";
 import CTASection from "../components/CTASection";
+import { generateOrganizationSchema } from "../lib/seo";
 
 export default function Home() {
   const partners = [
@@ -14,8 +16,16 @@ export default function Home() {
     { name: "Moronge Obonyo & Co. Advocates" },
   ];
 
+  const organizationSchema = generateOrganizationSchema();
+
   return (
     <>
+      <SEO
+        title="AYEDOS COWRIE | Catalysing Commerce"
+        description="Innovative financial solutions combining capital growth, social impact, and blockchain technology. Explore MLP, DEX, and investment opportunities."
+        path="/"
+        structuredData={organizationSchema}
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center bg-ayedos-bluegray overflow-hidden pt-20">
         {/* Background Image */}
@@ -24,6 +34,7 @@ export default function Home() {
             width="100%"
             height="100%"
             label="Hero Background"
+            alt="Background image for AYEDOS COWRIE home page"
             className="rounded-none w-full h-full"
             src="/images/05.jpg"
           />

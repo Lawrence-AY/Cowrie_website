@@ -1,55 +1,68 @@
 import { HiLightningBolt, HiShieldCheck, HiChartBar, HiCash, HiTrendingUp, HiCurrencyDollar, HiDocumentText, HiOfficeBuilding } from 'react-icons/hi'
+import SEO from '../components/SEO'
 import PageBanner from '../components/PageBanner'
 import FeatureCard from '../components/FeatureCard'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import CTASection from '../components/CTASection'
+import { generateProductSchema } from '../lib/seo'
 
 const commercialFeatures = [
   {
     icon: <HiLightningBolt size={24} />,
-    title: 'Instant Supplier Payments',
-    description: 'DEX allows approved invoices to be represented as DexT security tokens, giving suppliers a faster path to liquidity while buyers keep structured settlement terms.',
+    title: 'Instant Payments',
+    description: 'Buyers can make immediate payments to suppliers using DexT security tokens issued by DEX and matched to negotiated invoice payment terms.',
   },
   {
     icon: <HiCurrencyDollar size={24} />,
-    title: 'Invoice Tokenization',
-    description: 'Receivables are converted into compliant digital security tokens that can be held, discounted, transferred, or settled through the DEX ecosystem.',
+    title: 'KES Conversion',
+    description: 'DexT automatically converts to Kenyan Shillings on maturity, while suppliers can access liquidity earlier by discounting all or part of their tokens.',
   },
   {
     icon: <HiCash size={24} />,
-    title: 'Factoring & Discounting',
-    description: 'Suppliers can unlock working capital from invoices without waiting through long payment cycles, improving cash flow across the supply chain.',
+    title: 'Enhanced Liquidity',
+    description: 'Suppliers can trade, convert, or use tokens to pay downstream suppliers under the same terms, creating a more liquid value chain.',
   },
   {
     icon: <HiTrendingUp size={24} />,
-    title: 'Liquidity Management',
-    description: 'Tokenized receivables create a more flexible liquidity layer for suppliers, buyers, investors, and participating financial institutions.',
+    title: 'Blockchain-Age Factoring',
+    description: 'DEX reimagines factoring and invoice discounting, reducing the need for expensive overdrafts and short-term bank loans.',
   },
   {
     icon: <HiChartBar size={24} />,
-    title: 'Procurement Efficiency',
-    description: 'Digital records, automated workflows, and transparent settlement reduce manual reconciliation and administrative pressure.',
+    title: 'Value Chain Efficiency',
+    description: 'Automated, transparent financial transactions reduce administrative overhead, improve cash flow management, and support a fluid commercial environment.',
   },
   {
     icon: <HiShieldCheck size={24} />,
-    title: 'Trusted Settlement',
-    description: 'Permissioned access, KYC, AML controls, and regulated financial institution settlement create a trusted commercial finance environment.',
+    title: 'Permissioned Trust',
+    description: 'All participants pass KYC and AML vetting, and payments or withdrawals move only through regulated financial institutions.',
   },
 ]
 
 const processSteps = [
-  'Supplier submits an approved invoice through the DEX platform.',
-  'DEX creates DexT security tokens that match the invoice value and payment terms.',
-  'The supplier receives tokens and can hold them, discount them, or use them for downstream payments.',
-  'On maturity, the tokens convert to KES through regulated financial institutions.',
+  'Buyer and supplier agree invoice payment terms through the procurement lifecycle.',
+  'DEX issues DexT security tokens matched to the submitted invoice terms.',
+  'The supplier can hold DexT to maturity, discount all or part of it, or use it for downstream payments.',
+  'On maturity, DexT automatically converts to KES through regulated financial institutions.',
 ]
 
 export default function DEXCommercial() {
+  const structuredData = generateProductSchema({
+    name: 'DEX Commercial Finance',
+    description: 'Blockchain-based supply chain finance platform with tokenized invoices and receivables financing',
+  })
+
   return (
     <>
+      <SEO
+        title="DEX Commercial Finance"
+        description="Supply chain finance platform using blockchain tokenization for instant payments and enhanced liquidity. Designed for commercial enterprises."
+        path="/dex/commercial"
+        structuredData={structuredData}
+      />
       <PageBanner
         title="DEX Commercial Finance"
-        subtitle="A tokenized supply chain finance solution that helps businesses improve cash flow, supplier confidence, and procurement efficiency."
+        subtitle="A blockchain-based supply chain finance platform that streamlines supplier payments, securitizes receivables, and enhances efficiency across the value chain."
       />
 
       <section className="py-20 lg:py-28 bg-white">
@@ -63,14 +76,13 @@ export default function DEXCommercial() {
                 Supply Chain <span className="text-ayedos-green">Finance</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                DEX gives commercial suppliers a blockchain-based way to manage invoices,
-                payment timing, and liquidity. Approved receivables can be securitized into DexT
-                tokens, helping suppliers access value earlier while buyers retain predictable
-                settlement windows.
+                DEX is an innovative blockchain-based platform designed to streamline supply chain
+                finance. It facilitates instant payments to suppliers by securitizing receivables
+                and providing liquidity, enhancing efficiency across the entire value chain.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed">
-                The result is a more transparent working-capital environment where invoice obligations
-                are easier to track, finance, and settle across the full value chain.
+                DEX reimagines traditional factoring and invoice discounting services, eliminating
+                the need for expensive overdrafts and short-term bank loans to pay suppliers.
               </p>
             </div>
             <div data-aos="fade-left">
@@ -112,8 +124,8 @@ export default function DEXCommercial() {
                 From Invoice to <span className="text-ayedos-green">Settlement</span>
               </h2>
               <p className="text-white/85 leading-relaxed">
-                DEX connects invoice approval, token issuance, liquidity access, and KES settlement
-                inside one permissioned environment.
+                DEX covers every stage of the procurement lifecycle, embedding trust and automation
+                into financial transactions between buyers and suppliers.
               </p>
             </div>
             <div className="space-y-4" data-aos="fade-left">
@@ -137,17 +149,17 @@ export default function DEXCommercial() {
               {
                 icon: <HiOfficeBuilding size={24} />,
                 title: 'For Buyers',
-                description: 'Improve procurement visibility, reduce payment friction, and strengthen supplier relationships.',
+                description: 'Enhance procurement transparency, speed up payments, reduce administrative burdens, and reduce dependence on overdrafts.',
               },
               {
                 icon: <HiDocumentText size={24} />,
                 title: 'For Suppliers',
-                description: 'Access liquidity earlier and reduce dependence on long invoice payment cycles.',
+                description: 'Achieve better liquidity, streamline factoring and discounting, access short-term investment opportunities, and benefit from instant payments.',
               },
               {
                 icon: <HiTrendingUp size={24} />,
-                title: 'For Investors',
-                description: 'Participate in tokenized receivables backed by real commercial obligations.',
+                title: 'For Investors and Financial Institutions',
+                description: 'Access high-yield, lower-risk investments backed by government and large buyers in a secure, innovative financial ecosystem.',
               },
             ].map((item, index) => (
               <FeatureCard
@@ -163,8 +175,8 @@ export default function DEXCommercial() {
       </section>
 
       <CTASection
-        title="Explore DEX for Commercial Finance"
-        subtitle="Talk to Cowrie about tokenized supply chain finance for buyers, suppliers, and financial partners."
+        title="Get Involved with DEX"
+        subtitle="Explore how DEX can transform procurement with efficiency, transparency, security, and blockchain-powered supply chain finance."
         buttonText="Contact Us"
         buttonLink="/contact"
       />

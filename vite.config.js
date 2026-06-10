@@ -6,11 +6,40 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
+export default defineConfig(({ command, mode }) => {
+  const isProduction = mode === 'production'
+  const isStaging = mode === 'staging'
+
+  return {
+    plugins: [react(), tailwindcss()],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+      },
     },
-  },
+    define: {
+      'import.meta.env.MODE': JSON.stringify(mode),
+    },
+    build: {
+      // Production optimizations
+      minify: isProduction ? 'esbuild' : 'esbuild',
+      esbuild: isProduction ? {
+        drop: ['console'],
+      } : undefined,
+      // Generate source maps for staging/production debugging
+      sourcemap: isStaging,
+      // Cache busting via hash
+      rollupOptions: {
+        output: {
+          entryFileNames: `[name].[hash].js`,
+          chunkFileNames: `[name].[hash].js`,
+          assetFileNames: `[name].[hash].[ext]`,
+        },
+      },
+    },
+    server: {
+      port: 5173,
+    },
+  }
 })
+
