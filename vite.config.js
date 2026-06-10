@@ -22,11 +22,9 @@ export default defineConfig(({ command, mode }) => {
     },
     build: {
       // Production optimizations
-      minify: isProduction ? 'terser' : 'esbuild',
-      terserOptions: isProduction ? {
-        compress: {
-          drop_console: true,
-        },
+      minify: isProduction ? 'esbuild' : 'esbuild',
+      esbuild: isProduction ? {
+        drop: ['console'],
       } : undefined,
       // Generate source maps for staging/production debugging
       sourcemap: isStaging,
