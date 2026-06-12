@@ -128,8 +128,10 @@ export default function SpecialFund() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-                SIF - AYEDOS COWRIE Special{" "}
-                <span className="text-ayedos-green">Investment Fund</span>
+                SIF - AYEDOS COWRIE{" "}
+                <span className="block text-ayedos-green">
+                  Special Investment Fund
+                </span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
                 AYEDOS COWRIE presents its new, innovative, and trusted Special
@@ -141,23 +143,25 @@ export default function SpecialFund() {
                 portfolio.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                The AYEDOS COWRIE Special Investment Fund invests across a range of carefully
-                vetted and monitored asset classes, including real estate developments,
-                infrastructure projects, Public Private Partnerships (PPPs), virtual assets,
-                and other high investment opportunities approved by the Capital Market
-                Authority.
+                The AYEDOS COWRIE Special Investment Fund invests across a range
+                of carefully vetted and monitored asset classes, including real
+                estate developments, infrastructure projects, Public Private
+                Partnerships (PPPs), virtual assets, and other high investment
+                opportunities approved by the Capital Market Authority.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                With our modern digital platform, investors can conveniently monitor their
-                investments through our mobile app or web portal at any time, from anywhere
-                in the world. Our dedicated investment team ensures transparency, integrity,
-                and round-the-clock support throughout your investment journey.
+                With our modern digital platform, investors can conveniently
+                monitor their investments through our mobile app or web portal
+                at any time, from anywhere in the world. Our dedicated
+                investment team ensures transparency, integrity, and
+                round-the-clock support throughout your investment journey.
               </p>
               <p className="text-ayedos-charcoal/90 leading-relaxed mb-6 font-semibold">
-                Whether your goal is wealth creation, portfolio diversification, long-term
-                financial security, or access to exclusive investment opportunities, the
-                AYEDOS COWRIE Special Fund provides a flexible and professionally managed
-                solution tailored to sophisticated investors.
+                Whether your goal is wealth creation, portfolio diversification,
+                long-term financial security, or access to exclusive investment
+                opportunities, the AYEDOS COWRIE Special Fund provides a
+                flexible and professionally managed solution tailored to
+                sophisticated investors.
               </p>
               <div className="flex flex-wrap gap-3">
                 {[
