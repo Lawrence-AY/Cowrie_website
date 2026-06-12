@@ -129,8 +129,9 @@ export default function SpecialFund() {
             <div data-aos="fade-right">
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
                 SIF - AYEDOS COWRIE{" "}
+                <span className="text-ayedos-green">Special</span>
                 <span className="block text-ayedos-green">
-                  Special Investment Fund
+                  Investment Fund
                 </span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
