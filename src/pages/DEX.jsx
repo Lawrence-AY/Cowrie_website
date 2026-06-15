@@ -7,36 +7,81 @@ import BenefitCard from '../components/BenefitCard'
 import CTASection from '../components/CTASection'
 import { generateProductSchema } from '../lib/seo'
 
-const howDexWorks = [
+const supplierJourney = [
   {
     step: '01',
     title: 'Receivables Submitted',
     description: 'Supplier submits receivables to the DEX platform.',
+    icon: <HiDocumentText size={20} />,
   },
   {
     step: '02',
     title: 'Token Created',
     description: 'DEX creates security tokens (DexT) matching the receivable payment terms.',
+    icon: <HiBadgeCheck size={20} />,
   },
   {
     step: '03',
     title: 'Token Issued',
     description: 'Tokens are issued to the Supplier representing the receivable value.',
+    icon: <HiShieldCheck size={20} />,
   },
   {
     step: '04',
     title: 'Liquidity Access',
     description: 'Supplier can discount tokens for instant liquidity or use them for downstream payments.',
+    icon: <HiCurrencyDollar size={20} />,
   },
   {
     step: '05',
     title: 'Token Matures',
     description: 'Tokens automatically convert to KES on the maturity date.',
+    icon: <HiLockClosed size={20} />,
   },
   {
     step: '06',
     title: 'KES Settlement',
     description: 'Dex settles the receivable in KES through regulated financial institutions.',
+    icon: <HiOfficeBuilding size={20} />,
+  },
+]
+
+const investorJourney = [
+  {
+    step: '01',
+    title: 'Investor Onboarding',
+    description: 'Investor completes digital onboarding, KYC checks, and platform eligibility review.',
+    icon: <HiUserGroup size={20} />,
+  },
+  {
+    step: '02',
+    title: 'Wallet Funding',
+    description: 'Funds are added through regulated channels for investment into tokenized opportunities.',
+    icon: <HiCurrencyDollar size={20} />,
+  },
+  {
+    step: '03',
+    title: 'Opportunity Selection',
+    description: 'Investor reviews available DexT opportunities and selects assets that match their objectives.',
+    icon: <HiTrendingUp size={20} />,
+  },
+  {
+    step: '04',
+    title: 'Token Purchase',
+    description: 'Investor purchases security tokens representing eligible receivables or asset-backed pools.',
+    icon: <HiBadgeCheck size={20} />,
+  },
+  {
+    step: '05',
+    title: 'Portfolio Tracking',
+    description: 'DEX provides visibility into holdings, maturities, returns, and performance metrics.',
+    icon: <HiDocumentText size={20} />,
+  },
+  {
+    step: '06',
+    title: 'Returns and Redemption',
+    description: 'Income is distributed and principal is redeemed through regulated settlement channels.',
+    icon: <HiShieldCheck size={20} />,
   },
 ]
 
@@ -102,6 +147,60 @@ const tokenizationConcepts = [
     description: 'Security Tokens carry compliance rules so sales and transfers can only occur between permitted and verified participants under CMA, KYC/AML, and market rules.',
   },
 ]
+
+function JourneyTimeline({ title, eyebrow, description, items, accent = 'green', delay = 0 }) {
+  const accentClasses =
+    accent === 'bluegray'
+      ? {
+          eyebrow: 'text-ayedos-bluegray bg-white border-ayedos-bluegray/15',
+          header: 'bg-ayedos-bluegray text-white',
+          icon: 'bg-ayedos-bluegray text-white',
+          connector: 'bg-ayedos-bluegray/20',
+          step: 'border-ayedos-bluegray/15 hover:border-ayedos-bluegray/35',
+          text: 'text-ayedos-bluegray',
+        }
+      : {
+          eyebrow: 'text-ayedos-green bg-white border-ayedos-green/25',
+          header: 'bg-ayedos-green text-white',
+          icon: 'bg-ayedos-green text-white',
+          connector: 'bg-ayedos-green/25',
+          step: 'border-ayedos-green/20 hover:border-ayedos-green/45',
+          text: 'text-ayedos-green',
+        }
+
+  return (
+    <div data-aos="fade-up" data-aos-delay={delay}>
+      <div className={`${accentClasses.header} rounded-xl p-6 shadow-lg shadow-ayedos-charcoal/10`}>
+        <div className={`inline-flex items-center px-3 py-1 rounded-full border text-xs font-semibold mb-5 ${accentClasses.eyebrow}`}>
+          {eyebrow}
+        </div>
+        <div>
+          <h3 className="text-2xl sm:text-3xl font-bold mb-3">{title}</h3>
+          <p className="text-sm sm:text-base text-white/85 leading-relaxed max-w-xl">{description}</p>
+        </div>
+      </div>
+
+      <div className="relative mt-6 space-y-4">
+        <div className={`absolute left-6 top-6 bottom-6 w-px ${accentClasses.connector}`} />
+        {items.map((item) => (
+          <div
+            key={item.step}
+            className={`relative flex gap-4 bg-white border ${accentClasses.step} rounded-xl p-4 sm:p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl`}
+          >
+            <div className={`relative z-10 w-12 h-12 rounded-xl ${accentClasses.icon} flex items-center justify-center shrink-0 shadow-md shadow-ayedos-charcoal/10`}>
+              {item.icon}
+            </div>
+            <div className="min-w-0">
+              <div className={`text-xs font-bold tracking-wide mb-1 ${accentClasses.text}`}>STEP {item.step}</div>
+              <h4 className="text-base sm:text-lg font-bold text-ayedos-bluegray mb-1">{item.title}</h4>
+              <p className="text-sm text-ayedos-charcoal/70 leading-relaxed">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 // const dexGalleryImages = [
 //   '/images/1.png',
@@ -304,51 +403,32 @@ export default function DEX() {
       </section>
 
       {/* How DEX Works */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-ayedos-light/45">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-              How <span className="text-ayedos-green">DEX Works(Supply chain finance )</span>
+              How <span className="text-ayedos-green">DEX Works (Supplier & Investor Journeys)</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              A seamless end-to-end process from invoice submission to settlement.
+              A seamless end-to-end process for suppliers and investors from onboarding to settlement.
             </p>
           </div>
 
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-ayedos-light -translate-x-1/2" />
-
-            <div className="space-y-12 lg:space-y-0">
-              {howDexWorks.map((item, index) => (
-                <div
-                  key={index}
-                  className={`relative lg:flex items-center ${
-                    index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                  }`}
-                  data-aos="fade-up"
-                >
-                  {/* Content */}
-                  <div className={`lg:w-1/2 ${index % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12'}`}>
-                    <div className={`bg-ayedos-light/50 rounded-xl p-6 border border-ayedos-light inline-block max-w-md ${
-                      index % 2 === 0 ? 'lg:ml-auto' : ''
-                    }`}>
-                      <div className="text-ayedos-green font-bold text-sm mb-1">Step {item.step}</div>
-                      <h3 className="text-lg font-bold text-ayedos-bluegray mb-2">{item.title}</h3>
-                      <p className="text-sm text-ayedos-charcoal/70">{item.description}</p>
-                    </div>
-                  </div>
-
-                  {/* Center dot */}
-                  <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-ayedos-green rounded-full items-center justify-center text-white text-xs font-bold z-10">
-                    {item.step}
-                  </div>
-
-                  {/* Spacer */}
-                  <div className="lg:w-1/2" />
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <JourneyTimeline
+              title="Supplier Journey"
+              eyebrow="Supplier Flow"
+              description="From receivable submission to token issuance, liquidity access, and final KES settlement."
+              items={supplierJourney}
+            />
+            <JourneyTimeline
+              title="Investor Journey"
+              eyebrow="Investor Flow"
+              description="From onboarding and funding to investment selection, portfolio tracking, returns, and redemption."
+              items={investorJourney}
+              accent="bluegray"
+              delay={100}
+            />
           </div>
         </div>
       </section>
