@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
 import {
+  HiChevronLeft,
+  HiChevronRight,
   HiHome,
   HiUserGroup,
   HiTrendingUp,
@@ -82,6 +85,25 @@ const investorBenefits = [
   "Transparent investment processes",
 ];
 
+const affordableHousingImages = [
+  {
+    src: "/images/AHK.jpg",
+    alt: "Affordable housing development",
+  },
+  {
+    src: "/images/AHK1.jpeg",
+    alt: "Affordable housing exterior view",
+  },
+  {
+    src: "/images/AHK2.jpg",
+    alt: "Affordable housing residential project",
+  },
+  {
+    src: "/images/AHK3.jpeg",
+    alt: "Affordable housing community development",
+  },
+];
+
 // const galleryImages = [
 //   '/images/01.jpg',
 //   '/images/02.jpg',
@@ -90,6 +112,89 @@ const investorBenefits = [
 //   '/images/05.jpg',
 //   '/images/06.jpg',
 // ]
+
+function AffordableHousingCarousel() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setActiveIndex((currentIndex) =>
+        currentIndex === affordableHousingImages.length - 1
+          ? 0
+          : currentIndex + 1,
+      );
+    }, 4500);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
+
+  const showPreviousImage = () => {
+    setActiveIndex((currentIndex) =>
+      currentIndex === 0
+        ? affordableHousingImages.length - 1
+        : currentIndex - 1,
+    );
+  };
+
+  const showNextImage = () => {
+    setActiveIndex((currentIndex) =>
+      currentIndex === affordableHousingImages.length - 1
+        ? 0
+        : currentIndex + 1,
+    );
+  };
+
+  return (
+    <div className="relative h-[450px] overflow-hidden rounded-xl shadow-2xl">
+      {affordableHousingImages.map((image, index) => (
+        <img
+          key={image.src}
+          src={image.src}
+          alt={image.alt}
+          loading={index === 0 ? "eager" : "lazy"}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+            index === activeIndex ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
+
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/60 to-transparent" />
+
+      <button
+        type="button"
+        onClick={showPreviousImage}
+        className="absolute left-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-ayedos-charcoal shadow-lg transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-ayedos-green"
+        aria-label="Show previous affordable housing image"
+      >
+        <HiChevronLeft size={22} aria-hidden="true" />
+      </button>
+
+      <button
+        type="button"
+        onClick={showNextImage}
+        className="absolute right-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-ayedos-charcoal shadow-lg transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-ayedos-green"
+        aria-label="Show next affordable housing image"
+      >
+        <HiChevronRight size={22} aria-hidden="true" />
+      </button>
+
+      <div className="absolute bottom-5 left-1/2 flex -translate-x-1/2 gap-2">
+        {affordableHousingImages.map((image, index) => (
+          <button
+            key={image.src}
+            type="button"
+            onClick={() => setActiveIndex(index)}
+            className={`h-2.5 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-ayedos-green ${
+              index === activeIndex ? "w-8 bg-ayedos-green" : "w-2.5 bg-white/80"
+            }`}
+            aria-label={`Show affordable housing image ${index + 1}`}
+            aria-current={index === activeIndex ? "true" : undefined}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function MLP() {
   const structuredData = generateProductSchema({
@@ -282,12 +387,7 @@ export default function MLP() {
               </div>
             </div>
             <div data-aos="fade-left">
-              <ImagePlaceholder
-                height="450px"
-                label="Affordable Housing"
-                className=""
-                src="/images/AHK.jpg"
-              />
+              <AffordableHousingCarousel />
             </div>
           </div>
         </div>
