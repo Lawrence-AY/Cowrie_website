@@ -36,7 +36,7 @@ const howDexWorks = [
   {
     step: '06',
     title: 'KES Settlement',
-    description: 'Buyer settles the receivable in KES through regulated financial institutions.',
+    description: 'Dex settles the receivable in KES through regulated financial institutions.',
   },
 ]
 
@@ -308,7 +308,7 @@ export default function DEX() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
             <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-              How <span className="text-ayedos-green">DEX Works</span>
+              How <span className="text-ayedos-green">DEX Works(Supply chain finance )</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
               A seamless end-to-end process from invoice submission to settlement.
