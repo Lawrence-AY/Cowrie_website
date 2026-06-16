@@ -50,7 +50,10 @@ export default function Home() {
               <span className="text-ayedos-green">Catalysing Commerce</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/85 leading-relaxed mb-10 max-w-xl">
-              Welcome to AYEDOS COWRIE, innovative financial solutions. Cowrie,
+              Welcome to AYEDOS COWRIE, innovative financial solutions. <span className="text-ayedos-green font-semibold">
+                Cowrie
+                </span>
+                ,
               the ancient symbol of fertility, prosperity, a store of value, and
               a means of exchange.
             </p>
@@ -394,7 +397,7 @@ export default function Home() {
               <ImagePlaceholder
                 height="400px"
                 label="Cowrie Special Investment Fund Preview"
-                className="shadow-xl"
+                className="shadow-none"
                 src="/images/06.jpg"
               />
             </div>
@@ -428,7 +431,7 @@ export default function Home() {
               {[...partners, ...partners].map((partner, index) => (
                 <div
                   key={`${partner.name}-${index}`}
-                  className="h-28 w-52 shrink-0 bg-white border border-ayedos-bluegray/10 rounded-xl px-5 py-6 flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300"
+                  className=" h-28 w-52 shrink-0 bg-white border border-ayedos-bluegray/10 rounded-xl px-5 py-6 flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300"
                   data-aos="fade-up"
                   data-aos-delay={(index % partners.length) * 75}
                 >
@@ -436,7 +439,7 @@ export default function Home() {
                     <img
                       src={partner.logo}
                       alt={`${partner.name} logo`}
-                      className="max-h-14 max-w-full object-contain"
+                      className="max-h-14 max-w-full object-contain mb-1"
                     />
                   ) : (
                     <span className="text-center text-sm font-bold leading-snug text-ayedos-bluegray">

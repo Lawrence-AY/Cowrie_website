@@ -40,7 +40,7 @@ const supplierJourney = [
   },
   {
     step: '06',
-    title: 'KES Settlement',
+    title: 'Settlement',
     description: 'Dex settles the receivable in KES through regulated financial institutions.',
     icon: <HiOfficeBuilding size={20} />,
   },
@@ -170,7 +170,7 @@ function JourneyTimeline({ title, eyebrow, description, items, accent = 'green',
 
   return (
     <div data-aos="fade-up" data-aos-delay={delay}>
-      <div className={`${accentClasses.header} rounded-xl p-6 shadow-lg shadow-ayedos-charcoal/10`}>
+      <div className={`${accentClasses.header} rounded-xl p-6   shadow-ayedos-charcoal/10`}>
         <div className={`inline-flex items-center px-3 py-1 rounded-full border text-xs font-semibold mb-5 ${accentClasses.eyebrow}`}>
           {eyebrow}
         </div>
@@ -257,7 +257,7 @@ export default function DEX() {
               <img
                 src="/images/dex1.png"
                 alt="DEX Digital Exchange Platform"
-                className="w-full h-auto rounded-xl shadow-lg"
+                className="w-full h-auto rounded-xl  "
               />
             </div>
           </div>
@@ -308,7 +308,7 @@ export default function DEX() {
             {dexPathways.map((pathway, index) => (
               <div
                 key={pathway.title}
-                className="bg-white border border-ayedos-light rounded-xl p-6 sm:p-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                className="bg-white border border-ayedos-light rounded-xl p-6 sm:p-8   transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
