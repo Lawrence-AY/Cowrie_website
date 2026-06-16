@@ -55,7 +55,7 @@ function CustomerCharter() {
         <div className="text-4xl font-semibold">Customer Service Charter</div>
         <div className="text-xl font-semibold">
           Our commitment to delivering outstanding service to every customer
-        </div>
+        </div>shad
       </div>
 
       <div
@@ -147,7 +147,7 @@ function CustomerCharter() {
                         financial systems by unlocking liquidity in traditionally
                         illiquid assets and empowering individuals and
                         institutions to participate in modern capital markets
-                        through our SACCO, Money Market Fund and Digital Exchange
+                        through Digital Exchange
                         platforms.
                       </p>
                     </div>
@@ -178,23 +178,23 @@ function CustomerCharter() {
                       </p>
                       <ul>
                         <li>
-                          Enable seamless access to investment and credit
+                          1. Enable seamless access to investment and credit
                           opportunities
                         </li>
                         <li>
-                          Digitize and tokenize real-world assets, starting with
+                          2. Digitize and tokenize real-world assets, starting with
                           mortgages and fixed income instruments
                         </li>
                         <li>
-                          Deliver secure, compliant, and user-friendly financial
+                          3. Deliver secure, compliant, and user-friendly financial
                           solutions
                         </li>
                         <li>
-                          Provide financial inclusion by lowering barriers to
+                          4. Provide financial inclusion by lowering barriers to
                           entry for individuals and institutions
                         </li>
                         <li>
-                          Partner with regulators, financial institutions, and
+                          5. Partner with regulators, financial institutions, and
                           technology providers to build a resilient financial
                           ecosystem
                         </li>
