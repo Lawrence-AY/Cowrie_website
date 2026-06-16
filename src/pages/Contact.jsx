@@ -8,7 +8,7 @@ const contactInfo = [
   {
     icon: <HiLocationMarker size={24} />,
     title: 'Our Address',
-    content: ['1st Floor Africa Reit House, Karen', 'Africa Reit Lane, Karen', 'Nairobi, Kenya'],
+    content: ['Africa Reit House, 1st Floor', 'Africa Reit Lane, Nairobi, Kenya'],
   },
   {
     icon: <HiPhone size={24} />,
@@ -126,7 +126,7 @@ export default function Contact() {
               <div className="rounded-xl overflow-hidden border border-ayedos-light bg-ayedos-light/40">
                 <iframe
                   title="AYEDOS COWRIE location map"
-                  src="https://www.google.com/maps?q=Africa%20Reit%20House%2C%20Africa%20Reit%20Lane%2C%20Karen%2C%20Nairobi%2C%20Kenya&output=embed"
+                  src="https://www.google.com/maps?q=AYEDOS%20GROUP%20LIMITED%2C%20Africa%20Reit%20House%2C%201st%20Floor%20Africa%20Reit%20Lane%2C%20Nairobi%2C%20Kenya&output=embed"
                   className="h-[250px] w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
