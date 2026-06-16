@@ -67,7 +67,7 @@ const investorJourney = [
   },
   {
     step: '04',
-    title: 'Token Purchase',
+    title: 'Trading',
     description: 'Investor purchases security tokens representing eligible receivables or asset-backed pools.',
     icon: <HiBadgeCheck size={20} />,
   },

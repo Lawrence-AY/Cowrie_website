@@ -87,19 +87,19 @@ const investorBenefits = [
 
 const affordableHousingImages = [
   {
-    src: "/images/AHK.jpg",
+    src: "/images/affordable3.png",
     alt: "Affordable housing development",
   },
   {
-    src: "/images/AHK1.jpeg",
+    src: "/images/affordable4.png",
     alt: "Affordable housing exterior view",
   },
   {
-    src: "/images/AHK2.jpg",
+    src: "/images/affordable1.png",
     alt: "Affordable housing residential project",
   },
   {
-    src: "/images/AHK3.jpeg",
+    src: "/images/affordable2.png",
     alt: "Affordable housing community development",
   },
 ];
