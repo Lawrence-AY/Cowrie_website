@@ -8,7 +8,7 @@ const contactInfo = [
   {
     icon: <HiLocationMarker size={24} />,
     title: 'Our Address',
-    content: 'Nairobi, Kenya, 1st Floor Africa Reit House, Africa Reit Lane, Karen',
+    content: ['1st Floor Africa Reit House, Karen', 'Africa Reit Lane, Karen', 'Nairobi, Kenya'],
   },
   {
     icon: <HiPhone size={24} />,
@@ -106,6 +106,14 @@ export default function Contact() {
                         <a href={item.href} className="text-ayedos-charcoal/70 hover:text-ayedos-green text-sm transition-colors">
                           {item.content}
                         </a>
+                      ) : Array.isArray(item.content) ? (
+                        <p className="text-ayedos-charcoal/70 text-sm">
+                          {item.content.map((line) => (
+                            <span key={line} className="block">
+                              {line}
+                            </span>
+                          ))}
+                        </p>
                       ) : (
                         <p className="text-ayedos-charcoal/70 text-sm">{item.content}</p>
                       )}
