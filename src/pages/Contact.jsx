@@ -2,7 +2,6 @@ import { HiLocationMarker, HiPhone, HiMail, HiClock } from 'react-icons/hi'
 import PageBanner from '../components/PageBanner'
 import ContactForm from '../components/ContactForm'
 import FAQAccordion from '../components/FAQAccordion'
-import ImagePlaceholder from '../components/ImagePlaceholder'
 import CTASection from '../components/CTASection'
 
 const contactInfo = [
@@ -115,9 +114,16 @@ export default function Contact() {
                 ))}
               </div>
 
-              {/* Map Placeholder */}
-              <div className="rounded-xl overflow-hidden border border-ayedos-light">
-                <ImagePlaceholder height="250px" label="Map Placeholder - Nairobi, Kenya" src="/images/04.jpg" />
+              {/* Location Map */}
+              <div className="rounded-xl overflow-hidden border border-ayedos-light bg-ayedos-light/40">
+                <iframe
+                  title="AYEDOS COWRIE location map"
+                  src="https://www.google.com/maps?q=Africa%20Reit%20House%2C%20Africa%20Reit%20Lane%2C%20Karen%2C%20Nairobi%2C%20Kenya&output=embed"
+                  className="h-[250px] w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
               </div>
             </div>
           </div>
