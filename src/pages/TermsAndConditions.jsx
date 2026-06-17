@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HiDocumentText, HiInformationCircle, HiMenu } from "react-icons/hi";
-import SEO from '../components/SEO';
+import SEO from "../components/SEO";
 
 function TermsAndConditions() {
   const [theme, setTheme] = useState(() => {
@@ -128,9 +128,8 @@ function TermsAndConditions() {
                   <p className="lead">
                     These Terms of Use, and any documents referred to herein,
                     set out the terms and conditions on which you are permitted
-                    to use our website. By using our
-                    website, you agree to be bound by, and to comply with, these
-                    Terms of Use.
+                    to use our website. By using our website, you agree to be
+                    bound by, and to comply with, these Terms of Use.
                   </p>
                   <p>
                     Please read these Terms of Use carefully. We recommend that
@@ -160,12 +159,12 @@ function TermsAndConditions() {
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        AYEDOS COWRIE LIMITED (we, our and us) operates the
-                        website. AYEDOS COWRIE LIMITED is a limited liability
-                        company incorporated in Kenya. Company Registration
-                        number is PVT-KAUZ3R2. Our registered address is 1st
-                        Floor Africa Reit House, Africa Reit Lane, Karen,
-                        43072-00100, Nairobi Kenya.
+                        AYEDOS COWRIE GROUP LIMITED (we, our and us) operates
+                        the website. AYEDOS COWRIE GROUP LIMITED is a limited
+                        liability company incorporated in Kenya. Company
+                        Registration number is PVT-KAUZ3R2. Our registered
+                        address is 1st Floor Africa Reit House, Africa Reit
+                        Lane, Karen, 43072-00100, Nairobi Kenya.
                       </p>
                       <p>
                         Our contact telephone number is +254 733556617 and our
@@ -315,11 +314,11 @@ function TermsAndConditions() {
                         copyright and other intellectual property rights in our
                         website and its content are either owned by us or
                         licensed to us. All such rights are reserved. AYEDOS
-                        COWRIE LIMITED is our registered trademark. Nothing in
-                        these Terms of Use should be construed as granting any
-                        licence or right to use any of our or any third-party
-                        marks without the respective owner's prior written
-                        permission.
+                        COWRIE GROUP LIMITED is our registered trademark.
+                        Nothing in these Terms of Use should be construed as
+                        granting any licence or right to use any of our or any
+                        third-party marks without the respective owner's prior
+                        written permission.
                       </p>
                     </div>
                   </div>
@@ -547,10 +546,11 @@ function TermsAndConditions() {
                         disputes arising from or in relation to them or any
                         documents they refer to, whether contractual or
                         non-contractual, shall be governed by and construed in
-                        accordance with the laws of the Republic of Kenya. The courts of the Republic
-                        of Kenya shall have exclusive jurisdiction over any
-                        claims or disputes arising from or in relation to these
-                        Terms of Use and any documents they refer to.
+                        accordance with the laws of the Republic of Kenya. The
+                        courts of the Republic of Kenya shall have exclusive
+                        jurisdiction over any claims or disputes arising from or
+                        in relation to these Terms of Use and any documents they
+                        refer to.
                       </p>
                     </div>
                   </div>
