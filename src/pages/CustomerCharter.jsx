@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  HiDocumentText,
-  HiInformationCircle,
-  HiMenu,
-} from "react-icons/hi";
+import { HiDocumentText, HiInformationCircle, HiMenu } from "react-icons/hi";
 import {
   HiOutlineLightBulb,
   HiOutlineEye,
@@ -55,7 +51,8 @@ function CustomerCharter() {
         <div className="text-4xl font-semibold">Customer Service Charter</div>
         <div className="text-xl font-semibold">
           Our commitment to delivering outstanding service to every customer
-        </div>shad
+        </div>
+        shad
       </div>
 
       <div
@@ -125,12 +122,13 @@ function CustomerCharter() {
                 {/* Introduction */}
                 <div className="prose prose-sm sm:prose-base max-w-none dark:prose-invert">
                   <p>
-                    This Customer Service Charter outlines AYEDOS COWRIE Group
-                    Limited's commitment to delivering high-quality, transparent,
-                    and reliable financial services to all our customers. It also
-                    outlines our service standards, customer rights, and our
-                    commitment to excellence in all interactions with you. The
-                    effective date of this Service Charter is 01.01.2026.
+                    This Customer Service Charter outlines AYEDOS COWRIE GROUP
+                    LIMITED'S commitment to delivering high-quality,
+                    transparent, and reliable financial services to all our
+                    customers. It also outlines our service standards, customer
+                    rights, and our commitment to excellence in all interactions
+                    with you. The effective date of this Service Charter is
+                    01.01.2026.
                   </p>
                 </div>
 
@@ -143,12 +141,11 @@ function CustomerCharter() {
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        To expand access to transparent, efficient, and inclusive
-                        financial systems by unlocking liquidity in traditionally
-                        illiquid assets and empowering individuals and
-                        institutions to participate in modern capital markets
-                        through Digital Exchange
-                        platforms.
+                        To expand access to transparent, efficient, and
+                        inclusive financial systems by unlocking liquidity in
+                        traditionally illiquid assets and empowering individuals
+                        and institutions to participate in modern capital
+                        markets through Digital Exchange platforms.
                       </p>
                     </div>
                   </div>
@@ -182,21 +179,21 @@ function CustomerCharter() {
                           opportunities
                         </li>
                         <li>
-                          2. Digitize and tokenize real-world assets, starting with
-                          mortgages and fixed income instruments
+                          2. Digitize and tokenize real-world assets, starting
+                          with mortgages and fixed income instruments
                         </li>
                         <li>
-                          3. Deliver secure, compliant, and user-friendly financial
-                          solutions
+                          3. Deliver secure, compliant, and user-friendly
+                          financial solutions
                         </li>
                         <li>
                           4. Provide financial inclusion by lowering barriers to
                           entry for individuals and institutions
                         </li>
                         <li>
-                          5. Partner with regulators, financial institutions, and
-                          technology providers to build a resilient financial
-                          ecosystem
+                          5. Partner with regulators, financial institutions,
+                          and technology providers to build a resilient
+                          financial ecosystem
                         </li>
                       </ul>
                     </div>
@@ -205,7 +202,8 @@ function CustomerCharter() {
                   {/* Section 4 - Our Commitment to You */}
                   <div id="section-4" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineHeart className="text-[#8cc63f]" /> Our Commitment to You
+                      <HiOutlineHeart className="text-[#8cc63f]" /> Our
+                      Commitment to You
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>We are dedicated to:</p>
@@ -215,8 +213,8 @@ function CustomerCharter() {
                           service at all times
                         </li>
                         <li>
-                          Ensuring transparency in all our products, pricing, and
-                          processes
+                          Ensuring transparency in all our products, pricing,
+                          and processes
                         </li>
                         <li>
                           Safeguarding customer data in compliance with
@@ -237,10 +235,14 @@ function CustomerCharter() {
                   {/* Section 5 - Our Core Service Principles */}
                   <div id="section-5" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineCheckCircle className="text-[#8cc63f]" /> Our Core Service Principles
+                      <HiOutlineCheckCircle className="text-[#8cc63f]" /> Our
+                      Core Service Principles
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
-                      <p>Our service delivery is guided by the following principles:</p>
+                      <p>
+                        Our service delivery is guided by the following
+                        principles:
+                      </p>
                       <ul>
                         <li>
                           <strong>Integrity</strong> – We act honestly and
@@ -269,7 +271,8 @@ function CustomerCharter() {
                   {/* Section 6 - Service Standards */}
                   <div id="section-6" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineClock className="text-[#8cc63f]" /> Service Standards
+                      <HiOutlineClock className="text-[#8cc63f]" /> Service
+                      Standards
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -306,8 +309,8 @@ function CustomerCharter() {
                               <td className="border p-3">
                                 Enquiries that do not require follow-up will be
                                 resolved in the course of your visit. Phone and
-                                emails will be answered and replied to within the
-                                shortest reasonable time.
+                                emails will be answered and replied to within
+                                the shortest reasonable time.
                               </td>
                             </tr>
                             <tr
@@ -329,8 +332,8 @@ function CustomerCharter() {
                                 Resolution of general complaints
                               </td>
                               <td className="border p-3">
-                                General complaints will be responded to within 24
-                                hours and resolved within 5 working days.
+                                General complaints will be responded to within
+                                24 hours and resolved within 5 working days.
                               </td>
                             </tr>
                             <tr
@@ -395,14 +398,16 @@ function CustomerCharter() {
                   {/* Section 7 - Customer Responsibilities */}
                   <div id="section-7" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineUserGroup className="text-[#8cc63f]" /> Customer Responsibilities
+                      <HiOutlineUserGroup className="text-[#8cc63f]" /> Customer
+                      Responsibilities
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>To help us serve you better, we ask that you:</p>
                       <ul>
                         <li>Provide accurate and complete information</li>
                         <li>
-                          Comply with applicable terms, policies, and regulations
+                          Comply with applicable terms, policies, and
+                          regulations
                         </li>
                         <li>
                           Safeguard your account credentials and personal
@@ -419,7 +424,8 @@ function CustomerCharter() {
                   {/* Section 8 - Data Protection & Confidentiality */}
                   <div id="section-8" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> Data Protection & Confidentiality
+                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> Data
+                      Protection & Confidentiality
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -450,13 +456,14 @@ function CustomerCharter() {
                   {/* Section 9 - Accessibility & Inclusion */}
                   <div id="section-9" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineUserGroup className="text-[#8cc63f]" /> Accessibility & Inclusion
+                      <HiOutlineUserGroup className="text-[#8cc63f]" />{" "}
+                      Accessibility & Inclusion
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
                         We are committed to ensuring our services are accessible
-                        to all customers, including persons with disabilities and
-                        digitally excluded individuals. Our platforms and
+                        to all customers, including persons with disabilities
+                        and digitally excluded individuals. Our platforms and
                         services are designed with inclusivity in mind, and we
                         continuously work to remove barriers that may prevent
                         anyone from accessing and benefiting from our financial
@@ -468,12 +475,13 @@ function CustomerCharter() {
                   {/* Section 10 - Feedback & Contact */}
                   <div id="section-10" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineHeart className="text-[#8cc63f]" /> Feedback & Contact
+                      <HiOutlineHeart className="text-[#8cc63f]" /> Feedback &
+                      Contact
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        Your feedback helps us improve. You can share suggestions
-                        or compliments via:
+                        Your feedback helps us improve. You can share
+                        suggestions or compliments via:
                       </p>
                       <ul>
                         <li>
@@ -500,9 +508,10 @@ function CustomerCharter() {
                   className={`mt-8 pt-6 text-sm border-t ${isDark ? "border-gray-700" : "border-gray-200"}`}
                 >
                   <p className={isDark ? "text-gray-400" : "text-gray-500"}>
-                    This Customer Service Charter reflects our ongoing commitment
-                    to excellence. We review and update our standards regularly
-                    to ensure we continue to meet and exceed your expectations.
+                    This Customer Service Charter reflects our ongoing
+                    commitment to excellence. We review and update our standards
+                    regularly to ensure we continue to meet and exceed your
+                    expectations.
                   </p>
                 </div>
               </div>

@@ -13,7 +13,7 @@ import {
   HiOutlineDocumentText,
   HiOutlineComputerDesktop,
 } from "react-icons/hi2";
-import SEO from '../components/SEO';
+import SEO from "../components/SEO";
 
 function CookiePolicy() {
   const [theme, setTheme] = useState(() => {
@@ -51,7 +51,7 @@ function CookiePolicy() {
     <div className="info-page-container">
       <SEO
         title="Cookie Policy"
-        description="Learn how AYEDOS COWRIE uses cookies and similar technologies to enhance your browsing experience."
+        description="Learn how AYEDOS COWRIE GROUP LIMITED uses cookies and similar technologies to enhance your browsing experience."
         path="/cookie-policy"
         noindex={true}
       />
@@ -130,8 +130,8 @@ function CookiePolicy() {
                 <div className="prose prose-sm sm:prose-base max-w-none dark:prose-invert">
                   <p>
                     This Cookies Policy sets out the basis on which we, AYEDOS
-                    COWRIE LIMITED use cookies and similar technologies on or in
-                    relation to our website, www.cowriex.io This Cookies
+                    COWRIE GROUP LIMITED use cookies and similar technologies on
+                    or in relation to our website, www.cowriex.io This Cookies
                     Policy is effective from 01.01.2026.
                   </p>
                   <p>
@@ -158,7 +158,8 @@ function CookiePolicy() {
                   {/* Section 1 - What are cookies? */}
                   <div id="section-1" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> What are cookies?
+                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> What
+                      are cookies?
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -190,10 +191,10 @@ function CookiePolicy() {
                       <div className="mt-4">
                         <strong>Legal bases for processing</strong>
                         <p>
-                          For essential cookies, our legal basis for processing is
-                          our legitimate interests in ensuring our site functions
-                          properly and providing you with the online services you
-                          have requested.
+                          For essential cookies, our legal basis for processing
+                          is our legitimate interests in ensuring our site
+                          functions properly and providing you with the online
+                          services you have requested.
                         </p>
                         <p>
                           For non-essential cookies and other technologies, our
@@ -207,7 +208,8 @@ function CookiePolicy() {
                   {/* Section 2 - Types of cookies we use */}
                   <div id="section-2" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineChartBar className="text-[#8cc63f]" /> Types of cookies we use
+                      <HiOutlineChartBar className="text-[#8cc63f]" /> Types of
+                      cookies we use
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <div className="overflow-x-auto">
@@ -260,14 +262,17 @@ function CookiePolicy() {
                   {/* Section 3 - Essential cookies */}
                   <div id="section-3" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> Essential cookies
+                      <HiOutlineShieldCheck className="text-[#8cc63f]" />{" "}
+                      Essential cookies
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        Essential cookies are those that are either used solely to carry out or facilitate
-                        the transmission of communications over a network, or are strictly necessary to
-                        provide an online service which you have requested. These cookies are automatically
-                        placed on your device when you access our website.
+                        Essential cookies are those that are either used solely
+                        to carry out or facilitate the transmission of
+                        communications over a network, or are strictly necessary
+                        to provide an online service which you have requested.
+                        These cookies are automatically placed on your device
+                        when you access our website.
                       </p>
                     </div>
                   </div>
@@ -275,13 +280,16 @@ function CookiePolicy() {
                   {/* Section 4 - Functional cookies */}
                   <div id="section-4" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineComputerDesktop className="text-[#8cc63f]" /> Functional cookies
+                      <HiOutlineComputerDesktop className="text-[#8cc63f]" />{" "}
+                      Functional cookies
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        Functional cookies allow our website to remember choices you make and provide
-                        enhanced, more personal features. These cookies can remember changes you have made
-                        to text size, fonts, and other parts of web pages that you can customize.
+                        Functional cookies allow our website to remember choices
+                        you make and provide enhanced, more personal features.
+                        These cookies can remember changes you have made to text
+                        size, fonts, and other parts of web pages that you can
+                        customize.
                       </p>
                     </div>
                   </div>
@@ -289,14 +297,17 @@ function CookiePolicy() {
                   {/* Section 5 - Analytical/performance cookies */}
                   <div id="section-5" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineChartBar className="text-[#8cc63f]" /> Analytical/performance cookies
+                      <HiOutlineChartBar className="text-[#8cc63f]" />{" "}
+                      Analytical/performance cookies
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        These cookies collect information about how you use our website, for instance which
-                        pages you visit most often, and if you get error messages from web pages. These
-                        cookies don't collect information that identifies you. All the information that
-                        these cookies collect is aggregated and therefore anonymous.
+                        These cookies collect information about how you use our
+                        website, for instance which pages you visit most often,
+                        and if you get error messages from web pages. These
+                        cookies don't collect information that identifies you.
+                        All the information that these cookies collect is
+                        aggregated and therefore anonymous.
                       </p>
                     </div>
                   </div>
@@ -304,7 +315,8 @@ function CookiePolicy() {
                   {/* Section 6 - Advertising/targeting cookies */}
                   <div id="section-6" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlinePhotograph className="text-[#8cc63f]" /> Advertising/targeting cookies
+                      <HiOutlinePhotograph className="text-[#8cc63f]" />{" "}
+                      Advertising/targeting cookies
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -326,7 +338,8 @@ function CookiePolicy() {
                           className="text-[#8cc63f] hover:underline"
                         >
                           here
-                        </a>.
+                        </a>
+                        .
                       </p>
                       <p>
                         You can opt out of Google Analytics tracking by
@@ -347,14 +360,16 @@ function CookiePolicy() {
                   {/* Section 7 - Third-party cookies */}
                   <div id="section-7" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> Third-party cookies
+                      <HiOutlineShieldCheck className="text-[#8cc63f]" />{" "}
+                      Third-party cookies
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        In some special cases we also use cookies provided by trusted third parties. The
-                        following section details which third-party cookies you might encounter through
-                        this site. Third-party cookies are placed on your device by domains other than
-                        our own.
+                        In some special cases we also use cookies provided by
+                        trusted third parties. The following section details
+                        which third-party cookies you might encounter through
+                        this site. Third-party cookies are placed on your device
+                        by domains other than our own.
                       </p>
                     </div>
                   </div>
@@ -362,16 +377,17 @@ function CookiePolicy() {
                   {/* Section 8 - How to manage cookies */}
                   <div id="section-8" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineAdjustments className="text-[#8cc63f]" /> How to manage cookies
+                      <HiOutlineAdjustments className="text-[#8cc63f]" /> How to
+                      manage cookies
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        You can accept or reject non-essential cookies by using our cookie
-                        management tool. You can also adjust your browser settings to block
-                        some or all cookies. If you do not know how to do this, the links below set
-                        out information about how to change your browser
-                        settings for some of the most commonly used web
-                        browsers:
+                        You can accept or reject non-essential cookies by using
+                        our cookie management tool. You can also adjust your
+                        browser settings to block some or all cookies. If you do
+                        not know how to do this, the links below set out
+                        information about how to change your browser settings
+                        for some of the most commonly used web browsers:
                       </p>
                       <ul>
                         <li>
@@ -431,14 +447,16 @@ function CookiePolicy() {
                   {/* Section 9 - Changes to this policy */}
                   <div id="section-9" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineDocumentText className="text-[#8cc63f]" /> Changes to this policy
+                      <HiOutlineDocumentText className="text-[#8cc63f]" />{" "}
+                      Changes to this policy
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        We may update this Cookies Policy from time to time in order to reflect changes
-                        to the cookies we use or for other operational, legal, or regulatory reasons.
-                        Please re-visit this Cookies Policy regularly to stay informed about our use of
-                        cookies and related technologies.
+                        We may update this Cookies Policy from time to time in
+                        order to reflect changes to the cookies we use or for
+                        other operational, legal, or regulatory reasons. Please
+                        re-visit this Cookies Policy regularly to stay informed
+                        about our use of cookies and related technologies.
                       </p>
                       <p>
                         This Cookies Policy is based on a template provided by
@@ -472,18 +490,20 @@ function CookiePolicy() {
                   {/* Section 10 - Contact us */}
                   <div id="section-10" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineDocumentText className="text-[#8cc63f]" /> Contact us
+                      <HiOutlineDocumentText className="text-[#8cc63f]" />{" "}
+                      Contact us
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        If you have any questions about our use of cookies or this Cookies Policy,
-                        please contact us at{" "}
+                        If you have any questions about our use of cookies or
+                        this Cookies Policy, please contact us at{" "}
                         <a
-                          href="mailto:info@ayedoscowrie.io"
+                          href="mailto:info@cowriex.io"
                           className="text-[#8cc63f] hover:underline"
                         >
-                          info@ayedoscowrie.io
-                        </a>.
+                          info@cowriex.io
+                        </a>
+                        .
                       </p>
                     </div>
                   </div>

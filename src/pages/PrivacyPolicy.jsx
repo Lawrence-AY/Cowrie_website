@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  HiDocumentText,
-  HiInformationCircle,
-  HiMenu,
-} from "react-icons/hi";
+import { HiDocumentText, HiInformationCircle, HiMenu } from "react-icons/hi";
 import {
   HiOutlineShieldCheck,
   HiOutlineLockClosed,
@@ -133,9 +129,9 @@ function PrivacyPolicy() {
                   <p>
                     This Privacy Policy sets out how we, AYEDOS COWRIE GROUP
                     LIMITED, obtain, store and use your information when you use
-                    or interact with our website, www.ayedosgroup.com, or where
-                    we otherwise obtain or collect your information. The
-                    effective date of this Privacy Policy is 01.01.2026.
+                    or interact with our website, www.cowriex.io, or where we
+                    otherwise obtain or collect your information. The effective
+                    date of this Privacy Policy is 01.01.2026.
                   </p>
                 </div>
 
@@ -144,7 +140,8 @@ function PrivacyPolicy() {
                   {/* Section 1 - Summary */}
                   <div id="section-1" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineDocumentText className="text-[#8cc63f]" /> Summary
+                      <HiOutlineDocumentText className="text-[#8cc63f]" />{" "}
+                      Summary
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -159,19 +156,21 @@ function PrivacyPolicy() {
                         LIMITED.
                       </p>
                       <p>
-                        <strong>How we collect or obtain information about you:</strong>
+                        <strong>
+                          How we collect or obtain information about you:
+                        </strong>
                       </p>
                       <ul>
                         <li>
-                          when you provide it to us (e.g., by contacting us,
+                          When you provide it to us (e.g., by contacting us,
                           placing an order on our website or signing up to our
                           e-newsletter).
                         </li>
                         <li>
-                          from your use of our website, using cookies and similar
-                          technologies.
+                          From your use of our website, using cookies and
+                          similar technologies.
                         </li>
-                        <li>occasionally from third parties.</li>
+                        <li>Occasionally from third parties.</li>
                       </ul>
                       <p>
                         <strong>Information we collect:</strong> Name, Email
@@ -185,16 +184,18 @@ function PrivacyPolicy() {
                         IP address and company/business name.
                       </p>
                       <p>
-                        <strong>How we use your information:</strong> for
+                        <strong>How we use your information:</strong> For
                         administrative and business purposes (particularly to
-                        contact you and process orders you place on our website),
-                        to improve our business and website, to fulfil our
-                        contractual obligations, to advertise our goods and
+                        contact you and process orders you place on our
+                        website), to improve our business and website, to fulfil
+                        our contractual obligations, to advertise our goods and
                         services, to analyse your use of our website, and in
                         connection with our legal rights and obligations.
                       </p>
                       <p>
-                        <strong>Disclosure of your information to third parties:</strong>{" "}
+                        <strong>
+                          Disclosure of your information to third parties:
+                        </strong>{" "}
                         Only to the extent necessary to run our business, to our
                         service providers, to fulfil any contracts we enter into
                         with you, where required by law or to enforce our legal
@@ -209,27 +210,27 @@ function PrivacyPolicy() {
                         No
                       </p>
                       <p>
-                        <strong>How long we retain your information:</strong> For
-                        no longer than necessary, taking into account any legal
-                        obligations we have (e.g., to maintain records for tax
-                        purposes), any other legal basis we have for using your
-                        information (e.g., your consent, performance of a
+                        <strong>How long we retain your information:</strong>{" "}
+                        For no longer than necessary, taking into account any
+                        legal obligations we have (e.g., to maintain records for
+                        tax purposes), any other legal basis we have for using
+                        your information (e.g., your consent, performance of a
                         contract with you or our legitimate interests as a
                         business). For specific retention periods in relation to
-                        certain information which we collect from you, please see
-                        the main section below entitled How long we retain your
-                        information.
+                        certain information which we collect from you, please
+                        see the main section below entitled How long we retain
+                        your information.
                       </p>
                       <p>
                         <strong>How we secure your information:</strong> Using
-                        appropriate technical and organisational measures such as
-                        storing your information on secure servers, encrypting
-                        transfers of data to or from our servers using Secure
-                        Sockets Layer (SSL) technology, encrypting payments you
-                        make on or via our website using Secure Sockets Layer
-                        (SSL) technology, only granting access to your
-                        information where necessary and encryption of personal
-                        data, encrypted email, pseudonymisation and/or
+                        appropriate technical and organisational measures such
+                        as storing your information on secure servers,
+                        encrypting transfers of data to or from our servers
+                        using Secure Sockets Layer (SSL) technology, encrypting
+                        payments you make on or via our website using Secure
+                        Sockets Layer (SSL) technology, only granting access to
+                        your information where necessary and encryption of
+                        personal data, encrypted email, pseudonymisation and/or
                         anonymisation of information.
                       </p>
                       <p>
@@ -244,11 +245,12 @@ function PrivacyPolicy() {
                           Use of automated decision making and profiling:
                         </strong>{" "}
                         we use automated decision making and/or profiling. The
-                        use of web analytics, cookies, web beacons or server logs
-                        analysis tools (profiling) or use targeting cookies to
-                        display advertisements to people who visit our website on
-                        other websites around the internet (e.g., using the
-                        Google AdSense network) (automated decision making).
+                        use of web analytics, cookies, web beacons or server
+                        logs analysis tools (profiling) or use targeting cookies
+                        to display advertisements to people who visit our
+                        website on other websites around the internet (e.g.,
+                        using the Google AdSense network) (automated decision
+                        making).
                       </p>
                       <p>
                         <strong>
@@ -265,10 +267,13 @@ function PrivacyPolicy() {
                         </li>
                         <li>to have your information deleted</li>
                         <li>to restrict the use of your information</li>
-                        <li>to receive your information in a portable format</li>
+                        <li>
+                          to receive your information in a portable format
+                        </li>
                         <li>to object to the use of your information</li>
                         <li>
-                          to withdraw your consent to the use of your information
+                          to withdraw your consent to the use of your
+                          information
                         </li>
                         <li>
                           not to have significant decisions made about you based
@@ -291,7 +296,8 @@ function PrivacyPolicy() {
                   {/* Section 2 - Our details */}
                   <div id="section-2" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> Our details
+                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> Our
+                      details
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -316,7 +322,8 @@ function PrivacyPolicy() {
                   {/* Section 3 - How we collect information */}
                   <div id="section-3" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineUserGroup className="text-[#8cc63f]" /> How we collect or obtain information about you
+                      <HiOutlineUserGroup className="text-[#8cc63f]" /> How we
+                      collect or obtain information about you
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <h3 className="text-lg font-semibold">
@@ -326,8 +333,8 @@ function PrivacyPolicy() {
                         We collect information about you when you provide it to
                         us, such as through your use of our website and its
                         features, when you contact us directly by email, phone,
-                        in writing, or via social media, when you order goods and
-                        services, when you use any of our other websites or
+                        in writing, or via social media, when you order goods
+                        and services, when you use any of our other websites or
                         applications or any other means by which you provide
                         information to us. The type of information we collect
                         about you includes information such as:
@@ -343,8 +350,8 @@ function PrivacyPolicy() {
                         </li>
                         <li>Your IP address;</li>
                         <li>
-                          Information about your device (e.g., device and browser
-                          type);
+                          Information about your device (e.g., device and
+                          browser type);
                         </li>
                         <li>
                           Information about how you use our website (e.g., which
@@ -362,19 +369,19 @@ function PrivacyPolicy() {
                         Our use of cookies and similar technologies
                       </h3>
                       <p>
-                        Cookies are data files which are sent from a website to a
-                        browser to record information about users of a website.
-                        We use cookies and similar technologies on or via our
-                        website. For further information on how we use cookies
-                        and similar technologies, including the information we
-                        collect through our use of cookies and similar
-                        technologies, please see our cookies policy. You can
-                        reject some or all of the cookies we use on or via our
-                        website by changing your browser settings, but doing so
-                        may impair your ability to use our website or some or all
-                        of its features. For further information about cookies,
-                        including how to change your browser settings, please
-                        visit{" "}
+                        Cookies are data files which are sent from a website to
+                        a browser to record information about users of a
+                        website. We use cookies and similar technologies on or
+                        via our website. For further information on how we use
+                        cookies and similar technologies, including the
+                        information we collect through our use of cookies and
+                        similar technologies, please see our cookies policy. You
+                        can reject some or all of the cookies we use on or via
+                        our website by changing your browser settings, but doing
+                        so may impair your ability to use our website or some or
+                        all of its features. For further information about
+                        cookies, including how to change your browser settings,
+                        please visit{" "}
                         <a
                           href="https://www.allaboutcookies.org"
                           target="_blank"
@@ -412,12 +419,12 @@ function PrivacyPolicy() {
                       <p>
                         We use web beacons in our marketing emails and/or on our
                         website. Some (but not all) browsers enable you to
-                        restrict the use of web beacons by either preventing them
-                        from sending information back to their source (e.g., when
-                        you choose browser settings which block cookies and
-                        trackers) or by not accessing the images containing them
-                        (e.g., if you select a "do not display images (in
-                        emails)" setting in your email server).
+                        restrict the use of web beacons by either preventing
+                        them from sending information back to their source
+                        (e.g., when you choose browser settings which block
+                        cookies and trackers) or by not accessing the images
+                        containing them (e.g., if you select a "do not display
+                        images (in emails)" setting in your email server).
                       </p>
                       <p>
                         We use Facebook Pixel on our website to monitor and
@@ -454,8 +461,8 @@ function PrivacyPolicy() {
                         with whom we have had no prior contact may provide us
                         with information about you. Information we obtain from
                         third parties will generally be your name and contact
-                        details but will include any additional information about
-                        you which they provide to us.
+                        details but will include any additional information
+                        about you which they provide to us.
                       </p>
 
                       <h3 className="text-lg font-semibold mt-6">
@@ -479,11 +486,11 @@ function PrivacyPolicy() {
                         information to us.
                       </p>
                       <p>
-                        Where a third party has shared information about you with
-                        us and you have not consented to the sharing of that
-                        information, we will have a legitimate interest in
-                        processing that information in certain circumstances. For
-                        example, we would have a legitimate interest in
+                        Where a third party has shared information about you
+                        with us and you have not consented to the sharing of
+                        that information, we will have a legitimate interest in
+                        processing that information in certain circumstances.
+                        For example, we would have a legitimate interest in
                         processing your information to perform our obligations
                         under a sub-contract with the third party, where the
                         third party has the main contract with you. Similarly,
@@ -516,13 +523,14 @@ function PrivacyPolicy() {
                         public sources in order to enable us to understand your
                         business and provide services to you or services to a
                         sufficient standard. In certain circumstances, we will
-                        have a legitimate interest in obtaining information about
-                        you from public and private sources. For example, if you
-                        have infringed or we suspect that you have infringed any
-                        of our legal rights, we will have a legitimate interest
-                        in obtaining and processing information about you from
-                        such sources in order to investigate and pursue any
-                        suspected or potential infringement.
+                        have a legitimate interest in obtaining information
+                        about you from public and private sources. For example,
+                        if you have infringed or we suspect that you have
+                        infringed any of our legal rights, we will have a
+                        legitimate interest in obtaining and processing
+                        information about you from such sources in order to
+                        investigate and pursue any suspected or potential
+                        infringement.
                       </p>
                     </div>
                   </div>
@@ -530,7 +538,8 @@ function PrivacyPolicy() {
                   {/* Section 4 - How we use your information */}
                   <div id="section-4" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineScale className="text-[#8cc63f]" /> How we use your information
+                      <HiOutlineScale className="text-[#8cc63f]" /> How we use
+                      your information
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -545,19 +554,19 @@ function PrivacyPolicy() {
                       <p>
                         <strong>Improving our website and business</strong>,
                         including personalising our website and services for you
-                        and other customers. This is necessary for our legitimate
-                        interest of better understanding our other customers' and
-                        potential customers' preferences and tailoring our
-                        website, products and services to their needs,
-                        preferences and desires.
+                        and other customers. This is necessary for our
+                        legitimate interest of better understanding our other
+                        customers' and potential customers' preferences and
+                        tailoring our website, products and services to their
+                        needs, preferences and desires.
                       </p>
                       <p>
                         <strong>Communicating directly with you</strong> with
                         information, updates and changes to our website and in
                         response to enquiries we receive from you. This is
                         necessary for our legitimate interests of informing you
-                        about changes to our business, website and privacy policy
-                        and responding to enquiries we receive from you.
+                        about changes to our business, website and privacy
+                        policy and responding to enquiries we receive from you.
                       </p>
                       <p>
                         <strong>
@@ -597,13 +606,13 @@ function PrivacyPolicy() {
                         which are either related to or associated with the
                         running of our business such as our business partners,
                         insurers, affiliates, associates, suppliers, independent
-                        contractors, email providers, IT, web development service
-                        providers and other financial institutions. We will share
-                        your information with these third parties where it is
-                        necessary for our legitimate interest of running and
-                        managing our business effectively, fulfilling our
-                        contractual obligations or for our own direct marketing
-                        purposes.
+                        contractors, email providers, IT, web development
+                        service providers and other financial institutions. We
+                        will share your information with these third parties
+                        where it is necessary for our legitimate interest of
+                        running and managing our business effectively,
+                        fulfilling our contractual obligations or for our own
+                        direct marketing purposes.
                       </p>
                       <p>
                         <strong>
@@ -611,14 +620,14 @@ function PrivacyPolicy() {
                           parties, such as payment service providers
                         </strong>
                         , including PayPal, Banks and Mobile Money Companies, in
-                        order to process your payments for goods and services you
-                        order from us. This is necessary for us to perform a
+                        order to process your payments for goods and services
+                        you order from us. This is necessary for us to perform a
                         contract we have entered into with you.
                       </p>
                       <p>
                         <strong>
-                          Ensuring physical, network and information security and
-                          integrity
+                          Ensuring physical, network and information security
+                          and integrity
                         </strong>
                         . This is necessary for our legitimate interest of
                         ensuring that our IT systems and networks are secure and
@@ -633,9 +642,9 @@ function PrivacyPolicy() {
                           of a business or share sale
                         </strong>{" "}
                         or sale or purchase of a business and/or assets, whether
-                        actual or potential. This is necessary for our legitimate
-                        interests of selling and/or ensuring and promoting the
-                        success of our business.
+                        actual or potential. This is necessary for our
+                        legitimate interests of selling and/or ensuring and
+                        promoting the success of our business.
                       </p>
                       <p>
                         <strong>To send you marketing communications</strong>.
@@ -695,8 +704,8 @@ function PrivacyPolicy() {
                       </p>
                       <p>
                         <strong>
-                          In connection with any legal or potential legal dispute
-                          or proceedings
+                          In connection with any legal or potential legal
+                          dispute or proceedings
                         </strong>
                         . This is necessary for our legitimate interest of
                         promoting and ensuring the success of our business,
@@ -713,8 +722,8 @@ function PrivacyPolicy() {
                         subject. For example, we may require your information
                         pursuant to a statutory obligation to conduct
                         anti-money-laundering checks or to disclose your
-                        information to a court following receipt of a court order
-                        or subpoena.
+                        information to a court following receipt of a court
+                        order or subpoena.
                       </p>
 
                       <h3 className="text-lg font-semibold mt-6">
@@ -722,8 +731,8 @@ function PrivacyPolicy() {
                       </h3>
                       <p>
                         Where we process your information on the basis of your
-                        consent, you can withdraw your consent to such processing
-                        at any time by emailing us at{" "}
+                        consent, you can withdraw your consent to such
+                        processing at any time by emailing us at{" "}
                         <a
                           href="mailto:info@cowriex.io"
                           className="text-[#8cc63f] hover:underline"
@@ -734,7 +743,8 @@ function PrivacyPolicy() {
                       </p>
 
                       <h3 className="text-lg font-semibold mt-6">
-                        Our use of automated decision-making, including profiling
+                        Our use of automated decision-making, including
+                        profiling
                       </h3>
                       <p>
                         We automate some of our decision-making and profiling
@@ -743,9 +753,9 @@ function PrivacyPolicy() {
                         by you, to improve the consistency with which we deliver
                         our products or services, to reduce our administrative
                         costs, to update our records, to organize our customer
-                        database to improve the services we offer you, to monitor
-                        your interaction with our business and to evaluate the
-                        viability of any orders placed by you.
+                        database to improve the services we offer you, to
+                        monitor your interaction with our business and to
+                        evaluate the viability of any orders placed by you.
                       </p>
                       <p>
                         This is important because it means that many actions and
@@ -753,8 +763,8 @@ function PrivacyPolicy() {
                         contract with you, the amount of any credit we are able
                         to offer you, or the storage, use and transfer of your
                         information, as well as specific communications that we
-                        may send you) are performed automatically by machines and
-                        algorithms rather than humans.
+                        may send you) are performed automatically by machines
+                        and algorithms rather than humans.
                       </p>
                       <p>
                         Your information will be used by these systems to
@@ -776,15 +786,16 @@ function PrivacyPolicy() {
                   {/* Section 5 - How long we retain your information */}
                   <div id="section-5" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineClock className="text-[#8cc63f]" /> How long we retain your information
+                      <HiOutlineClock className="text-[#8cc63f]" /> How long we
+                      retain your information
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
                         This section sets out how long we retain your
                         information. We have set out specific retention periods
-                        where possible. Where that has not been possible, we have
-                        set out the criteria we use to determine the retention
-                        period.
+                        where possible. Where that has not been possible, we
+                        have set out the criteria we use to determine the
+                        retention period.
                       </p>
 
                       <h3 className="text-lg font-semibold">
@@ -793,8 +804,8 @@ function PrivacyPolicy() {
                       <ul>
                         <li>
                           <strong>Server log information:</strong> we retain
-                          information on our server logs only for the duration at
-                          which you interact with our site.
+                          information on our server logs only for the duration
+                          at which you interact with our site.
                         </li>
                         <li>
                           <strong>Order information:</strong> when you place an
@@ -805,20 +816,20 @@ function PrivacyPolicy() {
                           for tax purposes.
                         </li>
                         <li>
-                          <strong>Correspondence and enquiries:</strong> when you
-                          make an enquiry or correspond with us for any reason,
-                          whether by email or via our contact form or by phone,
-                          we will retain your information for as long as it takes
-                          to respond to and resolve your enquiry, and for a
-                          further few months, after which, we will delete your
-                          information.
+                          <strong>Correspondence and enquiries:</strong> when
+                          you make an enquiry or correspond with us for any
+                          reason, whether by email or via our contact form or by
+                          phone, we will retain your information for as long as
+                          it takes to respond to and resolve your enquiry, and
+                          for a further few months, after which, we will delete
+                          your information.
                         </li>
                         <li>
                           <strong>E-Newsletter:</strong> we retain the
                           information you used to sign up for our e-newsletter
                           for as long as you remain subscribed (i.e., you do not
-                          unsubscribe) or if we decide to cancel our e-newsletter
-                          service, whichever comes earlier.
+                          unsubscribe) or if we decide to cancel our
+                          e-newsletter service, whichever comes earlier.
                         </li>
                       </ul>
 
@@ -832,8 +843,8 @@ function PrivacyPolicy() {
                       </p>
                       <ul>
                         <li>
-                          the purpose(s) and use of your information both now and
-                          in the future;
+                          the purpose(s) and use of your information both now
+                          and in the future;
                         </li>
                         <li>
                           whether we have any legal obligation to continue to
@@ -852,8 +863,8 @@ function PrivacyPolicy() {
                           information should be retained;
                         </li>
                         <li>
-                          the levels of risk, cost and liability involved with us
-                          continuing to hold the information;
+                          the levels of risk, cost and liability involved with
+                          us continuing to hold the information;
                         </li>
                         <li>
                           how hard it is to ensure that the information can be
@@ -870,14 +881,15 @@ function PrivacyPolicy() {
                   {/* Section 6 - How we secure your information */}
                   <div id="section-6" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineLockClosed className="text-[#8cc63f]" /> How we secure your information
+                      <HiOutlineLockClosed className="text-[#8cc63f]" /> How we
+                      secure your information
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        We take appropriate technical and organizational measures
-                        to secure your information and to protect it against
-                        unauthorized or unlawful use and accidental loss or
-                        destruction, including:
+                        We take appropriate technical and organizational
+                        measures to secure your information and to protect it
+                        against unauthorized or unlawful use and accidental loss
+                        or destruction, including:
                       </p>
                       <ul>
                         <li>
@@ -886,9 +898,7 @@ function PrivacyPolicy() {
                           confidentiality restrictions where appropriate, and on
                           an anonymised basis wherever possible;
                         </li>
-                        <li>
-                          using secure servers to store your information;
-                        </li>
+                        <li>using secure servers to store your information;</li>
                         <li>
                           verifying the identity of any individual who requests
                           access to information prior to granting them access to
@@ -897,12 +907,12 @@ function PrivacyPolicy() {
                         <li>
                           using Secure Sockets Layer (SSL) software to encrypt
                           any information you submit to us via any forms on our
-                          website and any payment transactions you make on or via
-                          our website;
+                          website and any payment transactions you make on or
+                          via our website;
                         </li>
                         <li>
-                          only transferring your information via closed system or
-                          end to end encrypted data transfers.
+                          only transferring your information via closed system
+                          or end to end encrypted data transfers.
                         </li>
                       </ul>
 
@@ -913,12 +923,12 @@ function PrivacyPolicy() {
                         Transmission of information over the internet is not
                         entirely secure, and if you submit any information to us
                         over the internet (whether by email, via our website or
-                        any other means), you do so entirely at your own risk. We
-                        cannot be responsible for any costs, expenses, loss of
-                        profits, harm to reputation, damages, liabilities or any
-                        other form of loss or damage suffered by you as a result
-                        of your decision to transmit information to us by such
-                        means.
+                        any other means), you do so entirely at your own risk.
+                        We cannot be responsible for any costs, expenses, loss
+                        of profits, harm to reputation, damages, liabilities or
+                        any other form of loss or damage suffered by you as a
+                        result of your decision to transmit information to us by
+                        such means.
                       </p>
                     </div>
                   </div>
@@ -926,7 +936,8 @@ function PrivacyPolicy() {
                   {/* Section 7 - Transfers of your information */}
                   <div id="section-7" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineGlobeAlt className="text-[#8cc63f]" /> Transfers of your information to other countries
+                      <HiOutlineGlobeAlt className="text-[#8cc63f]" /> Transfers
+                      of your information to other countries
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -939,8 +950,8 @@ function PrivacyPolicy() {
                         subject to an adequacy decision by the office of Data
                         Protection Commissioner, or if not (or if we transfer
                         your information to an international organization), we
-                        will ensure that the transfer takes place on the basis of
-                        one or more of the following safeguards:
+                        will ensure that the transfer takes place on the basis
+                        of one or more of the following safeguards:
                       </p>
                       <ul>
                         <li>
@@ -964,10 +975,10 @@ function PrivacyPolicy() {
                         <li>An approved certification mechanism; or</li>
                         <li>
                           Where authorised by the Data Protection Commissioner's
-                          Office, contractual clauses between the data controller
-                          or processor and the data controller, processor or
-                          recipient of the information in the third country or
-                          international organisation.
+                          Office, contractual clauses between the data
+                          controller or processor and the data controller,
+                          processor or recipient of the information in the third
+                          country or international organisation.
                         </li>
                       </ul>
                       <p>
@@ -989,7 +1000,8 @@ function PrivacyPolicy() {
                   {/* Section 8 - Your rights */}
                   <div id="section-8" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineScale className="text-[#8cc63f]" /> Your rights in relation to your information
+                      <HiOutlineScale className="text-[#8cc63f]" /> Your rights
+                      in relation to your information
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -1021,9 +1033,9 @@ function PrivacyPolicy() {
                           information;
                         </li>
                         <li>
-                          to receive information which you have provided to us in
-                          a structured, commonly used and machine-readable format
-                          (e.g., a CSV file) and the right to have that
+                          to receive information which you have provided to us
+                          in a structured, commonly used and machine-readable
+                          format (e.g., a CSV file) and the right to have that
                           information transferred to another data controller
                           (including a third-party data controller);
                         </li>
@@ -1032,10 +1044,10 @@ function PrivacyPolicy() {
                           certain purposes;
                         </li>
                         <li>
-                          to withdraw your consent to our use of your information
-                          at any time where we rely on your consent to use or
-                          process that information. Please note that if you
-                          withdraw your consent, this will not affect the
+                          to withdraw your consent to our use of your
+                          information at any time where we rely on your consent
+                          to use or process that information. Please note that
+                          if you withdraw your consent, this will not affect the
                           lawfulness of our use and processing of your
                           information on the basis of your consent before the
                           point in time when you withdraw your consent;
@@ -1050,7 +1062,8 @@ function PrivacyPolicy() {
                           the right to lodge a complaint with a supervisory
                           authority, in particular in the Member State of your
                           habitual residence, place of work or of an alleged
-                          infringement of the General Data Protection Regulation.
+                          infringement of the General Data Protection
+                          Regulation.
                         </li>
                       </ul>
                       <p>
@@ -1102,10 +1115,10 @@ function PrivacyPolicy() {
                         file, we will attempt to verify your identity using that
                         information. If it is not possible to identify you from
                         such information, or if we have insufficient information
-                        about you, we may require original or certified copies of
-                        certain documentation in order to be able to verify your
-                        identity before we are able to provide you with access to
-                        your information.
+                        about you, we may require original or certified copies
+                        of certain documentation in order to be able to verify
+                        your identity before we are able to provide you with
+                        access to your information.
                       </p>
                     </div>
                   </div>
@@ -1113,7 +1126,8 @@ function PrivacyPolicy() {
                   {/* Section 9 - Right to object */}
                   <div id="section-9" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineBan className="text-[#8cc63f]" /> Your right to object to processing
+                      <HiOutlineBan className="text-[#8cc63f]" /> Your right to
+                      object to processing
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -1133,34 +1147,35 @@ function PrivacyPolicy() {
                       <ul>
                         <li>
                           to object to us using or processing your information
-                          where we use or process it in order to carry out a task
-                          in the public interest or for our legitimate interests,
-                          including 'profiling' (i.e. analysing or predicting
-                          your behaviour based on your information) based on any
-                          of these purposes; and
+                          where we use or process it in order to carry out a
+                          task in the public interest or for our legitimate
+                          interests, including 'profiling' (i.e. analysing or
+                          predicting your behaviour based on your information)
+                          based on any of these purposes; and
                         </li>
                         <li>
                           to object to us using or processing your information
                           for direct marketing purposes (including any profiling
-                          we engage in that is related to such direct marketing).
+                          we engage in that is related to such direct
+                          marketing).
                         </li>
                       </ul>
                       <p>
-                        You may also exercise your right to object to us using or
-                        processing your information for direct marketing purposes
-                        by:
+                        You may also exercise your right to object to us using
+                        or processing your information for direct marketing
+                        purposes by:
                       </p>
                       <ul>
                         <li>
                           clicking the unsubscribe link contained at the bottom
-                          of any marketing email we send to you and following the
-                          instructions which appear in your browser following
-                          your clicking on that link;
+                          of any marketing email we send to you and following
+                          the instructions which appear in your browser
+                          following your clicking on that link;
                         </li>
                         <li>
                           sending an SMS message containing only the words "OPT
-                          OUT" in reply to any marketing communication we send by
-                          text message; or
+                          OUT" in reply to any marketing communication we send
+                          by text message; or
                         </li>
                         <li>
                           sending an email to{" "}
@@ -1186,7 +1201,8 @@ function PrivacyPolicy() {
                   {/* Section 10 - Consequences of not providing information */}
                   <div id="section-10" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineExclamationTriangle className="text-[#8cc63f]" /> Consequences of not providing your information
+                      <HiOutlineExclamationTriangle className="text-[#8cc63f]" />{" "}
+                      Consequences of not providing your information
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -1194,11 +1210,11 @@ function PrivacyPolicy() {
                         we require your information in order to enter into a
                         contract with you. We may also require your information
                         pursuant to a statutory obligation (in order to be able
-                        to send you an invoice for products and services you wish
-                        to order from us, for example). If you do not provide
-                        your information, we will not be able to enter into a
-                        contract with you or to provide you with those products
-                        or services.
+                        to send you an invoice for products and services you
+                        wish to order from us, for example). If you do not
+                        provide your information, we will not be able to enter
+                        into a contract with you or to provide you with those
+                        products or services.
                       </p>
                     </div>
                   </div>
@@ -1206,30 +1222,31 @@ function PrivacyPolicy() {
                   {/* Section 11 - Sensitive Personal Information */}
                   <div id="section-11" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineShieldCheck className="text-[#8cc63f]" /> Sensitive Personal Information
+                      <HiOutlineShieldCheck className="text-[#8cc63f]" />{" "}
+                      Sensitive Personal Information
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
                         'Sensitive personal information' is information about an
                         individual that reveals their racial or ethnic origin,
                         political opinions, religious or philosophical beliefs,
-                        or trade union membership, genetic information, biometric
-                        information for the purpose of uniquely identifying an
-                        individual, information concerning health or information
-                        concerning a natural person's sex life or sexual
-                        orientation.
+                        or trade union membership, genetic information,
+                        biometric information for the purpose of uniquely
+                        identifying an individual, information concerning health
+                        or information concerning a natural person's sex life or
+                        sexual orientation.
                       </p>
                       <p>
                         We do not knowingly or intentionally collect sensitive
                         personal information from individuals, and you must not
-                        submit sensitive personal information to us. If, however,
-                        you inadvertently or intentionally transmit sensitive
-                        personal information to us, you will be considered to
-                        have explicitly consented to us processing that sensitive
-                        personal information under Article 9(2)(a) of the
-                        General Data Protection Regulation. We will use and
-                        process your sensitive personal information for the
-                        purposes of deleting it.
+                        submit sensitive personal information to us. If,
+                        however, you inadvertently or intentionally transmit
+                        sensitive personal information to us, you will be
+                        considered to have explicitly consented to us processing
+                        that sensitive personal information under Article
+                        9(2)(a) of the General Data Protection Regulation. We
+                        will use and process your sensitive personal information
+                        for the purposes of deleting it.
                       </p>
                     </div>
                   </div>
@@ -1237,33 +1254,35 @@ function PrivacyPolicy() {
                   {/* Section 12 - Changes to our Privacy Policy */}
                   <div id="section-12" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlinePencilAlt className="text-[#8cc63f]" /> Changes to our Privacy Policy
+                      <HiOutlinePencilAlt className="text-[#8cc63f]" /> Changes
+                      to our Privacy Policy
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        We update and amend our Privacy Policy from time to time.
+                        We update and amend our Privacy Policy from time to
+                        time.
                       </p>
                       <p>
                         <strong>Minor changes:</strong> Where we make minor
-                        changes to our Privacy Policy, we will update our Privacy
-                        Policy with a new effective date stated at the beginning
-                        of it. Our processing of your information will be
-                        governed by the practices set out in that new version of
-                        the Privacy Policy from its effective date onwards.
+                        changes to our Privacy Policy, we will update our
+                        Privacy Policy with a new effective date stated at the
+                        beginning of it. Our processing of your information will
+                        be governed by the practices set out in that new version
+                        of the Privacy Policy from its effective date onwards.
                       </p>
                       <p>
                         <strong>Major changes:</strong> Where we make major
                         changes to our Privacy Policy or intend to use your
-                        information for a new purpose or a different purpose than
-                        the purposes for which we originally collected it, we
-                        will notify you by email (where possible) or by posting a
-                        notice on our website. We will provide you with the
-                        information about the change in question and the purpose
-                        and any other relevant information before we use your
-                        information for that new purpose. Wherever required, we
-                        will obtain your prior consent before using your
-                        information for a purpose that is different from the
-                        purposes for which we originally collected it.
+                        information for a new purpose or a different purpose
+                        than the purposes for which we originally collected it,
+                        we will notify you by email (where possible) or by
+                        posting a notice on our website. We will provide you
+                        with the information about the change in question and
+                        the purpose and any other relevant information before we
+                        use your information for that new purpose. Wherever
+                        required, we will obtain your prior consent before using
+                        your information for a purpose that is different from
+                        the purposes for which we originally collected it.
                       </p>
                     </div>
                   </div>
@@ -1271,7 +1290,8 @@ function PrivacyPolicy() {
                   {/* Section 13 - Children's Privacy */}
                   <div id="section-13" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineUserGroup className="text-[#8cc63f]" /> Children's Privacy
+                      <HiOutlineUserGroup className="text-[#8cc63f]" />{" "}
+                      Children's Privacy
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
@@ -1280,22 +1300,22 @@ function PrivacyPolicy() {
                         Protection Act of 1998 (COPPA). COPPA and its
                         accompanying regulations protect the privacy of children
                         using the internet. We do not knowingly contact or
-                        collect information from persons under the age of 18. The
-                        website is not intended to solicit information of any
-                        kind from persons under the age of 18.
+                        collect information from persons under the age of 18.
+                        The website is not intended to solicit information of
+                        any kind from persons under the age of 18.
                       </p>
                       <p>
                         It is possible that we could receive information
-                        pertaining to persons under the age of 18 by the fraud or
-                        deception of a third party. If we are notified of this,
-                        as soon as we verify the information, we will, where
-                        required by law to do so, immediately obtain the
+                        pertaining to persons under the age of 18 by the fraud
+                        or deception of a third party. If we are notified of
+                        this, as soon as we verify the information, we will,
+                        where required by law to do so, immediately obtain the
                         appropriate parental consent to use that information or,
-                        if we are unable to obtain such parental consent, we will
-                        delete the information from our servers. If you would
-                        like to notify us of our receipt of information about
-                        persons under the age of 18, please do so by sending an
-                        email to{" "}
+                        if we are unable to obtain such parental consent, we
+                        will delete the information from our servers. If you
+                        would like to notify us of our receipt of information
+                        about persons under the age of 18, please do so by
+                        sending an email to{" "}
                         <a
                           href="mailto:info@ayedosgroup.com"
                           className="text-[#8cc63f] hover:underline"
@@ -1309,14 +1329,15 @@ function PrivacyPolicy() {
                   {/* Section 14 - Copyright */}
                   <div id="section-14" className="scroll-mt-20">
                     <div className="text-xl font-bold mb-3 flex items-center gap-2">
-                      <HiOutlineDocumentText className="text-[#8cc63f]" /> Copyright, credit and logo
+                      <HiOutlineDocumentText className="text-[#8cc63f]" />{" "}
+                      Copyright, credit and logo
                     </div>
                     <div className="prose prose-sm max-w-none dark:prose-invert ml-6">
                       <p>
-                        This Privacy Policy is based on a General Data Protection
-                        Regulation (Regulation (EU) 2016/769) (GDPR) compliant
-                        template provided by GDPR Privacy Policy. For further
-                        information, please visit{" "}
+                        This Privacy Policy is based on a General Data
+                        Protection Regulation (Regulation (EU) 2016/769) (GDPR)
+                        compliant template provided by GDPR Privacy Policy. For
+                        further information, please visit{" "}
                         <a
                           href="https://gdprprivacypolicy.org"
                           target="_blank"
