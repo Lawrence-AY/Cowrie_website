@@ -117,7 +117,7 @@ export default function SpecialFund() {
     <>
       {/* Hero Banner */}
       <PageBanner
-        title="SIF - AYEDOS COWRIE Special Investment Fund"
+        title="CSIF - AYEDOS COWRIE Special Investment Fund"
         subtitle="A new, innovative, and trusted Special Fund for investors looking for growth opportunities through strategic investments."
         bgImage="/images/06.jpg"
       />
@@ -128,11 +128,9 @@ export default function SpecialFund() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-                SIF - AYEDOS COWRIE{" "}
+                CSIF - AYEDOS COWRIE{" "}
                 <span className="text-ayedos-green">Special</span>
-                <span className="block text-ayedos-green">
-                  Investment Fund
-                </span>
+                <span className="block text-ayedos-green">Investment Fund</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
                 AYEDOS COWRIE presents its new, innovative, and trusted Special
@@ -204,8 +202,8 @@ export default function SpecialFund() {
               Fund <span className="text-ayedos-green">Objectives</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              The Special Fund is tailored to sophisticated investors seeking
-              growth, diversification, and long-term financial security.
+              The Cowrie Special Fund is tailored to sophisticated investors
+              seeking growth, diversification, and long-term financial security.
             </p>
           </div>
 
@@ -302,7 +300,7 @@ export default function SpecialFund() {
       <CTASection
         title="Invest with AYEDOS COWRIE Special Fund"
         subtitle="Access a flexible and professionally managed solution tailored to sophisticated investors."
-        buttonText="Contact Us About Investment Opportunities"
+        buttonText="Invest Now"
         buttonLink="/contact"
       />
     </>

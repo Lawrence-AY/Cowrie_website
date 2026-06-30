@@ -1,34 +1,34 @@
-import { useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
+import { useState, useEffect, useRef } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { HiMenu, HiX, HiChevronDown } from "react-icons/hi";
 
 // navItems now includes children for both DEX and MLP
 const navItems = [
-  { name: 'Home', path: '/' },
+  { name: "Home", path: "/" },
   {
-    name: 'MLP',
-    path: '/mlp',
-    tooltip: 'Cowrie Mortgage Liquidity Platform',
+    name: "CMLP",
+    path: "/mlp",
+    tooltip: "Cowrie Mortgage Liquidity Platform",
   },
   {
-    name: 'DEX',
-    path: '/dex',
-    label: 'Cowrie Digital Exchange',
+    name: "CDEX",
+    path: "/dex",
+    label: "Cowrie Digital Exchange",
     children: [
-      { name: 'Commercial', path: '/dex/commercial' },
-      { name: 'Public Sector', path: '/dex/public-sector' },
+      { name: "Commercial", path: "/dex/commercial" },
+      { name: "Public Sector", path: "/dex/public-sector" },
     ],
   },
   {
-    name: 'SIF',
-    path: '/special-fund',
-    tooltip: 'Cowrie Special Investment Fund',
+    name: "CSIF",
+    path: "/special-fund",
+    tooltip: "Cowrie Special Investment Fund",
   },
-  { name: 'Contact', path: '/contact' },
+  { name: "Contact", path: "/contact" },
 ];
 
 const extendedNames = {
-  DEX: 'Cowrie Digital Exchange',
+  DEX: "Cowrie Digital Exchange",
 };
 
 export default function Navbar() {
@@ -42,8 +42,8 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Close mobile menu when route changes (but not on first render)
@@ -71,8 +71,8 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-ayedos-bluegray shadow-lg py-2'
-          : 'bg-ayedos-bluegray/95 py-4'
+          ? "bg-ayedos-bluegray shadow-lg py-2"
+          : "bg-ayedos-bluegray/95 py-4"
       }`}
       role="navigation"
       aria-label="Main navigation"
@@ -80,7 +80,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group" aria-label="AYEDOS COWRIE Home">
+          <Link
+            to="/"
+            className="flex items-center gap-3 group"
+            aria-label="AYEDOS COWRIE Home"
+          >
             <img
               src="/icon-dark-landscape.png"
               alt="Ayedos Cowrie Logo"
@@ -101,8 +105,8 @@ export default function Navbar() {
                       to={item.path}
                       className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 inline-flex items-center gap-1 ${
                         active
-                          ? 'text-ayedos-green bg-white/10'
-                          : 'text-white/80 hover:text-white hover:bg-white/5'
+                          ? "text-ayedos-green bg-white/10"
+                          : "text-white/80 hover:text-white hover:bg-white/5"
                       }`}
                       aria-expanded="false"
                       aria-haspopup="true"
@@ -110,7 +114,7 @@ export default function Navbar() {
                       {item.name}
                       <HiChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180" />
                     </Link>
-                    <div 
+                    <div
                       className="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                       role="menu"
                     >
@@ -124,8 +128,8 @@ export default function Navbar() {
                             to={child.path}
                             className={`block px-4 py-2 text-sm transition-colors ${
                               location.pathname === child.path
-                                ? 'text-ayedos-green bg-white/10'
-                                : 'text-white/70 hover:text-white hover:bg-white/5'
+                                ? "text-ayedos-green bg-white/10"
+                                : "text-white/70 hover:text-white hover:bg-white/5"
                             }`}
                             role="menuitem"
                           >
@@ -146,8 +150,8 @@ export default function Navbar() {
                       to={item.path}
                       className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                         active
-                          ? 'text-ayedos-green bg-white/10'
-                          : 'text-white/80 hover:text-white hover:bg-white/5'
+                          ? "text-ayedos-green bg-white/10"
+                          : "text-white/80 hover:text-white hover:bg-white/5"
                       }`}
                     >
                       {item.name}
@@ -168,8 +172,8 @@ export default function Navbar() {
                   to={item.path}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     active
-                      ? 'text-ayedos-green bg-white/10'
-                      : 'text-white/80 hover:text-white hover:bg-white/5'
+                      ? "text-ayedos-green bg-white/10"
+                      : "text-white/80 hover:text-white hover:bg-white/5"
                   }`}
                 >
                   {item.name}
@@ -182,7 +186,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
-            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
           >
@@ -195,7 +199,7 @@ export default function Navbar() {
       <div
         id="mobile-menu"
         className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${
-          isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="bg-ayedos-bluegray border-t border-white/10 px-4 py-2 space-y-1">
@@ -211,8 +215,8 @@ export default function Navbar() {
                     onClick={() => toggleMobileSubmenu(item.name)}
                     className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                       active
-                        ? 'text-ayedos-green bg-white/10'
-                        : 'text-white/70 hover:text-white hover:bg-white/5'
+                        ? "text-ayedos-green bg-white/10"
+                        : "text-white/70 hover:text-white hover:bg-white/5"
                     }`}
                     aria-expanded={isSubmenuOpen}
                     aria-controls={`submenu-${item.name}`}
@@ -220,7 +224,7 @@ export default function Navbar() {
                     <span>{item.name}</span>
                     <HiChevronDown
                       className={`w-4 h-4 transition-transform duration-300 ${
-                        isSubmenuOpen ? 'rotate-180' : ''
+                        isSubmenuOpen ? "rotate-180" : ""
                       }`}
                       aria-hidden="true"
                     />
@@ -228,7 +232,9 @@ export default function Navbar() {
                   <div
                     id={`submenu-${item.name}`}
                     className={`pl-4 space-y-1 overflow-hidden transition-all duration-300 ${
-                      isSubmenuOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                      isSubmenuOpen
+                        ? "max-h-40 opacity-100"
+                        : "max-h-0 opacity-0"
                     }`}
                     role="menu"
                   >
@@ -238,8 +244,8 @@ export default function Navbar() {
                         to={child.path}
                         className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                           location.pathname === child.path
-                            ? 'text-ayedos-green bg-white/10'
-                            : 'text-white/70 hover:text-white hover:bg-white/5'
+                            ? "text-ayedos-green bg-white/10"
+                            : "text-white/70 hover:text-white hover:bg-white/5"
                         }`}
                         role="menuitem"
                       >
@@ -257,8 +263,8 @@ export default function Navbar() {
                 to={item.path}
                 className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                   active
-                    ? 'text-ayedos-green bg-white/10'
-                    : 'text-white/70 hover:text-white hover:bg-white/5'
+                    ? "text-ayedos-green bg-white/10"
+                    : "text-white/70 hover:text-white hover:bg-white/5"
                 }`}
               >
                 {item.name}
