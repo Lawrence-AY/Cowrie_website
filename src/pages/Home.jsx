@@ -12,7 +12,7 @@ export default function Home() {
     { name: "Proximic", logo: "/images/proximic.jpg" },
     { name: "UBA", logo: "/images/UBA.png" },
     { name: "USI", logo: "/images/USI.jpg" },
-    { name: "Mohammed Muigai Advocates", logo:"/images/Mohammed.png" },
+    { name: "Mohammed Muigai Advocates", logo: "/images/Mohammed.png" },
     { name: "Moronge Obonyo & Co. Advocates", logo: "/images/Moronge.png" },
   ];
 
@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <SEO
         title="AYEDOS COWRIE | Catalysing Commerce"
-        description="Innovative financial solutions combining capital growth, social impact, and blockchain technology. Explore MLP, DEX, and investment opportunities."
+        description="Innovative financial solutions combining capital growth, social impact, and blockchain technology. Explore CMLP, CDEX, and investment opportunities."
         path="/"
         structuredData={organizationSchema}
       />
@@ -50,10 +50,8 @@ export default function Home() {
               <span className="text-ayedos-green">Catalysing Commerce</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/85 leading-relaxed mb-10 max-w-xl">
-              Welcome to AYEDOS COWRIE, innovative financial solutions. <span className="text-ayedos-green font-semibold">
-                Cowrie
-                </span>
-                ,
+              Welcome to AYEDOS COWRIE, innovative financial solutions.{" "}
+              <span className="text-ayedos-green font-semibold">Cowrie</span>,
               the ancient symbol of fertility, prosperity, a store of value, and
               a means of exchange.
             </p>
@@ -62,7 +60,7 @@ export default function Home() {
                 to="/mlp"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-ayedos-green text-white font-semibold rounded-xl hover:bg-ayedos-green/90 transition-all duration-300 hover:shadow-xl hover:scale-105"
               >
-                Explore MLP
+                Explore CMLP
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -81,7 +79,7 @@ export default function Home() {
                 to="/dex"
                 className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105"
               >
-                Explore DEX
+                Explore CDEX
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -116,7 +114,7 @@ export default function Home() {
               inexorable flow of economic value from producer to consumer,
               oftentimes via markets and exchanges. AYEDOS COWRIE reimagines
               markets and exchanges as the intersection of distributed ledger
-              technology (DLT), tokenization, securitization, and information
+              technology (DLT), tokenisation, securitisation, and information
               symmetry.
             </p>
           </div>
@@ -129,12 +127,12 @@ export default function Home() {
                   "Secure, transparent, and immutable blockchain infrastructure powering all our financial solutions.",
               },
               {
-                title: "Tokenization",
+                title: "Tokenisation",
                 description:
                   "Converting real-world assets into digital security tokens for fractional ownership and enhanced liquidity.",
               },
               {
-                title: "Securitization",
+                title: "Securitisation",
                 description:
                   "Pooling financial assets and issuing security tokens backed by diversified revenue streams.",
               },
@@ -169,10 +167,10 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-ayedos-green/20 rounded-full text-ayedos-green text-sm font-medium mb-4">
-                Mortgage Liquidity Platform
+                Cowrie Mortgage Liquidity Platform
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                Mortgage Liquidity{" "}
+                Cowrie Mortgage Liquidity{" "}
                 <span className="text-ayedos-green">Platform</span>
               </h2>
               <p className="text-white/85 leading-relaxed mb-8">
@@ -185,11 +183,12 @@ export default function Home() {
                 simple, efficient platform.
               </p>
               <p className="text-white/80 leading-relaxed mb-8">
-                MLP makes home ownership more accessible through rent-to-own schemes,
-                ordinary mortgages, and development finance. It also adds a liquidity
-                premium to the real estate sector through tokenization and distribution of
-                tokens for commercial real estate, mortgage receivables, and project
-                development finance bonds.
+                MLP makes home ownership more accessible through rent-to-own
+                schemes, ordinary mortgages, and development finance. It also
+                adds a liquidity premium to the real estate sector through
+                tokenization and distribution of tokens for commercial real
+                estate, mortgage receivables, and project development finance
+                bonds.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
@@ -270,17 +269,19 @@ export default function Home() {
                 Digital <span className="text-ayedos-green">Exchange</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-8">
-                DEX is a digital exchange that leverages securitization and
-                tokenization in a secure, permissioned blockchain environment to
+                DEX is a digital exchange that leverages securitisation and
+                tokenisation in a secure, permissioned blockchain environment to
                 deliver liquidity across the economy in both private and public
                 finance.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-8">
-                Whether the objective is to bring forward receivables or defer payables,
-                raise funds for a project, obtain liquidity for commercial real estate,
-                homebuyer finance, or residential project development finance, DEX provides
-                an innovative solution. It also supports government payment needs, VAT
-                collections, on-time supplier payments, and public borrowing optimization.
+                Whether the objective is to bring forward receivables or defer
+                payables, raise funds for a project, obtain liquidity for
+                commercial real estate, homebuyer finance, or residential
+                project development finance, DEX provides an innovative
+                solution. It also supports government payment needs, VAT
+                collections, on-time supplier payments, and public borrowing
+                optimization.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
@@ -354,9 +355,10 @@ export default function Home() {
                 strategic investments.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                The Fund is regulated by the Capital Markets Authority (CMA), and focuses on
-                preserving your capital while earning competitive returns through a diversified
-                portfolio across carefully vetted and monitored asset classes.
+                The Fund is regulated by the Capital Markets Authority (CMA),
+                and focuses on preserving your capital while earning competitive
+                returns through a diversified portfolio across carefully vetted
+                and monitored asset classes.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
                 {[

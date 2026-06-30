@@ -185,7 +185,9 @@ function AffordableHousingCarousel() {
             type="button"
             onClick={() => setActiveIndex(index)}
             className={`h-2.5 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-ayedos-green ${
-              index === activeIndex ? "w-8 bg-ayedos-green" : "w-2.5 bg-white/80"
+              index === activeIndex
+                ? "w-8 bg-ayedos-green"
+                : "w-2.5 bg-white/80"
             }`}
             aria-label={`Show affordable housing image ${index + 1}`}
             aria-current={index === activeIndex ? "true" : undefined}
@@ -198,7 +200,7 @@ function AffordableHousingCarousel() {
 
 export default function MLP() {
   const structuredData = generateProductSchema({
-    name: "Cowrie Mortgage Liquidity Platform (MLP)",
+    name: "Cowrie Mortgage Liquidity Platform (CMLP)",
     description:
       "Real estate marketplace for developers, homebuyers, financiers and investors with blockchain integration",
   });
@@ -206,15 +208,15 @@ export default function MLP() {
   return (
     <>
       <SEO
-        title="Cowrie Mortgage Liquidity Platform (MLP)"
+        title="Cowrie Mortgage Liquidity Platform (CMLP)"
         description="Real estate marketplace integrating mortgage lending, developer financing, and tokenized real estate investments. Streamlined homebuying with blockchain security."
         path="/mlp"
         structuredData={structuredData}
       />
       {/* Hero Banner */}
       <PageBanner
-        title="Mortgage Liquidity Platform (MLP)"
-        subtitle="The Cowrie Mortgage Liquidity Platform (MLP) is a real estate marketplace bringing together developers, homebuyers, financiers and investors in a coherent technology-driven ecosystem."
+        title="Cowrie Mortgage Liquidity Platform (CMLP)"
+        subtitle="The Cowrie Mortgage Liquidity Platform (CMLP) is a real estate marketplace bringing together developers, homebuyers, financiers and investors in a coherent technology-driven ecosystem."
         bgImage="/images/mlp.png"
       />
 
@@ -224,17 +226,17 @@ export default function MLP() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-3xl sm:text-4xl font-bold text-ayedos-bluegray mb-6">
-                Mortgage Liquidity{" "}
+                Cowrie Mortgage Liquidity{" "}
                 <span className="text-ayedos-green">Platform</span>
               </h2>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                MLP integrates market search, KYC/AML compliance, sales
+                CMLP integrates market search, KYC/AML compliance, sales
                 processes, credit assessment, homebuyer finance, loan
                 consolidation, equity release, and project financing into a
                 simple, efficient platform.
               </p>
               <p className="text-ayedos-charcoal/70 leading-relaxed mb-6">
-                MLP makes home ownership more accessible through rent-to-own
+                CMLP makes home ownership more accessible through rent-to-own
                 schemes, ordinary mortgages, and development finance. It also
                 adds a liquidity premium to the real estate sector through
                 tokenization and distribution of tokens for commercial real
@@ -257,7 +259,7 @@ export default function MLP() {
             <div data-aos="fade-left">
               <ImagePlaceholder
                 height="400px"
-                label="MLP Overview"
+                label="CMLP Overview"
                 className=""
                 src="/images/03.jpg"
               />
@@ -277,7 +279,7 @@ export default function MLP() {
               Key <span className="text-ayedos-green">Features</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              Discover the comprehensive features that make MLP the premier
+              Discover the comprehensive features that make CMLP the premier
               platform for real estate finance.
             </p>
           </div>
@@ -306,7 +308,7 @@ export default function MLP() {
               Benefits for <span className="text-ayedos-green">Everyone</span>
             </h2>
             <p className="text-lg text-ayedos-charcoal/70">
-              MLP creates value for all stakeholders in the real estate
+              CMLP creates value for all stakeholders in the real estate
               ecosystem.
             </p>
           </div>
@@ -343,13 +345,13 @@ export default function MLP() {
                 Social Impact
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-                MLP for{" "}
+                CMLP for{" "}
                 <span className="text-ayedos-green">Affordable Housing</span>
               </h2>
               <p className="text-white/85 leading-relaxed mb-6">
-                MLP offers an integrated solution for financing affordable
+                CMLP offers an integrated solution for financing affordable
                 housing projects. Through innovative rent-to-own schemes,
-                ordinary mortgages, and development finance, MLP addresses
+                ordinary mortgages, and development finance, CMLP addresses
                 housing shortages and promotes sustainable urban development.
               </p>
               <div className="space-y-4 mb-8">
@@ -357,7 +359,7 @@ export default function MLP() {
                   {
                     title: "Government Partnerships",
                     description:
-                      "MLP can become the official off-taker on behalf of the Government, freeing capital for the next project while providing homebuyers with financing.",
+                      "CMLP can become the official off-taker on behalf of the Government, freeing capital for the next project while providing homebuyers with financing.",
                   },
                   {
                     title: "Faster Onboarding",
@@ -417,8 +419,8 @@ export default function MLP() {
       {/* CTA */}
       <CTASection
         title="Ready to Transform Real Estate Finance?"
-        subtitle="Discover how MLP can help you own your dream home, complete your rental project, or invest in a diversified property portfolio with innovative financing devices."
-        buttonText="Contact Us About MLP"
+        subtitle="Discover how CMLP can help you own your dream home, complete your rental project, or invest in a diversified property portfolio with innovative financing devices."
+        buttonText="Invest Now"
         buttonLink="/contact"
       />
     </>
